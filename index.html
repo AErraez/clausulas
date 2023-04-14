@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clausulas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body class="px-4">
+    <header>
+        <h1>Filtro de clausulas</h1>
+    </header>
+
+    <main class="container-fluid py-3">
+        <div class="row py-3">
+            <label for="ramo">Selecciona un ramo:</label> 
+            <select name="ramo" id="ramo">
+                <option value="MI">Multiriesgo Industrial </option>
+                <option value="IN">Incendio</option>
+                <option value="VH">Todo Riesgo Vehiculos</option>
+            </select>
+        </div>
+
+        <div class="row py-3">
+            <label for="texto">Ingresa las clausulas:</label>
+            <textarea id="texto" name="texto" rows="10" cols="50"></textarea>
+        </div>
+
+        <div class="row py-3">
+            <button id="submit">Enviar</button>
+        </div>
+
+        <div id="resultado" class="row py-3">
+
+        </div>
+
+
+    </main>
+</body>
+
+<script src="/bundle.js" type="module"></script>
+</html>
