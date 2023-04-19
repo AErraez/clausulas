@@ -1,0 +1,22 @@
+.claus-but {
+    border: solid ;
+    margin: auto;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    text-align: center;
+    font-size: 0.75rem !important;
+}
+
+.claus-but:hover{
+    cursor: pointer;
+    box-shadow: inset;
+}
+
+button[value="active"]{
+    border-color:rgb(29, 95, 203);
+    background-color: rgba(56, 42, 181, 0.333);
+}
+
+p {
+    margin: 0 !important;
+}
