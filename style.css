@@ -12,7 +12,7 @@
     box-shadow: inset;
 }
 
-button[value="active"]{
+.active{
     border-color:rgb(29, 95, 203);
     background-color: rgba(56, 42, 181, 0.333);
 }

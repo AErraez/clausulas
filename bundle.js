@@ -5657,7 +5657,7 @@ function arrtotext(arr) {
   let unique= [ ...new Set(arr)]
   let txt= ""
   unique.forEach(elem=> {
-    txt+= elem+ "-"
+    txt+= elem
   })
   return txt.substring(0,txt.length -1)
 }
@@ -5679,21 +5679,22 @@ boton.addEventListener("click", (event)=>{
     let clausramo= clausulas[ramo]
     console.log(txtclean[0])
     let section=document.getElementById("resultado")
+    let footer= document.getElementById("clausulas")
     section.innerHTML=""
     let codarray=[]
     txtclean.forEach(element => {
       let similist = findSimilarSentences(clausramo,element)
       let txttoshow= `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
-                      <div class="col-2 "><button class="claus-but" value="active">${similist[0][0]} - ${similist[0][1]}</button></div> 
-                      <div class="col-2 "><button class="claus-but" value="inactive">${similist[1][0]} - ${similist[1][1]}</button></div> 
-                      <div class="col-2 "><button class="claus-but" value="inactive">${similist[2][0]} - ${similist[2][1]}</button></div> 
-                      <div class="col-md-auto text-center"><button class="claus-but" value="inactive">X</button></div> </div>`
+                      <div class="col-2 "><button class="claus-but active" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
+                      <div class="col-2 "><button class="claus-but" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
+                      <div class="col-2 "><button class="claus-but" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
+                      <div class="col-md-auto text-center"><button class="claus-but" value="">X</button></div> </div>`
       section.innerHTML+=txttoshow
-      codarray.push(similist[0][1])
+      codarray.push(similist[0][1]+"-")
     })
     let codtxt= arrtotext(codarray)
-    section.innerHTML+=`<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
+    footer.innerHTML=`<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
 
     let listbut=document.querySelectorAll(".claus-but")
     let ibut=0
@@ -5713,7 +5714,6 @@ boton.addEventListener("click", (event)=>{
     }
     console.log(objbut)
 
-    objbut[1][0].but.value="inactive"
     for (let fila_boton in objbut){
       let boton1=objbut[fila_boton][0]
       let boton2=objbut[fila_boton][1]
@@ -5721,11 +5721,18 @@ boton.addEventListener("click", (event)=>{
       let boton4=objbut[fila_boton][3]
       for (let boton of objbut[fila_boton]){
         boton.but.addEventListener("click", (event)=>{
-          boton1.but.value="inactive"
-          boton2.but.value="inactive"
-          boton3.but.value="inactive"
-          boton4.but.value="inactive"
-          boton.but.value="active"
+          boton1.but.classList.remove("active")
+          boton2.but.classList.remove("active")
+          boton3.but.classList.remove("active")
+          boton4.but.classList.remove("active")
+          boton.but.classList.add("active")
+          let activelist= document.querySelectorAll(".active")
+          codarray=[]
+          for (let elem of activelist){
+            codarray.push(elem.value)
+          }
+          codtxt=arrtotext(codarray)
+          footer.innerHTML=`<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
         })
       }
     }
