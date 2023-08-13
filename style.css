@@ -7,6 +7,19 @@
     font-size: 0.75rem !important;
 }
 
+.rev-but{
+    border: solid ;
+    margin: auto;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    text-align: center;
+    font-size: 0.75rem !important;
+}
+
+.rev-but:hover{
+    cursor: pointer;
+    box-shadow: inset;
+}
 .claus-but:hover{
     cursor: pointer;
     box-shadow: inset;
