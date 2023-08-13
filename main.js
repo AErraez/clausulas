@@ -163,11 +163,36 @@ filterbutton.addEventListener("input", (event) => {
     button.addEventListener('click',(e)=>{
       if (!review_active_list.includes(button.value)){
         review_active_list.push(button.value)
+        htmlbutarr.push(button.innerHTML)
+        console.log(htmlbutarr)
       }    
       codtxt = arrtotext([...codarray, ...review_active_list]);
       
       footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
-   
+      divselected.innerHTML=""
+      review_active_list.forEach((elem,i)=>{
+        divselected.innerHTML+=`<div class="py-2 col-12"><button class="rev-active" value=${elem}>${htmlbutarr[i]}</button></div>`
+      })
+
+      divselected.addEventListener('click', (event) => {
+        if (event.target.classList.contains('rev-active')) {
+          let value = event.target.value;
+          let i = review_active_list.indexOf(value);
+          if (i !== -1) {
+            review_active_list.splice(i, 1);
+            htmlbutarr.splice(i, 1);
+      
+            codtxt = arrtotext([...codarray, ...review_active_list]);
+      
+            footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`;
+            divselected.innerHTML = "";
+      
+            review_active_list.forEach((elem, i) => {
+              divselected.innerHTML += `<div class="py-2 col-12"><button class="rev-active" value=${elem}>${htmlbutarr[i]}</button></div>`;
+            });
+          }
+        }
+      });
 
     })
   }

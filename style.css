@@ -25,6 +25,15 @@
     box-shadow: inset;
 }
 
+.rev-active{
+    border-color:rgb(29, 95, 203);
+    background-color: rgba(56, 42, 181, 0.333);
+}
+
+.rev-active:hover{
+    border-color: rgb(210, 18, 18);
+    background-color: rgba(226, 21, 21, 0.332);
+}
 .active{
     border-color:rgb(29, 95, 203);
     background-color: rgba(56, 42, 181, 0.333);
