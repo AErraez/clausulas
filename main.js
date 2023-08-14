@@ -1,5 +1,5 @@
 const clausulas = require("./lista_clau.json");
-const stringSimilarity = require("string-similarity");
+const stringSimilarity = require("string-similarity"); 
 
 //**********************FUNCIONES********************//
 
@@ -59,6 +59,7 @@ let htmlbutarr=[]
 //**************EVENTOS************************************ */
 
 boton.addEventListener("click", (event) => {
+  manual_search_result.innerHTML = ""
   htmlbutarr=[]
   codtxt=""
   divselected.innerHTML=""
