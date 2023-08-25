@@ -42,3 +42,8 @@
 p {
     margin: 0 !important;
 }
+
+.scroll {
+    overflow-y: auto;
+    height: 500px;
+}

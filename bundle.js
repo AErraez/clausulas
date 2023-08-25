@@ -4007,6 +4007,7 @@ boton.addEventListener("click", (event) => {
   htmlbutarr=[]
   codtxt=""
   divselected.innerHTML=""
+  unselecteddiv.innerHTML = "";
   review_active_list=[]
   let ramo = document.getElementById("ramo").value;
   let texto = document.getElementById("texto").value;
@@ -4026,6 +4027,7 @@ boton.addEventListener("click", (event) => {
   section.innerHTML = "";
   codarray = [];
   txtclean.forEach((element) => {
+    if (element!=""){
     let similist = findSimilarSentences(clausramo, element);
     let txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
@@ -4036,6 +4038,7 @@ boton.addEventListener("click", (event) => {
 
     section.innerHTML += txttoshow;
     codarray.push(similist[0][1] + "-");
+    }
   });
   codtxt = arrtotext(codarray);
   footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`;
