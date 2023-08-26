@@ -4164,7 +4164,11 @@ reviewbutt.addEventListener("click", (event) => {
 });
 
 
+var clear_button= document.getElementById("clear-button")
 
+clear_button.addEventListener("click",(e)=>{
+  document.getElementById("texto").value=""
+})
 },{"./lista_clau.json":1,"string-similarity":3}],3:[function(require,module,exports){
 module.exports = {
 	compareTwoStrings:compareTwoStrings,

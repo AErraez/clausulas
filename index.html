@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clausulas</title>
+    <title>Cláusulas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ2XBXZT8E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZ2XBXZT8E');
+</script>
 <body class="px-4">
     <header>
-        <h1>Filtro de clausulas</h1>
+        <h1>Filtro de cláusulas</h1>
     </header>
 
     <main class="container-fluid py-3">
         <div class="row py-3">
             <label for="ramo">Selecciona un ramo:</label> 
             <select name="ramo" id="ramo">
-                <option value="VH">Todo Riesgo Vehiculos</option>
+                <option value="VH">Todo Riesgo Vehículos</option>
                 <option value="IN">Incendio</option>
                 <option value="MI">Multiriesgo Industrial </option>
                 <option value="RCE">Responsabilidad Civil</option>
@@ -38,7 +46,10 @@
         </div>
 
         <div class="row py-3">
-            <label for="texto">Ingresa las clausulas:</label>
+            <div class="col">
+            <label for="texto">Ingresa las cláusulas:</label>
+            <button style="float: right;" id="clear-button">Limpiar</button>
+        </div>
             <textarea id="texto" name="texto" rows="10" cols="50"></textarea>
         </div>
 
@@ -59,21 +70,21 @@
 
             <div class="row py-3 justify-content-around align-items-start text-align-center">
                 <div id="notselected" class="col-4 py-3 scroll">
-                    <h2 class="py-2">Clausulas sin seleccionar</h2>
+                    <h2 class="py-2">Cláusulas sin seleccionar</h2>
                     <div id="unselected">
 
                     </div>
                 </div>
                 <div id="manual" class="col-4 py-3 scroll">
                     <h2 class="py-2">Buscar</h2>
-                    <label for="searchclaus">Ingrese clausula a buscar:</label>
+                    <label for="searchclaus">Ingrese cláusula a buscar:</label>
                     
                     <textarea id="searchclaus" name="searchclaus" value="" rows="1" cols="50"></textarea>
                     <div id="manual_search_result" class="row"></div>
 
                 </div>
                 <div class="col-4 py-3 scroll">
-                    <h2 class="py-2">Clausulas agregadas</h2>
+                    <h2 class="py-2">Cláusulas agregadas</h2>
                     <div id="selected"></div>
                 </div>
             </div>

@@ -220,3 +220,8 @@ reviewbutt.addEventListener("click", (event) => {
 });
 
 
+var clear_button= document.getElementById("clear-button")
+
+clear_button.addEventListener("click",(e)=>{
+  document.getElementById("texto").value=""
+})
