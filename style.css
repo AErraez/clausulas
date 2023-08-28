@@ -22,8 +22,7 @@
 .claus-but:hover{
     cursor: pointer;
     box-shadow: inset;
-    border-color:rgb(29, 95, 203,0.5);
-    background-color: rgba(56, 42, 181, 0.333);
+    border-color:rgb(29, 95, 203);
 }
 
 .rev-active{
@@ -67,6 +66,7 @@ main {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 body {
     background-color: rgb(221 222 231);
