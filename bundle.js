@@ -3939,6 +3939,456 @@ module.exports={
       "Código": 9000,
       "Cláusula": "POLIZA DE SEGURO CONTRA ACCIDENTES PERSONALES NUEVA"
      }
+    ],
+    "RCP":[
+     {
+      "Código": 0,
+      "Cláusula": "RC PROFESIONAL PARA CLINICAS \/ HOSPITALES-VERSION  ENE.1997"
+     },
+     {
+      "Código": 8,
+      "Cláusula": "RESPONSABILIDAD CIVIL POR INCENDIO Y EXPLOSION"
+     },
+     {
+      "Código": 11,
+      "Cláusula": "DADO DE BAJA\/CONTAMINACION"
+     },
+     {
+      "Código": 13,
+      "Cláusula": "EXCESO DE VEHICULOS"
+     },
+     {
+      "Código": 14,
+      "Cláusula": "NO CANCELACION INDIVIDUAL"
+     },
+     {
+      "Código": 15,
+      "Cláusula": "ADHESION"
+     },
+     {
+      "Código": 16,
+      "Cláusula": "NOTIFICACION DE SINIESTROS"
+     },
+     {
+      "Código": 17,
+      "Cláusula": "CANCELACION"
+     },
+     {
+      "Código": 18,
+      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
+     },
+     {
+      "Código": 19,
+      "Cláusula": "ARBITRAJE"
+     },
+     {
+      "Código": 21,
+      "Cláusula": "PAGO DE PRIMAS"
+     },
+     {
+      "Código": 22,
+      "Cláusula": "RESTITUCION AUTOMATICA DE SUMA ASEGURADA"
+     },
+     {
+      "Código": 23,
+      "Cláusula": "CLAUSULA DE AVISO DE RESPONSABILIDAD DIVERSA"
+     },
+     {
+      "Código": 24,
+      "Cláusula": "EXCLUSION DE CONTAMINACION POR RADIACT.DEL INST.DE LONDRES"
+     },
+     {
+      "Código": 25,
+      "Cláusula": "RESPONSABILIDAD CIVIL EMPRESAS DE VIGILANCIA"
+     },
+     {
+      "Código": 26,
+      "Cláusula": "RESPONSABILIDAD CIVIL GUARDIANIA"
+     },
+     {
+      "Código": 27,
+      "Cláusula": "PAGO DE PRIMAS"
+     },
+     {
+      "Código": 28,
+      "Cláusula": "clausula de soldadura"
+     },
+     {
+      "Código": 29,
+      "Cláusula": "clausula N. 1 NMA 1683"
+     },
+     {
+      "Código": 30,
+      "Cláusula": "condiciones de gas\/combustible (1989)"
+     },
+     {
+      "Código": 31,
+      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS (REASEGURO)"
+     },
+     {
+      "Código": 32,
+      "Cláusula": "NOTIFICACION DE RESPONSABILIDAD DIVERSA (LSW 1001)"
+     },
+     {
+      "Código": 33,
+      "Cláusula": "CLAUSULA DE EXCLUSION PARA GUERRA Y GUERRA CIVIL"
+     },
+     {
+      "Código": 34,
+      "Cláusula": "FILTRACIÓN POLUCIÓN Y CONTAM.PARA INDUSTRIAS N°3 NMA 1685"
+     },
+     {
+      "Código": 35,
+      "Cláusula": "SINIESTROS EN SERIE"
+     },
+     {
+      "Código": 37,
+      "Cláusula": "AMPARO AUTOMATICO PARA PREDIOS"
+     },
+     {
+      "Código": 38,
+      "Cláusula": "CLAUSULA DE CONTROL DE RECLAMACIONES"
+     },
+     {
+      "Código": 39,
+      "Cláusula": "CONDICIONES DE GAS \/ COMBUSTIBLE (1989)"
+     },
+     {
+      "Código": 40,
+      "Cláusula": "ANEXO DE: PREDIOS LABORES Y OPERACIONES"
+     },
+     {
+      "Código": 41,
+      "Cláusula": "ANEXO  DE: CONTRATISTAS INDEPENDIENTES"
+     },
+     {
+      "Código": 42,
+      "Cláusula": " ANEXO DE:  PRODUCTOS"
+     },
+     {
+      "Código": 43,
+      "Cláusula": "ANEXO  DE : RESPONSABILIDAD CIVIL PATRONAL"
+     },
+     {
+      "Código": 44,
+      "Cláusula": "ANEXO DE:VEHICULOS PROPIOS Y NO PROPIOS Y EXCESO DE RC"
+     },
+     {
+      "Código": 45,
+      "Cláusula": "ANEXO  DE: RESPONSABILIDAD CIVIL CRUZADA"
+     },
+     {
+      "Código": 46,
+      "Cláusula": "ANEXO  DE:  USO DE ASCENSORES"
+     },
+     {
+      "Código": 47,
+      "Cláusula": "ANEXO DE:TRANSPORTE DE BIENES INCLUYENDO CARGA Y DESCARGA"
+     },
+     {
+      "Código": 48,
+      "Cláusula": "ANEXO DE :  CUIDADO CUSTODIA Y CONTROL"
+     },
+     {
+      "Código": 49,
+      "Cláusula": "ANEXO  DE: USO DE PARQUEADEROS"
+     },
+     {
+      "Código": 50,
+      "Cláusula": "ANEXO DE :   CONTAMINACION  Y  POLUCION"
+     },
+     {
+      "Código": 51,
+      "Cláusula": "EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
+     },
+     {
+      "Código": 52,
+      "Cláusula": "CLAUSULA DE JURISDICCION"
+     },
+     {
+      "Código": 55,
+      "Cláusula": "AJUSTADORES"
+     },
+     {
+      "Código": 56,
+      "Cláusula": "CLAUSULA DE SERVICIOS SUBTERRANEOS"
+     },
+     {
+      "Código": 57,
+      "Cláusula": "CLAUSULA DE SOLDADURA"
+     },
+     {
+      "Código": 58,
+      "Cláusula": "EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
+     },
+     {
+      "Código": 59,
+      "Cláusula": "Responsabilidad Civil Talleres"
+     },
+     {
+      "Código": 60,
+      "Cláusula": "AUTORIDAD CIVIL"
+     },
+     {
+      "Código": 61,
+      "Cláusula": "ALTERACIONES Y REPARACIONES"
+     },
+     {
+      "Código": 62,
+      "Cláusula": "ASEGURADO ADICIONAL"
+     },
+     {
+      "Código": 63,
+      "Cláusula": "Cláusula de Siniestralidad"
+     },
+     {
+      "Código": 64,
+      "Cláusula": "CLAUSULA DE ACEPTACION"
+     },
+     {
+      "Código": 65,
+      "Cláusula": "ANEXO DE EXCLUSIONES"
+     },
+     {
+      "Código": 66,
+      "Cláusula": "CLAUSULA DE INCENDIO Y EXPLOSION"
+     },
+     {
+      "Código": 72,
+      "Cláusula": "RESPONSABILIDAD CVIIL PATRONAL"
+     },
+     {
+      "Código": 73,
+      "Cláusula": "RESPONSABILIDAD CIVIL EXPLOTACIÓN CL. RC PROFESIONAL"
+     },
+     {
+      "Código": 78,
+      "Cláusula": "ACTIVIDAD DE EXTRACCIÓN Y TRANSFUSIÓN DE SANGRE"
+     },
+     {
+      "Código": 89,
+      "Cláusula": "MEDICINA ESTETICA SIN CIRUGIA CON REJUVENECIMIENTO"
+     },
+     {
+      "Código": 94,
+      "Cláusula": "OTRAS OBLIGACIONESD EBERES FACULTADES CL RC PROFESIONAL"
+     },
+     {
+      "Código": 95,
+      "Cláusula": " "
+     },
+     {
+      "Código": 97,
+      "Cláusula": "PERIODO DE DESCUBIRMIENTO CL RC"
+     },
+     {
+      "Código": 98,
+      "Cláusula": "CLÁUSULA RESPONSABILIDAD DEL ASEGURADO POR CONTAMINACIÓN ACC"
+     },
+     {
+      "Código": 99,
+      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 100,
+      "Cláusula": "RC SOCIEDADES  CONTAMINACIÓN ACCIDENTAL Y REPENTINA"
+     },
+     {
+      "Código": 101,
+      "Cláusula": "RC  PROFESIONAL PARA SOCIEDADES  EXPLOTACIÓN  (DAÑOS MATERIA"
+     },
+     {
+      "Código": 102,
+      "Cláusula": "RC SOCIEDADES  PARA SOCIEDADES RETROACTIVIDAD"
+     },
+     {
+      "Código": 103,
+      "Cláusula": "CLAUSULA DE COBERTURA POR ACTIVIDAD DE EXTRACCIÓN TRANSFUSI"
+     },
+     {
+      "Código": 104,
+      "Cláusula": "RC SOCIEDADES  COBERTURA INSTITUCIONAL"
+     },
+     {
+      "Código": 105,
+      "Cláusula": "RC SOCIEDADES CLÁUSULA DE COBERTURA DE RESPONSABILIDAD CIVIL"
+     },
+     {
+      "Código": 107,
+      "Cláusula": "RC SOCIEDADES ACTIVIDAD DE EXTRACCIÓN TRANSFUSIÓN Y\/O CONSE"
+     },
+     {
+      "Código": 108,
+      "Cláusula": "RC SOCIEDADES RETROACTIVIDAD"
+     },
+     {
+      "Código": 109,
+      "Cláusula": "RC SOCIEDADES CONTAMINACIÓN ACCIDENTAL Y REPENTINA"
+     },
+     {
+      "Código": 110,
+      "Cláusula": "RC SOCIEDADES COBERTURA POR DAÑOS MATERIALES Y(O PERSONALES"
+     },
+     {
+      "Código": 111,
+      "Cláusula": "RC SOCIEDADES  PATRONAL"
+     },
+     {
+      "Código": 112,
+      "Cláusula": "RC SOCIEDADES  COBERTURA INSTITUCIONAL"
+     },
+     {
+      "Código": 113,
+      "Cláusula": "RC SOCIEDADES PERIODO DE DESCUBRIMIENTO"
+     },
+     {
+      "Código": 114,
+      "Cláusula": "RC SOCIEDADES LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 115,
+      "Cláusula": "COBERTURA DE RETROACTIVIDAD"
+     },
+     {
+      "Código": 116,
+      "Cláusula": "CLÁUSULA DE COBERTURA MEDICINA ESTÉTICA SIN CIRUGÍA"
+     },
+     {
+      "Código": 117,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD FUNDAMENTAL"
+     },
+     {
+      "Código": 118,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD GLOBAL"
+     },
+     {
+      "Código": 119,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD INICIAL"
+     },
+     {
+      "Código": 120,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD PLATINUM"
+     },
+     {
+      "Código": 121,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD PROTECCIÓN TOTAL"
+     },
+     {
+      "Código": 122,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD SILVER PLUS"
+     },
+     {
+      "Código": 123,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD SILVER"
+     },
+     {
+      "Código": 124,
+      "Cláusula": "CLÁUSULA DE OBJETO Y PRESTACIONES DEL SEGURO"
+     },
+     {
+      "Código": 125,
+      "Cláusula": "CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPITALES - SEGUNDA"
+     },
+     {
+      "Código": 126,
+      "Cláusula": "CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPITALES"
+     },
+     {
+      "Código": 127,
+      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD COMPLEMENTARIA A CENTROS MÉD"
+     },
+     {
+      "Código": 128,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE DEMANDA CONTRA RECLAMACIONES INFUND"
+     },
+     {
+      "Código": 129,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE ACOMPAÑAMIENTO Y ASESORAMIENTO AL A"
+     },
+     {
+      "Código": 130,
+      "Cláusula": "CLÁUSULA DE ASESORÍA Y\/O DEFENSA JURÍDICA"
+     },
+     {
+      "Código": 131,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE DEFENSA DEL ASEGURADO EN CASO DE SE"
+     },
+     {
+      "Código": 132,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RECLAMACIÓN AL PACIENTE POR AGRESIO"
+     },
+     {
+      "Código": 133,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RESPONSABILIDAD CIVIL CONTAMINACIÓN"
+     },
+     {
+      "Código": 134,
+      "Cláusula": "CLÁUSULA DE COBERTURA POR ACTIVIDAD CON CARÁCTER DOCENTE"
+     },
+     {
+      "Código": 135,
+      "Cláusula": "CLÁUSULA DE COBERTURA POR ACTUACIÓN COMO PERITO EN PROCEDIMI"
+     },
+     {
+      "Código": 136,
+      "Cláusula": "CLÁUSULA DE COBERTURA POR INHABILITACIÓN TEMPORAL PROFESIONA"
+     },
+     {
+      "Código": 137,
+      "Cláusula": "CLÁUSULA DE COBERTURA POR SUSPENSIÓN DE EMPLEO Y SUELDO"
+     },
+     {
+      "Código": 138,
+      "Cláusula": "CLÁUSULA DE DELIMITACIÓN TEMPORAL Y VIGENCIA DEL SEGURO"
+     },
+     {
+      "Código": 139,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE NOTIFICACIÓN DE SINIESTROS E INCIDEN"
+     },
+     {
+      "Código": 140,
+      "Cláusula": "CLÁUSULA DE RENOVACIÓN AUTOMÁTICA"
+     },
+     {
+      "Código": 141,
+      "Cláusula": "CLÁUSULA DE ASESORÍA EN ELABORACIÓN DE INFORMES PERICIALES"
+     },
+     {
+      "Código": 142,
+      "Cláusula": "CLÁUSULA DE COBERTURA POR CESE DE LA ACTIVIDAD"
+     },
+     {
+      "Código": 143,
+      "Cláusula": "CLAUSULA DE COBERTURA DE BLEFAROPLASTIAS Y RINOPLASTIAS - CO"
+     },
+     {
+      "Código": 144,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE MICROFILLERS LABIALES"
+     },
+     {
+      "Código": 9000,
+      "Cláusula": "CONDICIONES GENERALES"
+     },
+     {
+      "Código": 9001,
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL"
+     },
+     {
+      "Código": 9002,
+      "Cláusula": "RESPONSABILIDAD CIVIL PARA DIRECTORES Y ADMINISTRADORES"
+     },
+     {
+      "Código": 9003,
+      "Cláusula": "R. C.  PROFESIONAL  PARA MEDICOS - DADA DE BAJA"
+     },
+     {
+      "Código": 9005,
+      "Cláusula": "CONDICION GENERAL RC PROFESIOAL PARA SOCIEDADES PRIVADAS PRE"
+     },
+     {
+      "Código": 9006,
+      "Cláusula": "PÓLIZA DE SEGURO DE RESPONSABILIDAD CIVIL PROFESIONAL PARA M"
+     }
     ]
     }
 },{}],2:[function(require,module,exports){
