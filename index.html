@@ -18,7 +18,7 @@
   gtag('config', 'G-YZ2XBXZT8E');
 </script>
 <body class="px-4">
-    <header>
+    <header class="text-center py-3">
         <h1>Filtro de cláusulas</h1>
     </header>
 
@@ -48,13 +48,13 @@
         <div class="row py-3">
             <div class="col">
             <label for="texto">Ingresa las cláusulas:</label>
-            <button style="float: right;" id="clear-button">Limpiar</button>
+            <button style="float: right;" id="clear-button" class="grey-but">Limpiar</button>
         </div>
             <textarea id="texto" name="texto" rows="10" cols="50"></textarea>
         </div>
 
         <div class="row py-3">
-            <button id="submit">Enviar</button>
+            <button id="submit" class="grey-but">Enviar</button>
         </div>
 
         <div id="resultado" class="row align-content-center py-3">
@@ -66,9 +66,9 @@
         </div>
 
         <div id="check" class="row align-content-center py-3" style="display: none;">
-            <button id="revisar">Revisar</button>
+            <button id="revisar" class="grey-but">Revisar</button>
 
-            <div class="row py-3 justify-content-around align-items-start text-align-center">
+            <div class="row py-3 justify-content-around align-items-start text-align-center mx-0">
                 <div id="notselected" class="col-4 py-3 scroll">
                     <h2 class="py-2">Cláusulas sin seleccionar</h2>
                     <div id="unselected">
@@ -79,7 +79,7 @@
                     <h2 class="py-2">Buscar</h2>
                     <label for="searchclaus">Ingrese cláusula a buscar:</label>
                     
-                    <textarea id="searchclaus" name="searchclaus" value="" rows="1" cols="50"></textarea>
+                    <textarea id="searchclaus" name="searchclaus" value="" rows="1" cols="45"></textarea>
                     <div id="manual_search_result" class="row"></div>
 
                 </div>
@@ -92,8 +92,8 @@
 
 
     </main>
-    <footer>
-        Cláusulas actualizadas por última vez el:  14/08/2023
+    <footer class="py-2">
+        <b>Cláusulas actualizadas por última vez el:  14/08/2023</b>
     </footer>
 </body>
 

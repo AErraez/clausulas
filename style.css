@@ -49,3 +49,25 @@ p {
     overflow-y: auto;
     height: 500px;
 }
+
+.grey-but {
+    transition: all 0.25s;
+}
+
+.grey-but:hover {
+    background-color: rgb(208, 206, 206);
+}
+
+select {
+    width: 30rem !important
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    border-radius: 10px;
+}
+body {
+    background-color: rgb(221 222 231);
+}
