@@ -65,6 +65,7 @@ boton.addEventListener("click", (event) => {
   divselected.innerHTML=""
   unselecteddiv.innerHTML = "";
   review_active_list=[]
+  activelist= []
   let ramo = document.getElementById("ramo").value;
   let texto = document.getElementById("texto").value;
 
@@ -155,7 +156,7 @@ filterbutton.addEventListener("input", (event) => {
     claus["Cláusula"].includes(filtertxt)
   );
   filteredclaus = filteredclaus.slice(0, 10);
-  let gridaccumulator = 0;
+  
   filteredclaus.forEach((elem) => {
     manual_search_result.innerHTML += `<div class="py-2 col-12"><button class="review-but" value=${elem["Código"]}->${elem["Código"]} - ${elem["Cláusula"]}</button></div>`;
   });
