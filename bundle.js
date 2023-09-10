@@ -4473,26 +4473,41 @@ boton.addEventListener("click", (event) => {
   });
 
   clausramo = clausulas[ramo];
-  console.log(txtclean[0]);
+  
   let section = document.getElementById("resultado");
   section.innerHTML = "";
   codarray = [];
   txtclean.forEach((element) => {
     if (element!=""){
     let similist = findSimilarSentences(clausramo, element);
-    let txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
+    console.log(similist[0][2])
+    let txttoshow=""
+    if (similist[0][2]>0.35){
+      txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
                       <div class="col-2 "><button class="claus-but active" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
                       <div class="col-2 "><button class="claus-but" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
                       <div class="col-2 "><button class="claus-but" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
                       <div class="col-md-auto text-center"><button class="claus-but" name="${element}" value="">X</button></div> </div>`;
+                      codarray.push(similist[0][1] + "-");
+                    }
+    else {
+      txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
+      <div class="col-5"><p>${element} ===> </p></div> 
+      <div class="col-2 "><button class="claus-but" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
+      <div class="col-2 "><button class="claus-but" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
+      <div class="col-2 "><button class="claus-but" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
+      <div class="col-md-auto text-center"><button class="claus-but active" name="${element}" value="">X</button></div> </div>`;
 
+    }
     section.innerHTML += txttoshow;
-    codarray.push(similist[0][1] + "-");
+    
     }
   });
   codtxt = arrtotext(codarray);
   footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`;
+  activelist = document.querySelectorAll(".active")
+
 
   let listbut = document.querySelectorAll(".claus-but");
   let ibut = 0;
@@ -4509,7 +4524,7 @@ boton.addEventListener("click", (event) => {
     }
     ibut += 1;
   }
-  console.log(objbut);
+  
 
   for (let fila_boton in objbut) {
     let boton1 = objbut[fila_boton][0];
@@ -4563,7 +4578,7 @@ filterbutton.addEventListener("input", (event) => {
       if (!review_active_list.includes(button.value)){
         review_active_list.push(button.value)
         htmlbutarr.push(button.innerHTML)
-        console.log(htmlbutarr)
+        
       }    
       codtxt = arrtotext([...codarray, ...review_active_list]);
       
