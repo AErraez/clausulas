@@ -35,6 +35,7 @@ function arrtotext(arr) {
   return txt.substring(0, txt.length - 1);
 }
 
+
 //**********************VARIABLES********************** */
 
 let boton = document.getElementById("submit");
@@ -111,7 +112,7 @@ boton.addEventListener("click", (event) => {
     }
   });
   codtxt = arrtotext(codarray);
-  footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`;
+  footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center" id="selectable" onclick="selectText('selectable')"> ${codtxt}</div>`;
   activelist = document.querySelectorAll(".active")
 
 
@@ -152,7 +153,7 @@ boton.addEventListener("click", (event) => {
 
         codtxt = arrtotext([...codarray, ...review_active_list]);
         
-        footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
+        footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center" id="selectable" onclick="selectText('selectable')"> ${codtxt}</div>`
      
         ;
       });
@@ -188,7 +189,7 @@ filterbutton.addEventListener("input", (event) => {
       }    
       codtxt = arrtotext([...codarray, ...review_active_list]);
       
-      footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`
+      footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center" id="selectable" onclick="selectText('selectable')"> ${codtxt}</div>`
       divselected.innerHTML=""
       review_active_list.forEach((elem,i)=>{
         divselected.innerHTML+=`<div class="py-2 col-12"><button class="rev-active" value=${elem}>${htmlbutarr[i]}</button></div>`
@@ -204,7 +205,7 @@ filterbutton.addEventListener("input", (event) => {
       
             codtxt = arrtotext([...codarray, ...review_active_list]);
       
-            footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center"> ${codtxt}</div>`;
+            footer.innerHTML = `<div class="row py-4 justify-content-around align-items-center text-align-center" id="selectable" onclick="selectText('selectable')"> ${codtxt}</div>`;
             divselected.innerHTML = "";
       
             review_active_list.forEach((elem, i) => {
