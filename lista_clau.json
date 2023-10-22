@@ -4388,5 +4388,249 @@
       "Código": 9006,
       "Cláusula": "PÓLIZA DE SEGURO DE RESPONSABILIDAD CIVIL PROFESIONAL PARA M"
      }
+    ],
+    "LCI":[
+     {
+      "Código": 1,
+      "Cláusula": "SUSPENSION DE SERVICIOS DE ENERGIA ELECTRICA AGUA O GAS"
+     },
+     {
+      "Código": 2,
+      "Cláusula": "PROVEEDORES DISTRIBUIDORES O PROCESADORES"
+     },
+     {
+      "Código": 3,
+      "Cláusula": "NOMINA POR SEMANA - REMUNERACIONES"
+     },
+     {
+      "Código": 4,
+      "Cláusula": "CL. NOMINA:  REMUNERACIONES CON INCLUSIÓN DE JORNALES (COASE"
+     },
+     {
+      "Código": 5,
+      "Cláusula": "CL NOMINA:  REMUNERACIONES INCLUYENDO SUELDOS (COASEGURO)"
+     },
+     {
+      "Código": 6,
+      "Cláusula": "CUENTAS Y DOCUMENTOS POR COBRAR"
+     },
+     {
+      "Código": 7,
+      "Cláusula": "ANEXO FORMA DE PERIODO"
+     },
+     {
+      "Código": 8,
+      "Cláusula": "ANEXO FORMA DE COASEGURO"
+     },
+     {
+      "Código": 10,
+      "Cláusula": "ADHESION"
+     },
+     {
+      "Código": 11,
+      "Cláusula": "NOTIFICACION DE SINIESTROS"
+     },
+     {
+      "Código": 12,
+      "Cláusula": "REPOSICION DE INVENTARIOS"
+     },
+     {
+      "Código": 14,
+      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
+     },
+     {
+      "Código": 17,
+      "Cláusula": "ANTICIPO EN CASO DE SINIESTRO"
+     },
+     {
+      "Código": 19,
+      "Cláusula": "AUDITORES CONTADORES Y ABOGADOS"
+     },
+     {
+      "Código": 22,
+      "Cláusula": "CONTABILIDAD"
+     },
+     {
+      "Código": 23,
+      "Cláusula": "NO CANCELACION INDIVIDUAL"
+     },
+     {
+      "Código": 24,
+      "Cláusula": "PAGO DE PRIMAS"
+     },
+     {
+      "Código": 25,
+      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS"
+     },
+     {
+      "Código": 27,
+      "Cláusula": "EXCLUSION DE CONTAMINACION POR RADIACT.DEL INST.DE LONDRES"
+     },
+     {
+      "Código": 30,
+      "Cláusula": "GASTOS DE VIAJE Y ESTADIA"
+     },
+     {
+      "Código": 32,
+      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
+     },
+     {
+      "Código": 34,
+      "Cláusula": "CL. LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 35,
+      "Cláusula": "CL. DESIGNACION DE BENEFICIARIO ACREEDOR"
+     },
+     {
+      "Código": 36,
+      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
+     },
+     {
+      "Código": 37,
+      "Cláusula": "CL. GARANTIA DE IMPLEMENTACIÓN DE PLA DE CONTINUIDAD DE NEGO"
+     },
+     {
+      "Código": 38,
+      "Cláusula": "CL. GARANTÍA PARA RIESGOS DIVERSOS"
+     },
+     {
+      "Código": 39,
+      "Cláusula": "SINIESTRALIDAD CL."
+     },
+     {
+      "Código": 9001,
+      "Cláusula": " CONDICIONES GENERALES DE LUCRO POR INCENDIO"
+     }
+    ],
+    "LCR":[
+     {
+      "Código": 29,
+      "Cláusula": "EXCLUSION DE CONTAMINACION POR POR RADIACTIVOS DEL INSTITUTO"
+     },
+     {
+      "Código": 32,
+      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 33,
+      "Cláusula": "CL. LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 34,
+      "Cláusula": "CL. ADHESIÓN"
+     },
+     {
+      "Código": 35,
+      "Cláusula": "CL. DAÑOS DE MAQUINARIA DURANTE EL PLAZO DE GARANTÍA"
+     },
+     {
+      "Código": 36,
+      "Cláusula": "CL. COBERTURA POR SUMISTRO DE CORRIENTE AGUA GAS O VAPOR"
+     },
+     {
+      "Código": 37,
+      "Cláusula": "CL. COBERTURA DE DESEMBOLSOS SUPLEMENTARIOS EXCEPTO GASTOS A"
+     },
+     {
+      "Código": 38,
+      "Cláusula": "CL- DESTRUCCIÓN PREVENTIVA- AUTORIDAD CIVIL"
+     },
+     {
+      "Código": 39,
+      "Cláusula": "CL. DETERIORO DE MATERIAS PRIMAS PRODUCTOS SEMIACABADOS"
+     },
+     {
+      "Código": 40,
+      "Cláusula": "C. FALLO DEL ABASTECIMIENTO DE ELECTRICIDADA DE LA RED PUBLI"
+     },
+     {
+      "Código": 41,
+      "Cláusula": "CL. GASTOS DE VIAJE Y ESTADIA"
+     },
+     {
+      "Código": 42,
+      "Cláusula": "CL ISOTOPOS  RADIACTIVOS"
+     },
+     {
+      "Código": 43,
+      "Cláusula": "CL. PROLONGACIÓN DEL PLAZO DE INTERRUPCIÓN A CONSECUENCIA DE"
+     },
+     {
+      "Código": 44,
+      "Cláusula": "CL. CARGA POR EXCESO DE DEMANDA DE ENERGIA ELECTRICA"
+     },
+     {
+      "Código": 45,
+      "Cláusula": "CL. PARA INCENDIO INTERNO EXPLOSIÓN QUIMICA INTERNA E IMPAC"
+     },
+     {
+      "Código": 46,
+      "Cláusula": "CL. MAQUINARIA Y EQUIPOS BAJO TIERRA"
+     },
+     {
+      "Código": 47,
+      "Cláusula": "CL. PARA DEMORAS EN LA REPARACIÓN"
+     },
+     {
+      "Código": 48,
+      "Cláusula": "CL. CONDICIONES PARA ENSAYOS NO DESTRUCTIVOS DE PRENSAS CIZ"
+     },
+     {
+      "Código": 49,
+      "Cláusula": "CL. FRANQUICIA TEMPORAL PROPORCIONAL"
+     },
+     {
+      "Código": 50,
+      "Cláusula": "CL. CONDICIONES PARA INSPECCIÓN Y REACONDICIONAMIENTO DE CAL"
+     },
+     {
+      "Código": 51,
+      "Cláusula": "CL PARA LIMITES DE PERIODO DE INDEMINIZACIÓN SUP A 12 MESES"
+     },
+     {
+      "Código": 52,
+      "Cláusula": "CL. CONDICOINES PARA MOTORES ELECTRICOS Y GENERADORES"
+     },
+     {
+      "Código": 53,
+      "Cláusula": "CL. PARA REACONDICIONAMIENTO DE TURBINAS DE VAPOR HIDROELEC"
+     },
+     {
+      "Código": 54,
+      "Cláusula": "CL. PARA SUMA ASEGURADA A BASE DE PRECIO UNITARIO"
+     },
+     {
+      "Código": 55,
+      "Cláusula": "CL. EXCLUSIÓN DE CONTAMINICIÓN POR RADIACTIVA ARMAS QUIMI"
+     },
+     {
+      "Código": 56,
+      "Cláusula": "CL. EXCLUSIÓN DE EXPLOSICIOES DE GASES DE HUMO EN CALDERAS"
+     },
+     {
+      "Código": 57,
+      "Cláusula": "CL. EXCLUSIÓN DE INUNDACIONES Y ENCENAGAMIENTO"
+     },
+     {
+      "Código": 58,
+      "Cláusula": "CL. DE NO CANCELACIÓN INDIVIDUAL"
+     },
+     {
+      "Código": 59,
+      "Cláusula": "CL. ENDOSO DE DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+     },
+     {
+      "Código": 60,
+      "Cláusula": "FORMULARIO"
+     },
+     {
+      "Código": 61,
+      "Cláusula": "CL. GARANTÍA DE IMPLEMENTACIÓN DE UN PLAN DE CONTINUIDAD"
+     },
+     {
+      "Código": 9001,
+      "Cláusula": "CONDICIÓN GENERAL DE PERDIDA DE BENEFICIOS POR ROTURA DE MAQ"
+     }
     ]
     }
