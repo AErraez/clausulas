@@ -5647,6 +5647,500 @@ module.exports={
       "Código": 9002,
       "Cláusula": "CONDICION GENERAL MULTIRIESGO HOGAR"
      }
+    ],
+    "CR":[
+     {
+      "Código": 2,
+      "Cláusula": "ANEXO DE GARANTIA DE CONTROL DUAL EN FIDELIDAD Y RIESGOS FIN"
+     },
+     {
+      "Código": 4,
+      "Cláusula": "CLÁUSULA DE GARANTIA DE AUDITORIA EN FIDELIDAD Y RIESGOS FIN"
+     },
+     {
+      "Código": 6,
+      "Cláusula": "ANEXO DE GARANTIA DE CONSULTA Y REPORTE EN FIDELIDAD Y RIESG"
+     },
+     {
+      "Código": 9,
+      "Cláusula": "ANEXO DE GARANTIA EN CASO DE SINIESTRO PARA FIDELIDAD Y RIES"
+     },
+     {
+      "Código": 10,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE CRIMEN POR COMPUTADOR"
+     },
+     {
+      "Código": 11,
+      "Cláusula": "CLAUSULA DE FALSIFICACIÓN ADULTERACIÓN ALTERACIÓN DE DINER"
+     },
+     {
+      "Código": 12,
+      "Cláusula": "FALSIFICACIÓN ADULTERACIÓN ALTERACIÓN DE FIRMA EN CHEQUE O"
+     },
+     {
+      "Código": 13,
+      "Cláusula": "CLAUSULA DE ADHESIÓN"
+     },
+     {
+      "Código": 14,
+      "Cláusula": "CANCELACION"
+     },
+     {
+      "Código": 15,
+      "Cláusula": "ARBITRAJE"
+     },
+     {
+      "Código": 16,
+      "Cláusula": "ERRORES U OMISIONES"
+     },
+     {
+      "Código": 19,
+      "Cláusula": "CL. AJUSTADORES"
+     },
+     {
+      "Código": 20,
+      "Cláusula": "CLAUSULA DE DESIGNACIÓN DE BIENES"
+     },
+     {
+      "Código": 21,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE CONTROL DUAL Y\/O CUSTODIA CONJUNTA"
+     },
+     {
+      "Código": 22,
+      "Cláusula": "SOLICITUD - CUESTIONARIO"
+     },
+     {
+      "Código": 23,
+      "Cláusula": "CLAUSULA DE ENDOSO PARA POLIZA ABIERTA CON LÍMITE GLOBAL"
+     },
+     {
+      "Código": 24,
+      "Cláusula": "PERIODO DE DESCUBRIMIENTO"
+     },
+     {
+      "Código": 26,
+      "Cláusula": "ANEXO DE ACCIONISTAS\/EMPLEADOS"
+     },
+     {
+      "Código": 29,
+      "Cláusula": "CLAUSULA DE AMPLIACIÓN DE AVISO DE SINIESTRO"
+     },
+     {
+      "Código": 30,
+      "Cláusula": "CLAUSULA DE PAGO DE PRIMAS"
+     },
+     {
+      "Código": 33,
+      "Cláusula": "CLAUSULA DE  ACLARACIÓN DE INVENTARIO Y MERCADERIAS EN FIDEL"
+     },
+     {
+      "Código": 34,
+      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+     },
+     {
+      "Código": 37,
+      "Cláusula": "CLAUSULA  AUTOMÁTICA DE NUEVO PERSONAL"
+     },
+     {
+      "Código": 39,
+      "Cláusula": "CL. DE SINIESTRALIDAD"
+     },
+     {
+      "Código": 40,
+      "Cláusula": "CLAUSULA DE NO CANCELACIÓN INDIVIDUAL"
+     },
+     {
+      "Código": 42,
+      "Cláusula": "CL. INFIDELIDAD DE EMPLEADOS EN COLUSIÓN CON TERCEROS"
+     },
+     {
+      "Código": 43,
+      "Cláusula": "CL CONTABILIDAD"
+     },
+     {
+      "Código": 46,
+      "Cláusula": "CL. AGREGADO ANUAL"
+     },
+     {
+      "Código": 48,
+      "Cláusula": "NO RENOVACIÓN AUTOMÁTICA CL."
+     },
+     {
+      "Código": 50,
+      "Cláusula": "EXCLUSIÓN DE GUERRA Y ACTOS TERRORISTAS CL."
+     },
+     {
+      "Código": 117,
+      "Cláusula": "PROPIEDAD EN CONSIGNACION"
+     },
+     {
+      "Código": 153,
+      "Cláusula": "DERRAME DE CONTENIDO CL DE INCENDIO"
+     },
+     {
+      "Código": 154,
+      "Cláusula": "DEFINICION DE MERCADERIA CL DE INCENDIO"
+     },
+     {
+      "Código": 157,
+      "Cláusula": "REFRIGERANTE  CL DE INCENDIO"
+     },
+     {
+      "Código": 160,
+      "Cláusula": "PAR Y JUEGO"
+     },
+     {
+      "Código": 190,
+      "Cláusula": "RESTITUCION AUTOMATICA DE SUMA ASEGURADA CL INCENDIO"
+     },
+     {
+      "Código": 207,
+      "Cláusula": "AMPARO DE MUELLES"
+     },
+     {
+      "Código": 231,
+      "Cláusula": "CL. DAÑO MALICIOSO Y VANDALISMO"
+     },
+     {
+      "Código": 233,
+      "Cláusula": "primera opcion de compra"
+     },
+     {
+      "Código": 236,
+      "Cláusula": "SEGURO  INSUFICIENTE PARCIAL"
+     },
+     {
+      "Código": 237,
+      "Cláusula": "COLAPSO"
+     },
+     {
+      "Código": 239,
+      "Cláusula": "PROPIEDAD FUERA DEL CONTROL DEL ASEGURADO"
+     },
+     {
+      "Código": 240,
+      "Cláusula": "LOCALIZACION Y LIBRE TRANSITO"
+     },
+     {
+      "Código": 241,
+      "Cláusula": "DEFINICION DINERO Y VALORES"
+     },
+     {
+      "Código": 242,
+      "Cláusula": "ERRORES U OMISIONES"
+     },
+     {
+      "Código": 243,
+      "Cláusula": "TOLERANCIA"
+     },
+     {
+      "Código": 244,
+      "Cláusula": "ALTERACIONES Y REPARACIONES"
+     },
+     {
+      "Código": 245,
+      "Cláusula": "CL. CAÍDA Y MANIPULACIÓN DE BIENES Y MERCADERÍAS"
+     },
+     {
+      "Código": 253,
+      "Cláusula": "CLAUSULA DE EXTINCION DE GARANTIA DEL FABRICANTE"
+     },
+     {
+      "Código": 254,
+      "Cláusula": "CL. BIENES DE PROPIEDAD DE TERCEROS BAJO RESPONSABILIDAD DEL"
+     },
+     {
+      "Código": 255,
+      "Cláusula": "COBERTURA EXTENDIDA AMPLIA"
+     },
+     {
+      "Código": 256,
+      "Cláusula": "ASISTENCIA HOGAR (BASICO)"
+     },
+     {
+      "Código": 260,
+      "Cláusula": "CLAUSULA DE LISTADOS (BLANKET)"
+     },
+     {
+      "Código": 262,
+      "Cláusula": "ASISTENCIA HOGAR"
+     },
+     {
+      "Código": 264,
+      "Cláusula": "GASTOS DE INCINERACIÓN CLAUSULA INCENDIO"
+     },
+     {
+      "Código": 265,
+      "Cláusula": "NOTIFICACION DE SINIESTRO CL EQUIPO INCENDIO"
+     },
+     {
+      "Código": 647,
+      "Cláusula": "CONTABILIDAD CL DE INCENDIO"
+     },
+     {
+      "Código": 649,
+      "Cláusula": "BIENES A LA INTEMPERIE CL INCENDIO"
+     },
+     {
+      "Código": 650,
+      "Cláusula": "AMPARO AUTOMATICO PARA NUEVOS PREDIOS CL INCENDIO"
+     },
+     {
+      "Código": 651,
+      "Cláusula": "CLAUSULA ELECTRICA AMPLIA"
+     },
+     {
+      "Código": 652,
+      "Cláusula": "CERTIFICADO DE SEGURO CONTRA INCENDIO Y LÍNEAS ALIADAS"
+     },
+     {
+      "Código": 653,
+      "Cláusula": "ASISTENCIA HOGAR MUPI"
+     },
+     {
+      "Código": 655,
+      "Cláusula": "CLAUSULA DE VALOR ACORDADO"
+     },
+     {
+      "Código": 656,
+      "Cláusula": "CLAUSULA DE AMPLIACION DE DAÑOS POR HUMO"
+     },
+     {
+      "Código": 660,
+      "Cláusula": "CLÁUSULA REPOSICIÓN Y REEMPLAZO"
+     },
+     {
+      "Código": 662,
+      "Cláusula": "CLÁUSULA DE AMPLIACION DE RAYO - DADA DE BAJA"
+     },
+     {
+      "Código": 663,
+      "Cláusula": "AJUSTADORES"
+     },
+     {
+      "Código": 664,
+      "Cláusula": "GARANTIAS BASICAS"
+     },
+     {
+      "Código": 665,
+      "Cláusula": "ARRENDAMIENTO"
+     },
+     {
+      "Código": 667,
+      "Cláusula": "DEFINICIÓN DE MUERTE BIOLÓGICA"
+     },
+     {
+      "Código": 668,
+      "Cláusula": "DEFINICIÓN DE EDIFICIO Y\/O ESTRUCTURA"
+     },
+     {
+      "Código": 669,
+      "Cláusula": "GASTOS POR DEMOSTRACIÓN DE PÉRDIDAS"
+     },
+     {
+      "Código": 670,
+      "Cláusula": "NOTIFICACIÓN DE RENOVACIÓN AUTOMÁTICA"
+     },
+     {
+      "Código": 671,
+      "Cláusula": "IMPEDIMENTO DE ACCESO"
+     },
+     {
+      "Código": 674,
+      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
+     },
+     {
+      "Código": 676,
+      "Cláusula": "ANEXO DE COMPRA PROTEGIDA"
+     },
+     {
+      "Código": 677,
+      "Cláusula": "DEFINICION DE CONTENDIO CASA HABITACION"
+     },
+     {
+      "Código": 678,
+      "Cláusula": "MOTIN HUELGA Y CONMOCIÓN CIVIL"
+     },
+     {
+      "Código": 679,
+      "Cláusula": "Cláusula De Limitación Y Exclusión De Sanciones"
+     },
+     {
+      "Código": 680,
+      "Cláusula": "ANEXO ACLARATORIO DE ESTADO DE EXCEPCIÓN"
+     },
+     {
+      "Código": 681,
+      "Cláusula": "ASISTENCIA PYMES  (2020)"
+     },
+     {
+      "Código": 682,
+      "Cláusula": "ASISTENCIA MUPI (AC)"
+     },
+     {
+      "Código": 683,
+      "Cláusula": "CL. MAREMOTO"
+     },
+     {
+      "Código": 685,
+      "Cláusula": "CL ADHESION"
+     },
+     {
+      "Código": 686,
+      "Cláusula": "CL. CUOTAS DE ADMINISTRACIÓN SOBRE AREAS Y\/O INMUEBLES"
+     },
+     {
+      "Código": 687,
+      "Cláusula": "CL. ANTICIPO EN CASO DE SINIESTRO"
+     },
+     {
+      "Código": 688,
+      "Cláusula": "CL. AUTOEXPLOSIÓN"
+     },
+     {
+      "Código": 690,
+      "Cláusula": "CL. GARANTIA EN CAJA FUERTE"
+     },
+     {
+      "Código": 691,
+      "Cláusula": "CL. COB. AUTOMATICA PARA EQUIPOS MAQ. Y SUS PARTES EN SUSTI"
+     },
+     {
+      "Código": 692,
+      "Cláusula": "ASISTENCIA HOGAR COMPLETA"
+     },
+     {
+      "Código": 693,
+      "Cláusula": "CL. DE COMBUSTIBLES LUBRICANTES Y EXPLOSIVOS"
+     },
+     {
+      "Código": 694,
+      "Cláusula": "cCL. DAÑOS POR INUNDACIÓN EN PLANTAS DE HARINA DE PESCADO"
+     },
+     {
+      "Código": 695,
+      "Cláusula": "CL. DEFINICION DE EQUIPO ELECTRONICO"
+     },
+     {
+      "Código": 696,
+      "Cláusula": " CL. DEFINICIÓN DE MAQUINARIA"
+     },
+     {
+      "Código": 697,
+      "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+     },
+     {
+      "Código": 698,
+      "Cláusula": "CL. DESIGNACIÓN DE BIENES"
+     },
+     {
+      "Código": 699,
+      "Cláusula": "CL. DOCUMENTOS Y MODELOS"
+     },
+     {
+      "Código": 700,
+      "Cláusula": "CL. EXTINTORES"
+     },
+     {
+      "Código": 701,
+      "Cláusula": "CL. FLOTANTE"
+     },
+     {
+      "Código": 702,
+      "Cláusula": "CL. GASTOS ADICIONALES"
+     },
+     {
+      "Código": 703,
+      "Cláusula": "CL. SALVATAJE"
+     },
+     {
+      "Código": 704,
+      "Cláusula": "CL. GASTOS PARA EXTINGUIR UN INCENDIO"
+     },
+     {
+      "Código": 705,
+      "Cláusula": "CL. GASTOS PARA PRESERVACIÓN DE BIENES"
+     },
+     {
+      "Código": 706,
+      "Cláusula": "CL. HORNOS"
+     },
+     {
+      "Código": 707,
+      "Cláusula": "CL. IMPLOSIÓN"
+     },
+     {
+      "Código": 708,
+      "Cláusula": "CL. SABOTAJE Y TERRORISMO"
+     },
+     {
+      "Código": 709,
+      "Cláusula": "CL. INTERES ASEGURABLE"
+     },
+     {
+      "Código": 710,
+      "Cláusula": "CL. LIMPIEZA DE CENIZAS"
+     },
+     {
+      "Código": 711,
+      "Cláusula": "CL. NO CANCELACIÓN INDIVIDUAL"
+     },
+     {
+      "Código": 712,
+      "Cláusula": "CL.NUEVAS PROPIEDADESBIENES Y PREDIOS"
+     },
+     {
+      "Código": 714,
+      "Cláusula": "CL. PROPIEDAD PERSONAL DE EMPLEADOS"
+     },
+     {
+      "Código": 715,
+      "Cláusula": "CL. REFRIGERACIÓN"
+     },
+     {
+      "Código": 716,
+      "Cláusula": "CL.REPARACIONES INMEDIATAS"
+     },
+     {
+      "Código": 717,
+      "Cláusula": "CL. ROTURA DE VIDRIOS"
+     },
+     {
+      "Código": 718,
+      "Cláusula": "CL. SELLOS Y MARCAS"
+     },
+     {
+      "Código": 719,
+      "Cláusula": "CL. SINIESTRALIDAD"
+     },
+     {
+      "Código": 720,
+      "Cláusula": "CL. GARANTIAS PARA RIESGOS DIVERSOS"
+     },
+     {
+      "Código": 721,
+      "Cláusula": "CL. MATERIALES IMPORTADOS"
+     },
+     {
+      "Código": 722,
+      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
+     },
+     {
+      "Código": 723,
+      "Cláusula": "CL. GARANTÍA DE CONSTRUCCIÓN"
+     },
+     {
+      "Código": 725,
+      "Cláusula": "CL Exclusión de Enfermedad infecciosa \/ Exclusión COVID-19"
+     },
+     {
+      "Código": 726,
+      "Cláusula": "CL.Exclusión Absoluta de Pérdidas Cibernéticas  (IUA 09-081)"
+     },
+     {
+      "Código": 9006,
+      "Cláusula": "PÓLIZA DE FIDELIDAD Y RIESGOS FINANCIEROS PARA INSTITUCIONES"
+     }
     ]
     }
 },{}],2:[function(require,module,exports){
