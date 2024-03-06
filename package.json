@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cosine-similarity": "^1.0.1",
-    "natural": "^6.2.0",
+    "sbd": "^1.0.19",
     "string-similarity": "^4.0.4"
   },
   "devDependencies": {
