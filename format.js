@@ -18,6 +18,8 @@ format_but.addEventListener('click', (e)=>{
 
     for (let [i,val] of Object.entries(df)){
       for (let [o, word] of val.entries()){
+        word=word.trim()
+        val[o]=word
         if (word.length>longest_val_arr[o].length){
           longest_val_arr[o]=word
         }
@@ -25,7 +27,7 @@ format_but.addEventListener('click', (e)=>{
     }
     console.log(df)
     console.log(longest_val_arr)
-    let intradistance= Math.floor((82-longest_val_arr.reduce((acum, val)=>acum+val.length, 0))/(longest_val_arr.length-1))
+    let intradistance= Math.floor((94-longest_val_arr.reduce((acum, val)=>acum+val.length, 0))/(longest_val_arr.length-1))
     console.log(intradistance)
 
     for (let [i,val] of Object.entries(df)){
@@ -36,6 +38,7 @@ format_but.addEventListener('click', (e)=>{
         }
         else {
         let extra_space=longest_val_arr[o].length-word.length
+        console.log(extra_space)
         row_to_text+=word+"&nbsp;".repeat(extra_space)+"&nbsp;".repeat(intradistance)
         }
       }
