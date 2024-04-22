@@ -48,9 +48,9 @@ format_but.addEventListener('click', (e)=>{
     console.log(glob_limit,non_limit_obj["n_exceeding"],"aaaaaaaaaa",limit)
     console.log(longest_val_arr)
   
-  
+    let entered_loop=0
     while (intradistance<=0){
-      
+      entered_loop=1
       intradistance= Math.floor((text_dist-longest_val_arr.reduce((acum, val)=>acum+val.length, 0))/(longest_val_arr.length-1))
       let append_count=0
       for (let [i,val] of Object.entries(df)){
@@ -78,7 +78,49 @@ format_but.addEventListener('click', (e)=>{
       longest_val_arr=result_arr[1]
       
       console.log("intradistance: ",intradistance)
-    }  
+    }
+    
+    if (entered_loop){
+      let longest_word=longest_val_arr.reduce(
+        function (a, b) {
+            return a.length > b.length ? a : b;
+        }
+      )
+      while (longest_word.length>limit){
+        intradistance= Math.floor((text_dist-longest_val_arr.reduce((acum, val)=>acum+val.length, 0))/(longest_val_arr.length-1))
+        let append_count=0
+        for (let [i,val] of Object.entries(df)){
+          let new_row_arr=[]
+          let word_added=false
+          for (let [o, word] of val.entries()){
+            if (word.length>limit){
+              row_arr[Number(i)+append_count]=row_arr[Number(i)+append_count].replace(word,word.substring(limit,0))
+              new_row_arr.push(word.substring(limit,word.length))
+              word_added=true
+            }
+            else{
+              new_row_arr.push(" ")
+            }
+          }
+          if (word_added){
+            row_arr.splice(Number(i)+1+append_count,0,new_row_arr.join("\t"))
+            append_count+=1
+          }
+        }
+        
+        let result_arr=setup_arr(row_arr)
+        
+        df=result_arr[0]
+        longest_val_arr=result_arr[1]
+        
+        console.log("intradistance: ",intradistance)
+        longest_word=longest_val_arr.reduce(
+          function (a, b) {
+              return a.length > b.length ? a : b;
+          }
+        )
+      }
+    }
     intradistance= Math.floor((text_dist-longest_val_arr.reduce((acum, val)=>acum+val.length, 0))/(longest_val_arr.length-1))
     console.log(df)
     console.log(longest_val_arr)
