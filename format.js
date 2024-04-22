@@ -3,10 +3,11 @@
 
 var format_but=document.getElementById('submit')
 var result_div= document.getElementById('resultado')
+var size_but=document.getElementById('tablesize')
 
-var text_dist=94
 
 function setup_arr(row_arr){
+    let text_dist=size_but.value
     let df1={}
     for (let [i,val] of row_arr.entries()){
       df1[i]=val.split('\t')
@@ -29,6 +30,7 @@ function setup_arr(row_arr){
 }
 
 format_but.addEventListener('click', (e)=>{
+    let text_dist=size_but.value
     let result_arr=[]
     let txt= document.getElementById('texto').value
     txt=txt.replaceAll("$","$ ")
