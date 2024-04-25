@@ -23,7 +23,14 @@
     </header>
 
     <main class="container-fluid py-3">
-       
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link"  href="./index.html">Cláusulas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="table.html">Excel a SISE</a>
+            </li>
+        </ul>
 
         <div class="row py-3">
             <div class="col">
@@ -60,8 +67,6 @@ function Copy(divid) {
    // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.innerText);
 
-  // Alert the copied text
-  alert("Texto copiado");
 }
 
 </script>
