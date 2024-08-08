@@ -1,7 +1,7 @@
 const clausulas = require("./lista_clau.json");
 const stringSimilarity = require("string-similarity"); 
 
-//**********************FUNCIONES********************//
+//**********************FUNCIONES*********************//
 
 function findSimilarSentences(objclaus, inputSentence) {
   let similarities = [];

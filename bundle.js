@@ -1252,6 +1252,10 @@ module.exports={
       "Cláusula": "CERTIFICADO DE INCENDIO"
      },
      {
+      "Código": 732,
+      "Cláusula": "ASISTENCIA MUPI"
+     },
+     {
       "Código": 9004,
       "Cláusula": "CONDICION GENERAL INCENDIO  RIESGOS NOMBRADOS"
      },
@@ -3936,8 +3940,28 @@ module.exports={
       "Cláusula": "CERTIFICADO INDIVIDUAL"
      },
      {
-      "Código": 9000,
-      "Cláusula": "POLIZA DE SEGURO CONTRA ACCIDENTES PERSONALES NUEVA"
+      "Código": 65,
+      "Cláusula": "ANEXO DE COBERTURA INCAPACIDAD TOTAL Y PERMANENTE POR ACCIDE"
+     },
+     {
+      "Código": 66,
+      "Cláusula": "ANEXO DE COBERTURA GASTOS MÉDICOS POR ACCIDENTE"
+     },
+     {
+      "Código": 67,
+      "Cláusula": "CLÁUSULA CRÉDITO HOSPITALARIO PARA LA COBERTURA DE GASTOS MÉ"
+     },
+     {
+      "Código": 68,
+      "Cláusula": "ANEXO DE COBERTURA SEPELIO POR MUERTE POR ACCIDENTE"
+     },
+     {
+      "Código": 69,
+      "Cláusula": "ANEXO DE COBERTURA AMBULANCIA POR ACCIDENTE"
+     },
+     {
+      "Código": 9002,
+      "Cláusula": "CONDICIONES GENERALES - SEGURO DE ACCIDENTES PERSONALES COLE"
      }
     ],
     "RCP":[
@@ -6147,7 +6171,7 @@ module.exports={
 const clausulas = require("./lista_clau.json");
 const stringSimilarity = require("string-similarity"); 
 
-//**********************FUNCIONES********************//
+//**********************FUNCIONES*********************//
 
 function findSimilarSentences(objclaus, inputSentence) {
   let similarities = [];
