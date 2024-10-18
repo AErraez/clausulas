@@ -746,524 +746,524 @@ module.exports={
       "Cláusula": "AJUSTADORES LIQUIDADORES Y PERITOS DE MUTUO ACUERDO CL."
      }
     ],
-    "IN":[
-     {
+    "IN": [
+{
       "Código": 2,
       "Cláusula": "PAGO DE PRIMAS"
-     },
-     {
+    },
+    {
       "Código": 4,
       "Cláusula": "CANCELACION"
-     },
-     {
+    },
+    {
       "Código": 6,
       "Cláusula": "REMOCION DE ESCOMBROS"
-     },
-     {
+    },
+    {
       "Código": 9,
       "Cláusula": "HONORARIOS DE ARQUITECTOS INGENIEROS Y TOPOGRAFOS"
-     },
-     {
+    },
+    {
       "Código": 10,
       "Cláusula": "DESTRUCCION PREVENTIVA CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 11,
       "Cláusula": "COMBUSTION EXPONTANEA"
-     },
-     {
+    },
+    {
       "Código": 12,
       "Cláusula": "BILLARES"
-     },
-     {
+    },
+    {
       "Código": 13,
       "Cláusula": "AUTORIDAD CIVIL"
-     },
-     {
+    },
+    {
       "Código": 14,
       "Cláusula": "COASEGUROS PACTADO"
-     },
-     {
+    },
+    {
       "Código": 15,
       "Cláusula": "GASTOS PARA AMINORAR UNA PÉRDIDA"
-     },
-     {
+    },
+    {
       "Código": 16,
       "Cláusula": "PROTECCIONES PARTICULARES"
-     },
-     {
+    },
+    {
       "Código": 19,
       "Cláusula": "SALVAMENTO"
-     },
-     {
+    },
+    {
       "Código": 22,
       "Cláusula": "TRASLADO TEMPORAL"
-     },
-     {
+    },
+    {
       "Código": 23,
       "Cláusula": "INTERESES DE CONTRATISTAS"
-     },
-     {
+    },
+    {
       "Código": 24,
       "Cláusula": "MATERIALES EN FUSION"
-     },
-     {
+    },
+    {
       "Código": 25,
       "Cláusula": "BIENES DEL ASEGURADO EN PROPIEDAD DE TERCERO CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 26,
       "Cláusula": "RIESGOS EN PARALIZACION"
-     },
-     {
+    },
+    {
       "Código": 40,
       "Cláusula": "TERREMOTO"
-     },
-     {
+    },
+    {
       "Código": 41,
       "Cláusula": "EXPLOSION"
-     },
-     {
+    },
+    {
       "Código": 42,
       "Cláusula": "DANOS POR AGUA"
-     },
-     {
+    },
+    {
       "Código": 43,
       "Cláusula": "LLUVIA E INUNDACION"
-     },
-     {
+    },
+    {
       "Código": 44,
       "Cláusula": "ARBITRAJE CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 45,
       "Cláusula": "COBERTURA EXTENDIDA"
-     },
-     {
+    },
+    {
       "Código": 47,
       "Cláusula": "CLAUSULA ELECTRICA"
-     },
-     {
+    },
+    {
       "Código": 51,
       "Cláusula": "AJUSTE DE VALOR ASEGURADO"
-     },
-     {
+    },
+    {
       "Código": 60,
       "Cláusula": "DEFINICIÓN DE MUEBLES Y ENSERES CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 68,
       "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS"
-     },
-     {
+    },
+    {
       "Código": 104,
       "Cláusula": "INDEMNIZACION PARA LAVANDERIA"
-     },
-     {
+    },
+    {
       "Código": 105,
-      "Cláusula": "PROPIEDAD HORIZONTAL( para bienes individuales)"
-     },
-     {
+      "Cláusula": "PROPIEDAD HORIZONTAL"
+    },
+    {
       "Código": 111,
       "Cláusula": "AUDITORES CONTADORES Y ABOGADOS CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 114,
       "Cláusula": "BIENES EN EXPOSICION O DEMOSTRACIÓN CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 116,
       "Cláusula": "OBRAS CIVILES EN CURSO CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 117,
       "Cláusula": "PROPIEDAD EN CONSIGNACION"
-     },
-     {
+    },
+    {
       "Código": 153,
       "Cláusula": "DERRAME DE CONTENIDO CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 154,
       "Cláusula": "DEFINICION DE MERCADERIA CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 157,
       "Cláusula": "REFRIGERANTE  CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 160,
       "Cláusula": "PAR Y JUEGO"
-     },
-     {
+    },
+    {
       "Código": 190,
       "Cláusula": "RESTITUCION AUTOMATICA DE SUMA ASEGURADA CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 207,
       "Cláusula": "AMPARO DE MUELLES"
-     },
-     {
+    },
+    {
       "Código": 231,
       "Cláusula": "CL. DAÑO MALICIOSO Y VANDALISMO"
-     },
-     {
+    },
+    {
       "Código": 233,
       "Cláusula": "PRIMERA OPCIÓN DE COMPRA"
-     },
-     {
+    },
+    {
       "Código": 236,
       "Cláusula": "SEGURO  INSUFICIENTE PARCIAL"
-     },
-     {
+    },
+    {
       "Código": 237,
       "Cláusula": "COLAPSO"
-     },
-     {
+    },
+    {
       "Código": 239,
       "Cláusula": "PROPIEDAD FUERA DEL CONTROL DEL ASEGURADO"
-     },
-     {
+    },
+    {
       "Código": 240,
       "Cláusula": "LOCALIZACION Y LIBRE TRANSITO"
-     },
-     {
+    },
+    {
       "Código": 241,
       "Cláusula": "DEFINICION DINERO Y VALORES"
-     },
-     {
+    },
+    {
       "Código": 242,
       "Cláusula": "ERRORES U OMISIONES"
-     },
-     {
+    },
+    {
       "Código": 243,
       "Cláusula": "TOLERANCIA"
-     },
-     {
+    },
+    {
       "Código": 244,
       "Cláusula": "ALTERACIONES Y REPARACIONES"
-     },
-     {
+    },
+    {
       "Código": 245,
       "Cláusula": "CL. CAÍDA Y MANIPULACIÓN DE BIENES Y MERCADERÍAS"
-     },
-     {
+    },
+    {
       "Código": 253,
       "Cláusula": "CLAUSULA DE EXTINCION DE GARANTIA DEL FABRICANTE"
-     },
-     {
+    },
+    {
       "Código": 254,
       "Cláusula": "CL. BIENES DE PROPIEDAD DE TERCEROS BAJO RESPONSABILIDAD DEL"
-     },
-     {
+    },
+    {
       "Código": 255,
       "Cláusula": "COBERTURA EXTENDIDA AMPLIA"
-     },
-     {
+    },
+    {
       "Código": 256,
       "Cláusula": "ASISTENCIA HOGAR (BASICO)"
-     },
-     {
+    },
+    {
       "Código": 260,
       "Cláusula": "CLAUSULA DE LISTADOS (BLANKET)"
-     },
-     {
+    },
+    {
       "Código": 262,
       "Cláusula": "ASISTENCIA HOGAR"
-     },
-     {
+    },
+    {
       "Código": 264,
       "Cláusula": "GASTOS DE INCINERACIÓN CLAUSULA INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 265,
       "Cláusula": "NOTIFICACION DE SINIESTRO CL EQUIPO INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 647,
       "Cláusula": "CONTABILIDAD CL DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 649,
       "Cláusula": "BIENES A LA INTEMPERIE CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 650,
       "Cláusula": "AMPARO AUTOMATICO PARA NUEVOS PREDIOS CL INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 651,
       "Cláusula": "CLAUSULA ELECTRICA AMPLIA"
-     },
-     {
+    },
+    {
       "Código": 652,
       "Cláusula": "CERTIFICADO DE SEGURO CONTRA INCENDIO Y LÍNEAS ALIADAS"
-     },
-     {
+    },
+    {
       "Código": 653,
       "Cláusula": "ASISTENCIA HOGAR MUPI"
-     },
-     {
+    },
+    {
       "Código": 655,
       "Cláusula": "CLAUSULA DE VALOR ACORDADO"
-     },
-     {
+    },
+    {
       "Código": 656,
       "Cláusula": "CLAUSULA DE AMPLIACION DE DAÑOS POR HUMO"
-     },
-     {
+    },
+    {
       "Código": 660,
       "Cláusula": "CLÁUSULA REPOSICIÓN Y REEMPLAZO"
-     },
-     {
+    },
+    {
       "Código": 663,
       "Cláusula": "AJUSTADORES"
-     },
-     {
+    },
+    {
       "Código": 664,
       "Cláusula": "GARANTIAS BASICAS"
-     },
-     {
+    },
+    {
       "Código": 665,
-      "Cláusula": "ARRENDAMIENTO"
-     },
-     {
+      "Cláusula": "CLÁUSULA DE COBERTURA DE ARRENDAMIENTOS"
+    },
+    {
       "Código": 667,
       "Cláusula": "DEFINICIÓN DE MUERTE BIOLÓGICA"
-     },
-     {
+    },
+    {
       "Código": 668,
-      "Cláusula": "DEFINICIÓN DE EDIFICIO Y\/O ESTRUCTURA"
-     },
-     {
+      "Cláusula": "DEFINICIÓN DE EDIFICIO Y/O ESTRUCTURA"
+    },
+    {
       "Código": 669,
       "Cláusula": "GASTOS POR DEMOSTRACIÓN DE PÉRDIDAS"
-     },
-     {
+    },
+    {
       "Código": 670,
       "Cláusula": "NOTIFICACIÓN DE RENOVACIÓN AUTOMÁTICA"
-     },
-     {
+    },
+    {
       "Código": 671,
       "Cláusula": "IMPEDIMENTO DE ACCESO"
-     },
-     {
+    },
+    {
       "Código": 674,
       "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
-     },
-     {
+    },
+    {
       "Código": 676,
       "Cláusula": "ANEXO DE COMPRA PROTEGIDA"
-     },
-     {
+    },
+    {
       "Código": 677,
       "Cláusula": "DEFINICION DE CONTENDIO CASA HABITACION"
-     },
-     {
+    },
+    {
       "Código": 678,
       "Cláusula": "MOTIN HUELGA Y CONMOCIÓN CIVIL"
-     },
-     {
+    },
+    {
       "Código": 679,
       "Cláusula": "Cláusula De Limitación Y Exclusión De Sanciones"
-     },
-     {
+    },
+    {
       "Código": 680,
       "Cláusula": "ANEXO ACLARATORIO DE ESTADO DE EXCEPCIÓN"
-     },
-     {
+    },
+    {
       "Código": 681,
-      "Cláusula": "ASISTENCIA PYMES  (2020)"
-     },
-     {
+      "Cláusula": "ASISTENCIA PYMES"
+    },
+    {
       "Código": 682,
       "Cláusula": "ASISTENCIA MUPI (AC)"
-     },
-     {
+    },
+    {
       "Código": 683,
       "Cláusula": "CL. MAREMOTO"
-     },
-     {
+    },
+    {
       "Código": 685,
       "Cláusula": "CL ADHESION"
-     },
-     {
+    },
+    {
       "Código": 686,
-      "Cláusula": "CL. CUOTAS DE ADMINISTRACIÓN SOBRE AREAS Y\/O INMUEBLES"
-     },
-     {
+      "Cláusula": "CL. CUOTAS DE ADMINISTRACIÓN SOBRE AREAS Y/O INMUEBLES"
+    },
+    {
       "Código": 687,
       "Cláusula": "CL. ANTICIPO EN CASO DE SINIESTRO"
-     },
-     {
+    },
+    {
       "Código": 688,
       "Cláusula": "CL. AUTOEXPLOSIÓN"
-     },
-     {
+    },
+    {
       "Código": 690,
       "Cláusula": "CL. GARANTIA EN CAJA FUERTE"
-     },
-     {
+    },
+    {
       "Código": 691,
       "Cláusula": "CL. COB. AUTOMATICA PARA EQUIPOS MAQ. Y SUS PARTES EN SUSTI"
-     },
-     {
+    },
+    {
       "Código": 692,
       "Cláusula": "ASISTENCIA HOGAR COMPLETA"
-     },
-     {
+    },
+    {
       "Código": 693,
       "Cláusula": "CL. DE COMBUSTIBLES LUBRICANTES Y EXPLOSIVOS"
-     },
-     {
+    },
+    {
       "Código": 694,
       "Cláusula": "CL. DAÑOS POR INUNDACIÓN EN PLANTAS DE HARINA DE PESCADO"
-     },
-     {
+    },
+    {
       "Código": 695,
       "Cláusula": "CL. DEFINICION DE EQUIPO ELECTRONICO"
-     },
-     {
+    },
+    {
       "Código": 696,
       "Cláusula": " CL. DEFINICIÓN DE MAQUINARIA"
-     },
-     {
+    },
+    {
       "Código": 697,
       "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
-     },
-     {
+    },
+    {
       "Código": 698,
       "Cláusula": "CL. DESIGNACIÓN DE BIENES"
-     },
-     {
+    },
+    {
       "Código": 699,
       "Cláusula": "CL. DOCUMENTOS Y MODELOS"
-     },
-     {
+    },
+    {
       "Código": 700,
       "Cláusula": "CL. EXTINTORES"
-     },
-     {
+    },
+    {
       "Código": 701,
       "Cláusula": "CL. FLOTANTE"
-     },
-     {
+    },
+    {
       "Código": 702,
       "Cláusula": "CL. GASTOS ADICIONALES"
-     },
-     {
+    },
+    {
       "Código": 703,
       "Cláusula": "CL. SALVATAJE"
-     },
-     {
+    },
+    {
       "Código": 704,
       "Cláusula": "CL. GASTOS PARA EXTINGUIR UN INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 705,
       "Cláusula": "CL. GASTOS PARA PRESERVACIÓN DE BIENES"
-     },
-     {
+    },
+    {
       "Código": 706,
-      "Cláusula": "CL. HORNOS"
-     },
-     {
+      "Cláusula": "CLÁUSULA DE COBERTURA DE HORNOS"
+    },
+    {
       "Código": 707,
       "Cláusula": "CL. IMPLOSIÓN"
-     },
-     {
+    },
+    {
       "Código": 708,
       "Cláusula": "CL. SABOTAJE Y TERRORISMO"
-     },
-     {
+    },
+    {
       "Código": 709,
       "Cláusula": "CL. INTERES ASEGURABLE"
-     },
-     {
+    },
+    {
       "Código": 710,
       "Cláusula": "CL. LIMPIEZA DE CENIZAS"
-     },
-     {
+    },
+    {
       "Código": 711,
       "Cláusula": "CL. NO CANCELACIÓN INDIVIDUAL"
-     },
-     {
+    },
+    {
       "Código": 712,
-      "Cláusula": "CL.NUEVAS PROPIEDADESBIENES Y PREDIOS"
-     },
-     {
+      "Cláusula": "CLÁUSULA ACLARATORIA DE NUEVAS PROPIEDADES BIENES Y PREDIOS"
+    },
+    {
       "Código": 714,
       "Cláusula": "CL. PROPIEDAD PERSONAL DE EMPLEADOS"
-     },
-     {
+    },
+    {
       "Código": 715,
       "Cláusula": "CL. REFRIGERACIÓN"
-     },
-     {
+    },
+    {
       "Código": 716,
       "Cláusula": "CL.REPARACIONES INMEDIATAS"
-     },
-     {
+    },
+    {
       "Código": 717,
       "Cláusula": "CL. ROTURA DE VIDRIOS"
-     },
-     {
+    },
+    {
       "Código": 718,
       "Cláusula": "CL. SELLOS Y MARCAS"
-     },
-     {
+    },
+    {
       "Código": 719,
-      "Cláusula": "CL. SINIESTRALIDAD"
-     },
-     {
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTRALIDAD"
+    },
+    {
       "Código": 720,
       "Cláusula": "CL. GARANTIAS PARA RIESGOS DIVERSOS"
-     },
-     {
+    },
+    {
       "Código": 721,
       "Cláusula": "CL. MATERIALES IMPORTADOS"
-     },
-     {
+    },
+    {
       "Código": 722,
       "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
-     },
-     {
+    },
+    {
       "Código": 723,
       "Cláusula": "CL. GARANTÍA DE CONSTRUCCIÓN"
-     },
-     {
+    },
+    {
       "Código": 724,
       "Cláusula": "CL. SOLDADURA ESMERILADO U OTRAS ACTIVIDADES EN CALIENTE"
-     },
-     {
-      "Código": 725,
-      "Cláusula": "CL Exclusión de Enfermedad infecciosa \/ Exclusión COVID-19"
-     },
-     {
+    },
+    {
       "Código": 726,
       "Cláusula": "CL.Exclusión Absoluta de Pérdidas Cibernéticas  (IUA 09-081)"
-     },
-     {
+    },
+    {
       "Código": 727,
       "Cláusula": "CL.  EXCLUSIÓN ABSOLUTA DE PERDIDAS CIBERNETICAS"
-     },
-     {
+    },
+    {
       "Código": 730,
       "Cláusula": "CERTIFICADO DE INCENDIO"
-     },
-     {
+    },
+    {
       "Código": 732,
-      "Cláusula": "ASISTENCIA MUPI"
-     },
-     {
+      "Cláusula": "ASISTENCIA INCENDIO 2024"
+    },
+    {
+      "Código": 733,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE ENFERMEDAD"
+    },
+    {
       "Código": 9004,
       "Cláusula": "CONDICION GENERAL INCENDIO  RIESGOS NOMBRADOS"
-     },
-     {
+    },
+    {
       "Código": 9005,
       "Cláusula": "CONDICION GENERAL INCENDIO TODO RIESGO"
-     }
-    ],
+    }
+  ],
     "RB":[
      {
       "Código": 0,
