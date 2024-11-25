@@ -115,7 +115,7 @@ module.exports={
     },
     {
       "Código": 572,
-      "Cláusula": "ARRENDAMIENTOS (AMPARO INCENDIO)"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE ARRENDAMIENTOS"
     },
     {
       "Código": 585,
@@ -139,7 +139,7 @@ module.exports={
     },
     {
       "Código": 593,
-      "Cláusula": "SEGURO INSUFICENTE PARCIAL (AMPARO DE INCENDIO)"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SEGURO INSUFICENTE PARCIAL (INCENDIO"
     },
     {
       "Código": 594,
@@ -379,7 +379,7 @@ module.exports={
     },
     {
       "Código": 672,
-      "Cláusula": "GARANTIAS BASICAS PARA INCENDIO ROBO Y EE"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE GARANTÍA"
     },
     {
       "Código": 673,
@@ -427,7 +427,7 @@ module.exports={
     },
     {
       "Código": 686,
-      "Cláusula": "CL. SINIESTRALIDAD"
+      "Cláusula": "CLAUSULA DE SINIESTRALIDAD"
     },
     {
       "Código": 687,
@@ -451,7 +451,7 @@ module.exports={
     },
     {
       "Código": 692,
-      "Cláusula": "CL. REPARACIONES INMEDIATAS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE REPARACIONES INMEDIATAS"
     },
     {
       "Código": 693,
@@ -475,7 +475,7 @@ module.exports={
     },
     {
       "Código": 698,
-      "Cláusula": "CL. MAREMOTO"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE MAREMOTO"
     },
     {
       "Código": 699,
@@ -499,7 +499,7 @@ module.exports={
     },
     {
       "Código": 705,
-      "Cláusula": "CL. BILLARES"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE BILLARES"
     },
     {
       "Código": 706,
@@ -547,7 +547,7 @@ module.exports={
     },
     {
       "Código": 717,
-      "Cláusula": "CL. EXCLUSIÓN DE MATERIALES QUIICOS"
+      "Cláusula": "CL DE EXCLUSIÓN DE MATERIALES QUÍMICOS O BIOLÓGICOS"
     },
     {
       "Código": 718,
@@ -643,7 +643,7 @@ module.exports={
     },
     {
       "Código": 741,
-      "Cláusula": "ASISTENCIA PYMES"
+      "Cláusula": "CLÁUSULA DE ASISTENCIA PYMES AMPLIADA"
     },
     {
       "Código": 742,
@@ -3021,7 +3021,7 @@ module.exports={
     },
     {
       "Código": 128,
-      "Cláusula": "CL. POR CONTAMINZACION ACCIDENTAL"
+      "Cláusula": "CL. RESPONSABILIDAD POR CONTAMINACIÓN ACCIDENTAL"
     },
     {
       "Código": 129,
@@ -3269,7 +3269,7 @@ module.exports={
     },
     {
       "Código": 12,
-      "Cláusula": "NUEVAS PROPIEDADES"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE NUEVAS PROPIEDADES"
     },
     {
       "Código": 13,
@@ -3412,10 +3412,6 @@ module.exports={
       "Cláusula": "CL.GASTOS EXTRAS POR TRANSPORTE AÉREO O EXPRESO"
     },
     {
-      "Código": 411,
-      "Cláusula": "GASTOS ADICIONALES PARA HORAS EXTRAS EN LA REPARACION"
-    },
-    {
       "Código": 412,
       "Cláusula": "CL. GASTOS POR UTILIZACIÓN DE INSTALACIONES AJENAS"
     },
@@ -3526,6 +3522,10 @@ module.exports={
     {
       "Código": 455,
       "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+    },
+    {
+      "Código": 456,
+      "Cláusula": "CL DE COBERTURA DE GASTOS POR PAGOS DE HORAS EXTRAS EN LA RE"
     },
     {
       "Código": 9004,
@@ -4523,7 +4523,7 @@ module.exports={
     },
     {
       "Código": 49,
-      "Cláusula": "CL. FRANQUICIA TEMPORAL PROPORCIONAL"
+      "Cláusula": "CL ACLARATORIA DE CONDICIONES  FRANQUICIA TEMPORAL PROPORCIO"
     },
     {
       "Código": 50,
@@ -4547,7 +4547,7 @@ module.exports={
     },
     {
       "Código": 55,
-      "Cláusula": "CL. EXCLUSIÓN DE CONTAMINICIÓN POR RADIACTIVA ARMAS QUIMI"
+      "Cláusula": "CL. EXCLUSIÓN DE CONTAMINICIÓN POR RADIACTIVA ARMAS QUIMICA"
     },
     {
       "Código": 56,
@@ -4571,7 +4571,7 @@ module.exports={
     },
     {
       "Código": 61,
-      "Cláusula": "CL. GARANTÍA DE IMPLEMENTACIÓN DE UN PLAN DE CONTINUIDAD"
+      "Cláusula": "CL. GARANTÍA DE IMPLEMENTACIÓN DE UN PLAN DE CONTINUIDAD DE"
     },
     {
       "Código": 9001,
@@ -5420,10 +5420,6 @@ module.exports={
   ],
   "MH": [
     {
-      "Código": 1,
-      "Cláusula": "ASISTENCIA HOGAR BIEN SEGURO"
-    },
-    {
       "Código": 2,
       "Cláusula": "ANEXO CANCELACION"
     },
@@ -5545,7 +5541,7 @@ module.exports={
     },
     {
       "Código": 45,
-      "Cláusula": "ASISTENCIA HOGAR"
+      "Cláusula": "CLÁUSULA DE ASISTENCIA HOGAR"
     },
     {
       "Código": 46,
@@ -5569,7 +5565,7 @@ module.exports={
     },
     {
       "Código": 51,
-      "Cláusula": "CLAUSULA DE LLUVIA E INUNDACIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE LLUVIA E INUNDACIÓN"
     },
     {
       "Código": 52,
@@ -5711,6 +5707,7 @@ module.exports={
     }
   ]
 }
+
 },{}],2:[function(require,module,exports){
 const clausulas = require("./lista_clau.json");
 const stringSimilarity = require("string-similarity"); 
