@@ -1811,7 +1811,7 @@ module.exports={
     },
     {
       "Código": 145,
-      "Cláusula": "CL MODALIDAD FLOTANTE"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE MODALIDAD FLOTANTE"
     },
     {
       "Código": 146,
@@ -2029,7 +2029,7 @@ module.exports={
     },
     {
       "Código": 81,
-      "Cláusula": "CL. ACUMULACIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE ACUMULACIÓN"
     },
     {
       "Código": 82,
@@ -2101,7 +2101,7 @@ module.exports={
     },
     {
       "Código": 99,
-      "Cláusula": "CL. GARANTIAS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE GARANTIAS"
     },
     {
       "Código": 100,
@@ -2149,7 +2149,7 @@ module.exports={
     },
     {
       "Código": 111,
-      "Cláusula": "CL. PRIMERA OPCIÓN DE COMPRA"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE PRIMERA OPCIÓN DE COMPRA"
     },
     {
       "Código": 112,
@@ -2367,7 +2367,7 @@ module.exports={
     },
     {
       "Código": 251,
-      "Cláusula": "CL. GARANTIAS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE GARANTIAS"
     },
     {
       "Código": 252,
@@ -2391,7 +2391,7 @@ module.exports={
     },
     {
       "Código": 257,
-      "Cláusula": "CL. PAR Y JUEGO"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE DE PAR Y JUEGO"
     },
     {
       "Código": 258,
@@ -2443,7 +2443,7 @@ module.exports={
     },
     {
       "Código": 270,
-      "Cláusula": "AJUSTADORES CL."
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AJUSTADORES"
     },
     {
       "Código": 9001,
@@ -2543,31 +2543,31 @@ module.exports={
   "VH": [
     {
       "Código": 8,
-      "Cláusula": "CAMINOS VECINALES"
+      "Cláusula": "CLÁUSULA DE CAMINOS VECINALES"
     },
     {
       "Código": 10,
-      "Cláusula": "NO CANCELACION INDIVIDUAL"
+      "Cláusula": "CLÁUSULA DE NO CANCELACIÓN INDIVIDUAL"
     },
     {
       "Código": 12,
-      "Cláusula": "CLÁUSULA DE NOTIFICACIÓN/ AVISO  DE SINIESTROS"
+      "Cláusula": "CLÁUSULA DE NOTIFICACIÓN DE SINIESTROS"
     },
     {
       "Código": 13,
-      "Cláusula": "AVISOS Y LETREROS"
+      "Cláusula": "CLÁUSULA  AVISOS Y LETREROS"
     },
     {
       "Código": 14,
-      "Cláusula": "PAR Y JUEGO"
+      "Cláusula": "CLÁUSULA DE PAR Y JUEGO"
     },
     {
       "Código": 15,
-      "Cláusula": "GASTOS DE WINCHA O REMOLQUE"
+      "Cláusula": "CLÁUSULA DE GASTOS DE WINCHA O REMOLQUE"
     },
     {
       "Código": 18,
-      "Cláusula": "PRIMERA OPCION DE COMPRA"
+      "Cláusula": "CLÁUSULA DE PRIMERA OPCIÓN DE COMPRA"
     },
     {
       "Código": 19,
@@ -2575,15 +2575,15 @@ module.exports={
     },
     {
       "Código": 20,
-      "Cláusula": "GASTOS MEDICOS POR ACCIDENTES A OCUPANTES"
+      "Cláusula": "CLÁUSULA DE GASTOS MÉDICOS POR ACCIDENTE"
     },
     {
       "Código": 27,
-      "Cláusula": "REPARACIONES INMEDIATAS"
+      "Cláusula": "CLÁUSULA DE REPARACIONES INMEDIATAS"
     },
     {
       "Código": 301,
-      "Cláusula": "RECUPERACION"
+      "Cláusula": "CLÁUSULA DE RECUPERACIÓN"
     },
     {
       "Código": 306,
@@ -2591,15 +2591,15 @@ module.exports={
     },
     {
       "Código": 307,
-      "Cláusula": "CLÁUSULA DE AJUSTE POR SINIESTRALIDAD"
+      "Cláusula": "SEGURO DE VEHÍCULOS CLÁUSULA DE AJUSTE POR SINIESTRALIDAD"
     },
     {
       "Código": 309,
-      "Cláusula": "CLAUSULA DE ADHESION"
+      "Cláusula": "CLÁUSULA DE ADHESIÓN"
     },
     {
       "Código": 312,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE CANCELACIÓN"
+      "Cláusula": "CLÁUSULA DE CANCELACIÓN"
     },
     {
       "Código": 313,
@@ -2607,27 +2607,27 @@ module.exports={
     },
     {
       "Código": 314,
-      "Cláusula": "ANEXO DE AVISO DE RESPONSABILIDAD DIVERSA"
+      "Cláusula": "CLÁUSULA DE AVISO DE RESPONSABILIDAD DIVERSA"
     },
     {
       "Código": 319,
-      "Cláusula": "COBERTURA EXTRATERRITORIAL"
+      "Cláusula": "CLÁUSULA DE COBERTURA EXTRATERRITORIAL"
     },
     {
       "Código": 320,
-      "Cláusula": "TOLERANCIA"
+      "Cláusula": "CLÁUSULA DE TOLERANCIA"
     },
     {
       "Código": 321,
-      "Cláusula": "AJUSTADORES"
+      "Cláusula": "CLÁUSULA DE AJUSTADORES"
     },
     {
       "Código": 322,
-      "Cláusula": "DESTRUCCION PREVENTIVA"
+      "Cláusula": "CLÁUSULA DE DESTRUCCIÓN PREVENTIVA"
     },
     {
       "Código": 328,
-      "Cláusula": "CLAUSULA DE INEXISTENCIA DE PARTES EN EL MERCADO"
+      "Cláusula": "CLÁUSULA DE INEXISTENCIA DE PARTES EN EL MERCADO"
     },
     {
       "Código": 331,
@@ -2635,15 +2635,15 @@ module.exports={
     },
     {
       "Código": 332,
-      "Cláusula": "CLAUSULA PARA GASTOS JUDICIALES"
+      "Cláusula": "CLÁUSULA PARA GASTOS JUDICIALES"
     },
     {
       "Código": 335,
-      "Cláusula": "CLAUSULA DE ACEPTACION"
+      "Cláusula": "CLÁUSULA DE ACEPTACIÓN"
     },
     {
       "Código": 337,
-      "Cláusula": "AMPARO PATRIMONIAL PARA CHOFER ASALARIADO"
+      "Cláusula": "CLÁUSULA DE AMPARO PATRIMONIAL PARA CHOFER ASALARIADO"
     },
     {
       "Código": 340,
@@ -2651,11 +2651,11 @@ module.exports={
     },
     {
       "Código": 341,
-      "Cláusula": "CLAUSULA DE BUENA EXPERIENCIA"
+      "Cláusula": "CLÁUSULA DE BUENA EXPERIENCIA"
     },
     {
       "Código": 343,
-      "Cláusula": "ERRORES U OMISIONES"
+      "Cláusula": "CLÁUSULA DE ERRORES U OMISIONES"
     },
     {
       "Código": 344,
@@ -2663,7 +2663,7 @@ module.exports={
     },
     {
       "Código": 350,
-      "Cláusula": "ASISTENCIA AUTO SUSTITUTO"
+      "Cláusula": "SEGURO VEHICULAR ANEXO DE AUTO SUSTITUTO"
     },
     {
       "Código": 355,
@@ -2671,11 +2671,11 @@ module.exports={
     },
     {
       "Código": 356,
-      "Cláusula": "CLAUSULA DE SINIESTRALIDAD"
+      "Cláusula": "CLÁUSULA DE CAUSA DE SINIESTRALIDAD"
     },
     {
       "Código": 364,
-      "Cláusula": "CLAUSULA DE DEDUCIBLE"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE DEDUCIBLE"
     },
     {
       "Código": 1175,
@@ -2739,7 +2739,7 @@ module.exports={
     },
     {
       "Código": 1213,
-      "Cláusula": "PASO DE PUENTES Y GABARRAS"
+      "Cláusula": "CLÁUSULA DE PUENTES Y GABARRAS"
     },
     {
       "Código": 1215,
@@ -2755,7 +2755,7 @@ module.exports={
     },
     {
       "Código": 1219,
-      "Cláusula": "ANEXO DE ASISTENCIA SERVICIO EXCEQUIAL"
+      "Cláusula": "ANEXO DE ASISTENCIA SERVICIO EXEQUIAL"
     },
     {
       "Código": 1220,
@@ -2775,7 +2775,7 @@ module.exports={
     },
     {
       "Código": 1224,
-      "Cláusula": "ANEXO DE GARANTÍA DE DISPOSITIVO"
+      "Cláusula": "SEGURO DE VEHÍCULOS ANEXO DE GARANTÍA DE DISPOSITIVO"
     },
     {
       "Código": 1225,
@@ -2799,7 +2799,7 @@ module.exports={
     },
     {
       "Código": 1231,
-      "Cláusula": "CLÁUSULA DE EXTENSION DE VIGENCIA A PRORRATA"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE EXTENSIÓN DE VIGENCIA A PRORRATA"
     },
     {
       "Código": 1233,
@@ -3701,7 +3701,7 @@ module.exports={
   "AP": [
     {
       "Código": 1,
-      "Cláusula": "AMPARO AUTOMATICO DE NUEVO PERSONAL"
+      "Cláusula": "CLÁUSULA DE AMPARO AUTOMÁTICO NUEVAS PERSONAS"
     },
     {
       "Código": 5,
@@ -3749,7 +3749,7 @@ module.exports={
     },
     {
       "Código": 36,
-      "Cláusula": "ASISTENCIA SERVICIO EXEQUIAL PERSONAS"
+      "Cláusula": "ANEXO ASISTENCIA SERVICIO EXEQUIAL"
     },
     {
       "Código": 37,
@@ -3770,10 +3770,6 @@ module.exports={
     {
       "Código": 41,
       "Cláusula": "BECA ESTUDIANTIL Y/O CANASTA BÁSICA FAMILIAR"
-    },
-    {
-      "Código": 42,
-      "Cláusula": "ANEXO DE ASISTENCIA AZUL"
     },
     {
       "Código": 43,
@@ -3860,10 +3856,6 @@ module.exports={
       "Cláusula": "CERTIFICADO INDIVIDUAL"
     },
     {
-      "Código": 65,
-      "Cláusula": "ANEXO DE COBERTURA INCAPACIDAD TOTAL Y PERMANENTE POR ACCIDE"
-    },
-    {
       "Código": 66,
       "Cláusula": "ANEXO DE COBERTURA GASTOS MÉDICOS POR ACCIDENTE"
     },
@@ -3880,7 +3872,27 @@ module.exports={
       "Cláusula": "ANEXO DE COBERTURA AMBULANCIA POR ACCIDENTE"
     },
     {
-      "Código": 9002,
+      "Código": 70,
+      "Cláusula": "ANEXO DE COBERTURA INCAPACIDAD TOTAL Y PERMANENTE POR ACCIDE"
+    },
+    {
+      "Código": 71,
+      "Cláusula": "ANEXO DE COBERTURA GASTOS MÉDICOS POR ACCIDENTE"
+    },
+    {
+      "Código": 72,
+      "Cláusula": "CLÁUSULA CRÉDITO HOSPITALARIO PARA LA COBERTURA DE GASTOS MÉ"
+    },
+    {
+      "Código": 73,
+      "Cláusula": "ANEXO DE COBERTURA SEPELIO POR MUERTE POR ACCIDENTE"
+    },
+    {
+      "Código": 74,
+      "Cláusula": "ANEXO DE COBERTURA AMBULANCIA POR ACCIDENTE"
+    },
+    {
+      "Código": 9003,
       "Cláusula": "CONDICIONES GENERALES - SEGURO DE ACCIDENTES PERSONALES COLE"
     }
   ],
@@ -5412,6 +5424,10 @@ module.exports={
     {
       "Código": 105,
       "Cláusula": "CL. LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+    },
+    {
+      "Código": 106,
+      "Cláusula": "CLÁUSULA ACLARATORIA PARA DESIGNACIÓN DE BENEFICIARIO ACREED"
     },
     {
       "Código": 9001,
