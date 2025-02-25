@@ -2860,12 +2860,60 @@ module.exports={
   ],
   "RCE": [
     {
+      "Código": 1,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE CONTROL EN EL AJUSTE DE SINIESTROS"
+    },
+    {
+      "Código": 2,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SEÑALIZACIÓN Y AISLAMIENTOS"
+    },
+    {
+      "Código": 3,
+      "Cláusula": "CLÁUSULA DE RESPONSABILIDAD CIVIL TRANSPORTE CARGA Y DESCAR"
+    },
+    {
+      "Código": 4,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE CONTAMINACIÓN RADIOACTIVA Y EXPLOSIÓ"
+    },
+    {
+      "Código": 5,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE DECLARACIÓN DE TERCEROS"
+    },
+    {
+      "Código": 6,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES-"
+    },
+    {
+      "Código": 12,
+      "Cláusula": "CIVIL CLÁUSULA DE COBERTURA DE CAFETERÍAS RESTAURANTES COM"
+    },
+    {
+      "Código": 18,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE MILENIO"
+    },
+    {
+      "Código": 33,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE GUERRA Y GUERRA CIVIL"
+    },
+    {
+      "Código": 35,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTROS EN SERIE"
+    },
+    {
+      "Código": 43,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD CIVIL PATRONAL"
+    },
+    {
       "Código": 65,
       "Cláusula": "ANEXO DE EXCLUSIONES"
     },
     {
       "Código": 87,
-      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE EXTENSIÓN DE VIGENCIA"
+    },
+    {
+      "Código": 88,
+      "Cláusula": "CLÁUSULA DE ACLARATORIA DE CONSTRUCCIÓN"
     },
     {
       "Código": 90,
@@ -2873,123 +2921,119 @@ module.exports={
     },
     {
       "Código": 91,
-      "Cláusula": "CLAUSULA: ADHESION"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE ADHESIÓN"
     },
     {
       "Código": 92,
-      "Cláusula": "CLAUSULA: AMPARO AUTOMÁTICO PARA PREDIOS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AMPARO AUTOMÁTICO PARA PREDIOS"
     },
     {
       "Código": 93,
-      "Cláusula": "CLAUSULA: ASEGURADO ADICIONAL"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE ASEGURADO ADICIONAL"
     },
     {
       "Código": 94,
-      "Cláusula": "CLAUSULA: AUTORIDAD CIVIL"
-    },
-    {
-      "Código": 95,
-      "Cláusula": "CLAUSULA: CAFETERIAS RESTAURANTES COMEDORES  Y BARES"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AUTORIDAD CIVIL"
     },
     {
       "Código": 96,
-      "Cláusula": "CLAUSULA: CANCELACIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE CANCELACIÓN"
     },
     {
       "Código": 97,
-      "Cláusula": "CLAUSULA: EXCLUSION DE CONDICIONES DE GAS/ COMBUSTIBLE"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE CONDICIONES DE GAS / COMBUSTIBLE"
     },
     {
       "Código": 98,
-      "Cláusula": "CLAUSULA: CONTAMINACIÓN Y POLUCIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE CONTAMINACIÓN Y POLUCIÓN"
     },
     {
       "Código": 99,
-      "Cláusula": "CLAUSULA: CONTRASTISTAS Y SUBCONTRATISTAS IND"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE CONTRATISTAS Y SUBCONTRATISTAS INDE"
     },
     {
       "Código": 100,
-      "Cláusula": "CLAUSULA: CUIDADO CUSTODIA Y CONTROL"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE CUIDADO CUSTODIA Y CONTROL"
     },
     {
       "Código": 101,
-      "Cláusula": "CLAUSULA: EXCESO DE RESPONSABILIDAD CIVIL VEHICULOS"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE EXCESO DE RESPONSABILIDAD CIVIL DE"
     },
     {
       "Código": 102,
-      "Cláusula": "CLAUSULA: EXCLUSIÓN DE CONTAMINACIÓN POR RADIACION INST. DE"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE CONTAMINACIÓN POR RADIACIÓN DEL INS"
     },
     {
       "Código": 103,
-      "Cláusula": "CLAUSULA: EXCLUSÓN DE GUERRA TERRORISMO Y TUMULTOS"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
     },
     {
       "Código": 104,
-      "Cláusula": "CLAUSULA: EXCLUSIÓN DE FILTRACIÓN Y POLUCIÓN (NMA 1683)"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE FILTRACIÓN POLUCIÓN Y CONTAMINACIÓ"
     },
     {
       "Código": 105,
-      "Cláusula": "CLAUSULA: GUARDIANIA VIGILANTES CELADORES"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE GUARDIANÍA VIGILANTES Y CELADORES"
     },
     {
       "Código": 106,
-      "Cláusula": "CLAUSULA: NO CANCELACIÓN INDIVIDUAL"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE NO CANCELACIÓN INDIVIDUAL"
     },
     {
       "Código": 107,
-      "Cláusula": "CLAUSULA: TALLERES AUTOMOTRICES"
+      "Cláusula": "CLÁUSULA DE COBERTURA PARA TALLERES AUTOMOTRICES"
     },
     {
       "Código": 108,
-      "Cláusula": "CLAUSULA: PREDIOS LABORES Y OPERACIONES"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE PREDIOS LABORES Y OPERACIONES"
     },
     {
       "Código": 109,
-      "Cláusula": "CLAUSULA:  PRODUCTOS"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE PRODUCTOS"
     },
     {
       "Código": 110,
-      "Cláusula": "CLAUSULA: RESPONSABILIDAD CIVIL PARA CONSTRUCCIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD CIVIL PARA CONSTRUCC"
     },
     {
       "Código": 111,
-      "Cláusula": "CLAUSULA: PATRONAL"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RESPONSABILIDAD CIVIL PATRONAL"
     },
     {
       "Código": 112,
-      "Cláusula": "CLAUSULA: INCENDIO Y EXPLOSIÓN"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD CIVIL POR INCENDIO Y"
     },
     {
       "Código": 113,
-      "Cláusula": "CLAUSULA: EMPRESAS DE VIGILANCIA"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RESPONSABILIDAD CIVIL DE EMPRESAS D"
     },
     {
       "Código": 114,
-      "Cláusula": "CLAUSULA: SERVICIOS SUBTERRANEOS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SERVICIOS SUBTERRÁNEOS"
     },
     {
       "Código": 115,
-      "Cláusula": "CLAUSULA: SOLDADURA"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SOLDADURA"
     },
     {
       "Código": 116,
-      "Cláusula": "CLAUSULA: TRANSPORTE CARGA Y DESCARGA"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE TRANSPORTE DE BIENES INCLUYENDO CAR"
     },
     {
       "Código": 117,
-      "Cláusula": "CLAUSULA: ASCENSORES"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE USO DE ASCENSORES"
     },
     {
       "Código": 118,
-      "Cláusula": "CLAUSULA: USO DE PARQUEADEROS"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE USO DE PARQUEADERO"
     },
     {
       "Código": 119,
-      "Cláusula": "CLAUSULA: VEHICULOS PROPIOS Y NO PROPIOS"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE VEHÍCULOS PROPIOS Y NO PROPIOS Y EX"
     },
     {
       "Código": 120,
-      "Cláusula": "CL. GRUAS Y MONTACARGAS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE GRÚAS Y MONTACARGAS"
     },
     {
       "Código": 121,
@@ -3001,11 +3045,11 @@ module.exports={
     },
     {
       "Código": 123,
-      "Cláusula": "CL. DECLARACIÓN DE TERCERO"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE DECLARACIÓN DE TERCEROS"
     },
     {
       "Código": 124,
-      "Cláusula": "CL. RC SOLDADURA (REASEGUROS)"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SOLDADURA"
     },
     {
       "Código": 125,
@@ -3013,59 +3057,63 @@ module.exports={
     },
     {
       "Código": 126,
-      "Cláusula": "CL. EXCLUSIÓN MOHO"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN MOHO"
     },
     {
       "Código": 127,
-      "Cláusula": "CL. RC PROFESIONAL (ERROR U OMISIÓN)"
+      "Cláusula": "CLÁUSULA DE COBERTURA RESPONSABILIDAD CIVIL PROFESIONAL (ERR"
     },
     {
       "Código": 128,
-      "Cláusula": "CL. RESPONSABILIDAD POR CONTAMINACIÓN ACCIDENTAL"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD DEL ASEGURADO POR CO"
     },
     {
       "Código": 129,
-      "Cláusula": "CL. DE MWP OIL & GAS CONDITIONS 1989 CONDICIONES DE GAS/COMB"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE MWP OIL & GAS CONDITIONS 1989 CONDIC"
     },
     {
       "Código": 130,
-      "Cláusula": "CL. CRUZADA ENTRE CONTRATISTAS Y SUBCONTRATISTAS"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD CIVIL CRUZADA ENTRE"
     },
     {
       "Código": 131,
-      "Cláusula": "CL. EXCLUSIÓN DE GUERRA TERRORMISMO TUMULTOS"
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
     },
     {
       "Código": 132,
-      "Cláusula": "CL. EXCLUSIÓN POR ATAQUE CIBERNETICO"
+      "Cláusula": "CLÁUSULA ACLARATORIA DEL INSTITUTO DE EXCLUSIÓN POR ATAQUE C"
     },
     {
       "Código": 133,
-      "Cláusula": "RC CIVIL PARA RIESGOS CIBERNETICOS- CYBER PERSONAS NATURALES"
+      "Cláusula": "CLÁUSULA DE COBERTURA CYBER PERSONAS NATURALES-CYBER"
     },
     {
       "Código": 135,
-      "Cláusula": "CL. MODIFICACIÓN RIESGO"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE MODIFICACIÓN DE RIESGO"
     },
     {
       "Código": 136,
-      "Cláusula": "CL. DEFINICIÓN DE AGREGADO ANUAL"
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AGREGADO ANUAL"
     },
     {
       "Código": 137,
-      "Cláusula": "EXCLUSIÓN DE PANDEMIA Y EPIDEMIA CL."
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE PANDEMIA Y EPIDEMIA"
     },
     {
       "Código": 138,
-      "Cláusula": "EXCLUSIÓN ABSOLUTA DE PÉRDIDA CIBERNETICA CL."
+      "Cláusula": "CLÁUSULA ACLARATORIA DE EXCLUSIÓN ABSOLUTA DE PÉRDIDA CIBERN"
     },
     {
       "Código": 139,
-      "Cláusula": "SINIESTRALIDAD CL."
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTRALIDAD"
     },
     {
       "Código": 140,
       "Cláusula": "CUESTIONARIO D&O"
+    },
+    {
+      "Código": 141,
+      "Cláusula": "CLÁUSULA DE COBERTURA CYBER PERSONAS NATURALES"
     },
     {
       "Código": 9001,
@@ -3081,7 +3129,7 @@ module.exports={
     },
     {
       "Código": 9004,
-      "Cláusula": "CONDICIÓN GENERAL RC RIESGOS CIBERNETICOS"
+      "Cláusula": "CONDICIONES GENERALES RC RIESGOS CIBERNETICOS"
     }
   ],
   "EM": [
@@ -3534,16 +3582,8 @@ module.exports={
   ],
   "EE": [
     {
-      "Código": 108,
-      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
-    },
-    {
       "Código": 918,
       "Cláusula": "CONTABILIDAD"
-    },
-    {
-      "Código": 936,
-      "Cláusula": "DEFINICIÓN DE EQUIPO ELECTRONICO  CL EQUIPO ELECTRONICO"
     },
     {
       "Código": 937,
@@ -3562,10 +3602,6 @@ module.exports={
       "Cláusula": "TOLERANCIA"
     },
     {
-      "Código": 950,
-      "Cláusula": "ANEXO DE COBERTURA DE PROTECCIÓN DE EQUIPOS MOVILES"
-    },
-    {
       "Código": 951,
       "Cláusula": "MOTIN HUELGA Y CONMOCIÓN CIVIL"
     },
@@ -3580,10 +3616,6 @@ module.exports={
     {
       "Código": 954,
       "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
-    },
-    {
-      "Código": 955,
-      "Cláusula": "CLAUSULA DE CONTABILIDAD"
     },
     {
       "Código": 956,
@@ -3670,24 +3702,8 @@ module.exports={
       "Cláusula": "CL. AGREGADO ANUAL"
     },
     {
-      "Código": 977,
-      "Cláusula": "CL. COBERTURA AUTOMÁTICA PARA EQUIPOS EN SUSTITUCIÓN"
-    },
-    {
       "Código": 978,
       "Cláusula": "CL. GARANTÍAS RIESGOS DIVERSOS"
-    },
-    {
-      "Código": 979,
-      "Cláusula": "SAQUEO CL."
-    },
-    {
-      "Código": 980,
-      "Cláusula": "AVISO DE SINIESTROS CL."
-    },
-    {
-      "Código": 981,
-      "Cláusula": "ARBITRAJE CL-CG"
     },
     {
       "Código": 9003,
