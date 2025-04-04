@@ -25,7 +25,7 @@
     cursor: pointer;
     box-shadow: inset;
     border-color:rgb(29, 95, 203);
-    background-color: rgb(215, 218, 224);
+    background-color: rgb(226, 229, 234);
 }
 
 .rev-active{
@@ -41,6 +41,10 @@
 .active{
     border-color:rgb(29, 95, 203);
     background-color: rgba(56, 42, 181, 0.333);
+}
+.active:hover{
+    border-color:rgb(29, 95, 203);
+    background-color: rgba(56, 42, 181, 0.333) !important;
 }
 
 p {
