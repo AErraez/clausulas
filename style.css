@@ -6,6 +6,8 @@
     text-align: center;
     font-size: 0.75rem !important;
     transition: all 0.25s;
+    border-radius: 5px;
+    min-width: 4vw;
 }
 
 .review-but{
@@ -23,6 +25,7 @@
     cursor: pointer;
     box-shadow: inset;
     border-color:rgb(29, 95, 203);
+    background-color: rgb(215, 218, 224);
 }
 
 .rev-active{
