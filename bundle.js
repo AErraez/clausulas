@@ -259,7 +259,7 @@ module.exports={
     },
     {
       "Código": 631,
-      "Cláusula": "CL. EXTENDIDA AMPLIA  COBERTURA (AMPARO INCENDIO)"
+      "Cláusula": "CL. COBERTURA EXTENDIDA AMPLIA (AMPARO INCENDIO)"
     },
     {
       "Código": 632,
@@ -507,15 +507,15 @@ module.exports={
     },
     {
       "Código": 707,
-      "Cláusula": "CLAUSULA G: COBERTURA DE DINERO Y VALORES"
+      "Cláusula": "AMPARO G: COBERTURA DE DINERO Y VALORES"
     },
     {
       "Código": 708,
-      "Cláusula": "COBERTURA E: COBERTURA PARA PERDIDA DE BENEICIO POR ROTURA"
+      "Cláusula": "AMPARO E: COBERTURA PARA PERDIDA DE BENEFICIO POR ROTURA"
     },
     {
       "Código": 709,
-      "Cláusula": "COBERTURA F: AMPARO PARA EQUIPO ELECTRONICO"
+      "Cláusula": "AMPARO F: COBERTURA PARA EQUIPO ELECTRONICO"
     },
     {
       "Código": 710,
@@ -731,7 +731,7 @@ module.exports={
     },
     {
       "Código": 763,
-      "Cláusula": "AMPARO D  ROTURA DE MAQUINARIA"
+      "Cláusula": "AMPARO D:  COBERTURA DE ROTURA DE MAQUINARIA"
     },
     {
       "Código": 9001,
@@ -1037,7 +1037,7 @@ module.exports={
     },
     {
       "Código": 669,
-      "Cláusula": "GASTOS POR DEMOSTRACIÓN DE PÉRDIDAS"
+      "Cláusula": "GASTOS POR DEMOSTRACIÓN DE  PÉRDIDAS"
     },
     {
       "Código": 670,
@@ -1189,7 +1189,7 @@ module.exports={
     },
     {
       "Código": 712,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE NUEVAS PROPIEDADES BIENES Y PREDIOS"
+      "Cláusula": "CL. NUEVAS PROPIEDADES BIENES Y PREDIOS"
     },
     {
       "Código": 714,
@@ -2834,6 +2834,10 @@ module.exports={
       "Cláusula": "FORMUARIO CERTICADO"
     },
     {
+      "Código": 1242,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE AMPARO PATRIMONIAL VEHÍCULOS."
+    },
+    {
       "Código": 9001,
       "Cláusula": "POLIZA DE SEGURO CONTRA TODO RIESGO DE VEHICULOS"
     },
@@ -3266,10 +3270,6 @@ module.exports={
       "Cláusula": "CLÁUSULA DE AMPARO AUTOMATICO DE NUEVOS EQUIPOS"
     },
     {
-      "Código": 468,
-      "Cláusula": "CLAUSULA DE TRANSPORTES NACIONALES"
-    },
-    {
       "Código": 470,
       "Cláusula": "CLÁUSULA DE COBERTURA DE EQUIPOS Y MAQUINARIAS EN PARALIZACI"
     },
@@ -3358,10 +3358,6 @@ module.exports={
     {
       "Código": 302,
       "Cláusula": "PROPIEDAD ADYACENTE Y RESPONSABILIDAD CIVIL"
-    },
-    {
-      "Código": 303,
-      "Cláusula": "CL. DE EXCLUSIÓN DE EXPLOSIONES DE GASES DE HUMO EN CAL"
     },
     {
       "Código": 311,
@@ -3918,12 +3914,20 @@ module.exports={
       "Cláusula": "RC PROFESIONAL PARA CLINICAS / HOSPITALES-VERSION  ENE.1997"
     },
     {
+      "Código": 1,
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLAUSULA DE COBERTURA DE R"
+    },
+    {
+      "Código": 2,
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA DE ACOMPAÑAMIENTO Y ASE"
+    },
+    {
       "Código": 8,
       "Cláusula": "RESPONSABILIDAD CIVIL POR INCENDIO Y EXPLOSION"
     },
     {
       "Código": 11,
-      "Cláusula": "DADO DE BAJA/CONTAMINACION"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CONTAMINACIÓN ACCIDENTAL Y"
     },
     {
       "Código": 13,
@@ -4127,7 +4131,7 @@ module.exports={
     },
     {
       "Código": 72,
-      "Cláusula": "RESPONSABILIDAD CVIIL PATRONAL"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA DE R"
     },
     {
       "Código": 73,
@@ -4151,7 +4155,7 @@ module.exports={
     },
     {
       "Código": 97,
-      "Cláusula": "PERIODO DE DESCUBIRMIENTO CL RC"
+      "Cláusula": "RC PROFESIONAL PERIODO DE DESCUBRIMIENTO"
     },
     {
       "Código": 98,
@@ -4175,7 +4179,7 @@ module.exports={
     },
     {
       "Código": 103,
-      "Cláusula": "CLAUSULA DE COBERTURA POR ACTIVIDAD DE EXTRACCIÓN TRANSFUSI"
+      "Cláusula": "RC PROFESIONAL COBERTURA ACTIVIDAD DE EXTRACCIÓN FUSIÓN Y/O"
     },
     {
       "Código": 104,
@@ -4199,7 +4203,7 @@ module.exports={
     },
     {
       "Código": 110,
-      "Cláusula": "RC SOCIEDADES COBERTURA POR DAÑOS MATERIALES Y(O PERSONALES"
+      "Cláusula": "RC PROFESIONAL  COBERTURA POR DAÑOS MATERIALES Y(O PERSONALE"
     },
     {
       "Código": 111,
@@ -4223,31 +4227,31 @@ module.exports={
     },
     {
       "Código": 116,
-      "Cláusula": "CLÁUSULA DE COBERTURA MEDICINA ESTÉTICA SIN CIRUGÍA"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA MEDICINA ESTÉTICA SIN C"
     },
     {
       "Código": 117,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD FUNDAMENTAL"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA MODALIDAD FUNDAMENTAL"
     },
     {
       "Código": 118,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD GLOBAL"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA MODA"
     },
     {
       "Código": 119,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD INICIAL"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA MODA"
     },
     {
       "Código": 120,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD PLATINUM"
+      "Cláusula": "CLAUSULA COBERTURA MODALIDAD PLATINUM"
     },
     {
       "Código": 121,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD PROTECCIÓN TOTAL"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA MODA"
     },
     {
       "Código": 122,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD SILVER PLUS"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA MODA"
     },
     {
       "Código": 123,
@@ -4255,19 +4259,19 @@ module.exports={
     },
     {
       "Código": 124,
-      "Cláusula": "CLÁUSULA DE OBJETO Y PRESTACIONES DEL SEGURO"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE OBJETO Y PRESTACIONES DEL SEGURO"
     },
     {
       "Código": 125,
-      "Cláusula": "CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPITALES - SEGUNDA"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPI"
     },
     {
       "Código": 126,
-      "Cláusula": "CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPITALES"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA CENTROS MÉDICOS Y HOSPI"
     },
     {
       "Código": 127,
-      "Cláusula": "CLÁUSULA DE COBERTURA MODALIDAD COMPLEMENTARIA A CENTROS MÉD"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA MODALIDAD COMPLEMENTARI"
     },
     {
       "Código": 128,
@@ -4279,15 +4283,11 @@ module.exports={
     },
     {
       "Código": 130,
-      "Cláusula": "CLÁUSULA DE ASESORÍA Y/O DEFENSA JURÍDICA"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE ASESORÍA Y/O D"
     },
     {
       "Código": 131,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE DEFENSA DEL ASEGURADO EN CASO DE SE"
-    },
-    {
-      "Código": 132,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE RECLAMACIÓN AL PACIENTE POR AGRESIO"
+      "Cláusula": "COBERTURA DE DEFENSA DEL ASEGURADO EN CASO DE SER DENUNCIADO"
     },
     {
       "Código": 133,
@@ -4295,15 +4295,15 @@ module.exports={
     },
     {
       "Código": 134,
-      "Cláusula": "CLÁUSULA DE COBERTURA POR ACTIVIDAD CON CARÁCTER DOCENTE"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA POR ACTIVIDAD CON CARÁC"
     },
     {
       "Código": 135,
-      "Cláusula": "CLÁUSULA DE COBERTURA POR ACTUACIÓN COMO PERITO EN PROCEDIMI"
+      "Cláusula": "RC PROFESIONAL CL DE COBERTURA POR ACTUACIÓN COMO PERITO"
     },
     {
       "Código": 136,
-      "Cláusula": "CLÁUSULA DE COBERTURA POR INHABILITACIÓN TEMPORAL PROFESIONA"
+      "Cláusula": "CLAUSULA COBERTURA POR INHABILITACIÓN TEMPORAL PROFESIONAL"
     },
     {
       "Código": 137,
@@ -4315,27 +4315,51 @@ module.exports={
     },
     {
       "Código": 139,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE NOTIFICACIÓN DE SINIESTROS E INCIDEN"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA ACLARATORIA DE NOTIFICACIÓN DE SINIE"
     },
     {
       "Código": 140,
-      "Cláusula": "CLÁUSULA DE RENOVACIÓN AUTOMÁTICA"
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE RENOVACIÓN AUT"
     },
     {
       "Código": 141,
-      "Cláusula": "CLÁUSULA DE ASESORÍA EN ELABORACIÓN DE INFORMES PERICIALES"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE ASESORÍA EN ELABORACIÓN DE INFORM"
     },
     {
       "Código": 142,
-      "Cláusula": "CLÁUSULA DE COBERTURA POR CESE DE LA ACTIVIDAD"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA POR CESE DE LA ACTIVIDA"
     },
     {
       "Código": 143,
-      "Cláusula": "CLAUSULA DE COBERTURA DE BLEFAROPLASTIAS Y RINOPLASTIAS - CO"
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA DE BLEFAROPLASTIAS Y RI"
     },
     {
       "Código": 144,
       "Cláusula": "CLÁUSULA DE COBERTURA DE MICROFILLERS LABIALES"
+    },
+    {
+      "Código": 145,
+      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL ACLATORIA RETROACTIVIDAD"
+    },
+    {
+      "Código": 146,
+      "Cláusula": "RC PROFESIONAL POR DAÑOS MATERIALES Y/O PERSONALES"
+    },
+    {
+      "Código": 147,
+      "Cláusula": "RC PROFESIONAL COBERTURA INSTITUCIONAL"
+    },
+    {
+      "Código": 148,
+      "Cláusula": "RC PROFESIONAL CL DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+    },
+    {
+      "Código": 149,
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA DE ACOMPAÑAMIENTO"
+    },
+    {
+      "Código": 150,
+      "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA DE ACTIVIDADES ESTÉTICA"
     },
     {
       "Código": 9000,
@@ -4343,7 +4367,7 @@ module.exports={
     },
     {
       "Código": 9001,
-      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL"
+      "Cláusula": "CONDICIONES GENERALES RESPONSABILIDAD CIVIL PROFESIONAL"
     },
     {
       "Código": 9002,
@@ -5550,10 +5574,6 @@ module.exports={
     {
       "Código": 39,
       "Cláusula": "CL. GASTOS A CONSECUENCIA DE UN SINIESTRO"
-    },
-    {
-      "Código": 40,
-      "Cláusula": "CL. GASTOS PARA HONORARIOS ING. ARQUITECTOS"
     },
     {
       "Código": 41,
