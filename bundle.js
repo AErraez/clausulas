@@ -486,10 +486,6 @@ module.exports={
       "Cláusula": "CL. MATERIALES EN FUSION  (AMPARO INCENDIO)"
     },
     {
-      "Código": 701,
-      "Cláusula": "CL. DAÑO MALICIOSO"
-    },
-    {
       "Código": 702,
       "Cláusula": "CL. COBERTURA EXTENDIDA"
     },
@@ -634,10 +630,6 @@ module.exports={
       "Cláusula": "CL. MOTIN HUELGA DISTURBIOS LABORES CONMOCIÓN CIVIL"
     },
     {
-      "Código": 739,
-      "Cláusula": "AMPARO C LUCRO CESANTE POR INCENDIO"
-    },
-    {
       "Código": 740,
       "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
     },
@@ -670,14 +662,6 @@ module.exports={
       "Cláusula": "CL. GARANTÍA DE IMPREMENTACIÓN DE PLAN DE CONTINUIDAD (LUCRO"
     },
     {
-      "Código": 748,
-      "Cláusula": "CL. EXCLUSIÓN DE ENFERMEDADES GRAVES"
-    },
-    {
-      "Código": 749,
-      "Cláusula": "CL. DE EXCLUSIÓN ABSOLUTA DE PÉRDIDAS CIBERNÉTICAS"
-    },
-    {
       "Código": 750,
       "Cláusula": "CL. AGREGADO ANUAL"
     },
@@ -706,10 +690,6 @@ module.exports={
       "Cláusula": "CL. CALDERAS"
     },
     {
-      "Código": 757,
-      "Cláusula": "CL. DE MATERIALES DE MATERIALES DE REFRACTARIO Y/O REVESTIMI"
-    },
-    {
       "Código": 758,
       "Cláusula": "CL. GARANTÍA RIESGOS DIVERSOS (B)"
     },
@@ -722,546 +702,362 @@ module.exports={
       "Cláusula": "ACEITES LUBRICANTES Y/O REFRIGERANTES"
     },
     {
-      "Código": 761,
-      "Cláusula": "Restitución automática de suma Asegurada CL-CG"
-    },
-    {
-      "Código": 762,
-      "Cláusula": "ARBITRAJE CL-CG"
-    },
-    {
       "Código": 763,
       "Cláusula": "AMPARO D:  COBERTURA DE ROTURA DE MAQUINARIA"
     },
     {
-      "Código": 9001,
-      "Cláusula": "CONDICIONES GENERALES SEGURO MULTIRIESGO HOGAR"
-    },
-    {
       "Código": 9003,
       "Cláusula": "CONDICION GENERAL DE MULTIRIESGO INDUSTRIAL"
-    },
-    {
-      "Código": 9004,
-      "Cláusula": "AJUSTADORES LIQUIDADORES Y PERITOS DE MUTUO ACUERDO CL."
     }
   ],
   "IN": [
     {
-      "Código": 2,
-      "Cláusula": "PAGO DE PRIMAS"
+      "Código": 735,
+      "Cláusula": "CLÁUSULA PAGO DE PRIMAS"
     },
     {
-      "Código": 4,
-      "Cláusula": "CANCELACION"
+      "Código": 736,
+      "Cláusula": "CLÁUSULA DE PAGO DE PRIMAS DE CUOTAS"
     },
     {
-      "Código": 6,
-      "Cláusula": "REMOCION DE ESCOMBROS"
+      "Código": 737,
+      "Cláusula": "CLÁUSULA ERRORES U OMISIONES"
     },
     {
-      "Código": 9,
-      "Cláusula": "HONORARIOS DE ARQUITECTOS INGENIEROS Y TOPOGRAFOS"
+      "Código": 738,
+      "Cláusula": "CLÁUSULA DE AJUSTADORES"
     },
     {
-      "Código": 10,
-      "Cláusula": "DESTRUCCION PREVENTIVA CL DE INCENDIO"
+      "Código": 739,
+      "Cláusula": "CLÁUSULA DE CANCELACIÓN A PRORRATA"
     },
     {
-      "Código": 11,
-      "Cláusula": "COMBUSTION EXPONTANEA"
+      "Código": 740,
+      "Cláusula": "CLÁUSULA DE NO CANCELACIÓN INDIVIDUAL"
     },
     {
-      "Código": 12,
-      "Cláusula": "BILLARES"
+      "Código": 741,
+      "Cláusula": "CLÁUSULA DE GASTOS PARA AMINORAR LA PERDIDA"
     },
     {
-      "Código": 13,
-      "Cláusula": "AUTORIDAD CIVIL"
+      "Código": 742,
+      "Cláusula": "CLÁUSULA DE REPARACIONES INMEDIATAS"
     },
     {
-      "Código": 14,
-      "Cláusula": "COASEGUROS PACTADO"
+      "Código": 743,
+      "Cláusula": "CLÁUSULA DE COASEGURO PACTADO"
     },
     {
-      "Código": 15,
-      "Cláusula": "GASTOS PARA AMINORAR UNA PÉRDIDA"
+      "Código": 744,
+      "Cláusula": "CLÁUSULA DE PAR Y JUEGO"
     },
     {
-      "Código": 16,
-      "Cláusula": "PROTECCIONES PARTICULARES"
+      "Código": 745,
+      "Cláusula": "CLÁUSULA DE AMPARO AUTOMÁTICO DE NUEVAS PROPIEDADES"
     },
     {
-      "Código": 19,
-      "Cláusula": "SALVAMENTO"
+      "Código": 746,
+      "Cláusula": "CLÁUSULA DE AUTORIDAD CIVIL"
     },
     {
-      "Código": 22,
-      "Cláusula": "TRASLADO TEMPORAL"
+      "Código": 747,
+      "Cláusula": "CLÁUSULA DE BIENES EN EXPOSICIÓN Y/O DEMOSTRACIÓN"
     },
     {
-      "Código": 23,
-      "Cláusula": "INTERESES DE CONTRATISTAS"
+      "Código": 748,
+      "Cláusula": "CLÁUSULA DE CONOCIMIENTO DEL RIESGO"
     },
     {
-      "Código": 24,
-      "Cláusula": "MATERIALES EN FUSION"
+      "Código": 749,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE EDIFICIO E INSTALACIONES"
     },
     {
-      "Código": 25,
-      "Cláusula": "BIENES DEL ASEGURADO EN PROPIEDAD DE TERCERO CL INCENDIO"
+      "Código": 750,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE DINERO Y VALORES"
     },
     {
-      "Código": 26,
-      "Cláusula": "RIESGOS EN PARALIZACION"
+      "Código": 751,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE MAQUINARIAS"
     },
     {
-      "Código": 40,
-      "Cláusula": "TERREMOTO"
+      "Código": 752,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE INVENTARIOS"
     },
     {
-      "Código": 41,
-      "Cláusula": "EXPLOSION"
+      "Código": 753,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE MUEBLES ENSERES Y EQUIPOS DE OFIC"
     },
     {
-      "Código": 42,
-      "Cláusula": "DANOS POR AGUA"
+      "Código": 754,
+      "Cláusula": "CLÁUSULA DE PROTECCIONES PARTICULARES"
     },
     {
-      "Código": 43,
-      "Cláusula": "LLUVIA E INUNDACION"
+      "Código": 755,
+      "Cláusula": "CLÁUSULA DE BIENES DE REPOSICIÓN O REEMPLAZO"
     },
     {
-      "Código": 44,
-      "Cláusula": "ARBITRAJE CL DE INCENDIO"
+      "Código": 756,
+      "Cláusula": "CLÁUSULA DE ROBO DURANTE EL SINIESTRO"
     },
     {
-      "Código": 45,
-      "Cláusula": "COBERTURA EXTENDIDA"
+      "Código": 757,
+      "Cláusula": "CLÁUSULA DE TRASLADO TEMPORAL"
     },
     {
-      "Código": 47,
-      "Cláusula": "CLAUSULA ELECTRICA"
+      "Código": 758,
+      "Cláusula": "CLÁUSULA DE SISTEMAS DE CONTABILIDAD Y PRUEBA"
     },
     {
-      "Código": 51,
-      "Cláusula": "AJUSTE DE VALOR ASEGURADO"
+      "Código": 759,
+      "Cláusula": "CLÁUSULA DE AVISOS Y LETREROS"
     },
     {
-      "Código": 60,
-      "Cláusula": "DEFINICIÓN DE MUEBLES Y ENSERES CL INCENDIO"
+      "Código": 760,
+      "Cláusula": "CLÁUSULA DE BIENES DE PROPIEDAD PERSONAL DE EMPLEADOS"
     },
     {
-      "Código": 68,
-      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS"
+      "Código": 761,
+      "Cláusula": "CLÁUSULA DE DAÑOS MATERIALES OCASIONADOS POR ACTOS MALICIOSO"
     },
     {
-      "Código": 104,
-      "Cláusula": "INDEMNIZACION PARA LAVANDERIA"
+      "Código": 762,
+      "Cláusula": "CLÁUSULA DE ADICIONES Y/O MEJORAS"
     },
     {
-      "Código": 105,
-      "Cláusula": "PROPIEDAD HORIZONTAL"
+      "Código": 763,
+      "Cláusula": "CLÁUSULA DE ALTERACIONES Y REPARACIONES"
     },
     {
-      "Código": 111,
-      "Cláusula": "AUDITORES CONTADORES Y ABOGADOS CL DE INCENDIO"
+      "Código": 764,
+      "Cláusula": "CLÁUSULA DE ARRENDAMIENTO Y GASTOS EXTRAORDINARIOS"
     },
     {
-      "Código": 114,
-      "Cláusula": "BIENES EN EXPOSICION O DEMOSTRACIÓN CL INCENDIO"
+      "Código": 765,
+      "Cláusula": "CLÁUSULA DE AMPLIACIÓN DE LA COBERTURA DE LLUVIA E INUNDACIÓ"
     },
     {
-      "Código": 116,
-      "Cláusula": "OBRAS CIVILES EN CURSO CL INCENDIO"
+      "Código": 766,
+      "Cláusula": "CLÁUSULA DE AMPLIACIÓN DE LA COBERTURA DE TERREMOTO"
     },
     {
-      "Código": 117,
-      "Cláusula": "PROPIEDAD EN CONSIGNACION"
+      "Código": 767,
+      "Cláusula": "CLÁUSULA DE COBERTURA EXTENDIDA"
     },
     {
-      "Código": 153,
-      "Cláusula": "DERRAME DE CONTENIDO CL DE INCENDIO"
+      "Código": 768,
+      "Cláusula": "CLÁUSULA DE SELLOS Y MARCAS"
     },
     {
-      "Código": 154,
-      "Cláusula": "DEFINICION DE MERCADERIA CL DE INCENDIO"
+      "Código": 769,
+      "Cláusula": "CLÁUSULA DE ARRENDAMIENTO"
     },
     {
-      "Código": 157,
-      "Cláusula": "REFRIGERANTE  CL DE INCENDIO"
+      "Código": 770,
+      "Cláusula": "CLÁUSULA DE AUDITORES REVISORES EXTERNOS Y CONTADORES"
     },
     {
-      "Código": 160,
-      "Cláusula": "PAR Y JUEGO"
+      "Código": 771,
+      "Cláusula": "CLÁUSULA DE BILLARES"
     },
     {
-      "Código": 190,
-      "Cláusula": "RESTITUCION AUTOMATICA DE SUMA ASEGURADA CL INCENDIO"
+      "Código": 772,
+      "Cláusula": "CLÁUSULA DE ASONADA HUELGA MOTÍN CONMOCIÓN CIVIL O POPULA"
     },
     {
-      "Código": 207,
-      "Cláusula": "AMPARO DE MUELLES"
+      "Código": 773,
+      "Cláusula": "CLÁUSULA DE ASONADA HUELGA MOTÍN CONMOCIÓN CIVIL O POPULA"
     },
     {
-      "Código": 231,
-      "Cláusula": "CL. DAÑO MALICIOSO Y VANDALISMO"
+      "Código": 774,
+      "Cláusula": "CLÁUSULA DE SABOTAJE Y TERRORISMO"
     },
     {
-      "Código": 233,
-      "Cláusula": "PRIMERA OPCIÓN DE COMPRA"
+      "Código": 775,
+      "Cláusula": "CLÁUSULA DE DAÑOS OCASIONADOS DIRECTAMENTE POR INUNDACIONES"
     },
     {
-      "Código": 236,
-      "Cláusula": "SEGURO  INSUFICIENTE PARCIAL"
+      "Código": 776,
+      "Cláusula": "CLÁUSULA DE DOMICILIO"
     },
     {
-      "Código": 237,
-      "Cláusula": "COLAPSO"
+      "Código": 777,
+      "Cláusula": "CLÁUSULA FLOTANTE DE INCENDIO"
     },
     {
-      "Código": 239,
-      "Cláusula": "PROPIEDAD FUERA DEL CONTROL DEL ASEGURADO"
+      "Código": 778,
+      "Cláusula": "CLÁUSULA DE GASTOS DE ESTADÍA Y DE VIAJE"
     },
     {
-      "Código": 240,
-      "Cláusula": "LOCALIZACION Y LIBRE TRANSITO"
+      "Código": 779,
+      "Cláusula": "CLÁUSULA DE HONORARIOS DE INGENIEROS ARQUITECTOS Y TOPÓGRAF"
     },
     {
-      "Código": 241,
-      "Cláusula": "DEFINICION DINERO Y VALORES"
+      "Código": 780,
+      "Cláusula": "CLÁUSULA DE LAVANDERÍAS"
     },
     {
-      "Código": 242,
-      "Cláusula": "ERRORES U OMISIONES"
+      "Código": 781,
+      "Cláusula": "CLÁUSULA DE INTERESES DE CONTRATISTAS"
     },
     {
-      "Código": 243,
-      "Cláusula": "TOLERANCIA"
+      "Código": 782,
+      "Cláusula": "CLÁUSULA DE COLAPSO"
     },
     {
-      "Código": 244,
-      "Cláusula": "ALTERACIONES Y REPARACIONES"
+      "Código": 783,
+      "Cláusula": "CLÁUSULA DE DAÑOS MATERIALES OCASIONADOS POR MOTÍN Y ALBOROT"
     },
     {
-      "Código": 245,
-      "Cláusula": "CL. CAÍDA Y MANIPULACIÓN DE BIENES Y MERCADERÍAS"
+      "Código": 784,
+      "Cláusula": "CLÁUSULA DE PALETIZACIÓN"
     },
     {
-      "Código": 253,
-      "Cláusula": "CLAUSULA DE EXTINCION DE GARANTIA DEL FABRICANTE"
+      "Código": 785,
+      "Cláusula": "CLÁUSULA DE PREVENCIÓN DE ERUPCIÓN VOLCÁNICA"
     },
     {
-      "Código": 254,
-      "Cláusula": "CL. BIENES DE PROPIEDAD DE TERCEROS BAJO RESPONSABILIDAD DEL"
+      "Código": 786,
+      "Cláusula": "CLÁUSULA DE PROPIEDAD FUERA DEL CONTROL DEL ASEGURADO"
     },
     {
-      "Código": 255,
-      "Cláusula": "COBERTURA EXTENDIDA AMPLIA"
+      "Código": 787,
+      "Cláusula": "CLÁUSULA DE PROPIEDAD HORIZONTAL"
     },
     {
-      "Código": 256,
-      "Cláusula": "ASISTENCIA HOGAR (BASICO)"
+      "Código": 788,
+      "Cláusula": "CLAUSULA DE HORNOS"
     },
     {
-      "Código": 260,
-      "Cláusula": "CLAUSULA DE LISTADOS (BLANKET)"
+      "Código": 789,
+      "Cláusula": "CLÁUSULA DE REMOCIÓN DE ESCOMBROS"
     },
     {
-      "Código": 262,
-      "Cláusula": "ASISTENCIA HOGAR"
+      "Código": 790,
+      "Cláusula": "CLÁUSULA DE VIDRIOS Y CRISTALES"
     },
     {
-      "Código": 264,
-      "Cláusula": "GASTOS DE INCINERACIÓN CLAUSULA INCENDIO"
+      "Código": 791,
+      "Cláusula": "CLÁUSULA DE HONORARIOS DE AUDITORES REVISORES Y CONTADORES"
     },
     {
-      "Código": 265,
-      "Cláusula": "NOTIFICACION DE SINIESTRO CL EQUIPO INCENDIO"
+      "Código": 792,
+      "Cláusula": "CLÁUSULA DE AUTO EXPLOSIÓN"
     },
     {
-      "Código": 647,
-      "Cláusula": "CONTABILIDAD CL DE INCENDIO"
+      "Código": 793,
+      "Cláusula": "CLÁUSULA EXTENDIDA"
     },
     {
-      "Código": 649,
-      "Cláusula": "BIENES A LA INTEMPERIE CL INCENDIO"
+      "Código": 794,
+      "Cláusula": "CLÁUSULA EXTENDIDA AMPLIA"
     },
     {
-      "Código": 650,
-      "Cláusula": "AMPARO AUTOMATICO PARA NUEVOS PREDIOS CL INCENDIO"
+      "Código": 795,
+      "Cláusula": "CLÁUSULA DE DOCUMENTOS Y MODELOS"
     },
     {
-      "Código": 651,
-      "Cláusula": "CLAUSULA ELECTRICA AMPLIA"
+      "Código": 796,
+      "Cláusula": "CLÁUSULA DE HUNDIMIENTOS CAÍDAS O DESPLAZAMIENTOS DE EDIFIC"
     },
     {
-      "Código": 652,
-      "Cláusula": "CERTIFICADO DE SEGURO CONTRA INCENDIO Y LÍNEAS ALIADAS"
+      "Código": 797,
+      "Cláusula": "CLÁUSULA DE PÉRDIDAS O DAÑOS CAUSADOS POR HUELGA MOTÍN Y CO"
     },
     {
-      "Código": 653,
-      "Cláusula": "ASISTENCIA HOGAR MUPI"
+      "Código": 798,
+      "Cláusula": "CLÁUSULA DE REFRIGERACIÓN"
     },
     {
-      "Código": 655,
-      "Cláusula": "CLAUSULA DE VALOR ACORDADO"
+      "Código": 799,
+      "Cláusula": "CLÁUSULA DE MATERIALES IMPORTADOS"
     },
     {
-      "Código": 656,
-      "Cláusula": "CLAUSULA DE AMPLIACION DE DAÑOS POR HUMO"
+      "Código": 800,
+      "Cláusula": "CLÁUSULA DE EXPLOSIÓN"
     },
     {
-      "Código": 660,
-      "Cláusula": "CLÁUSULA REPOSICIÓN Y REEMPLAZO"
+      "Código": 801,
+      "Cláusula": "CLÁUSULA ELÉCTRICA AMPLIA"
     },
     {
-      "Código": 663,
-      "Cláusula": "AJUSTADORES"
+      "Código": 802,
+      "Cláusula": "CLÁUSULA DE EXTINTORES"
     },
     {
-      "Código": 664,
-      "Cláusula": "GARANTIAS BASICAS"
+      "Código": 803,
+      "Cláusula": "CLÁUSULA DE GASTOS EXTRAORDINARIOS POR HORAS EXTRA TRABAJO"
     },
     {
-      "Código": 665,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE ARRENDAMIENTOS"
+      "Código": 804,
+      "Cláusula": "CLÁUSULA DE FLETE AÉREO"
     },
     {
-      "Código": 667,
-      "Cláusula": "DEFINICIÓN DE MUERTE BIOLÓGICA"
+      "Código": 805,
+      "Cláusula": "CLÁUSULA DE INCLUSIÓN DE EQUIPOS PARARRAYOS Y EQUIPOS PROTEC"
     },
     {
-      "Código": 668,
-      "Cláusula": "DEFINICIÓN DE EDIFICIO Y/O ESTRUCTURA"
+      "Código": 806,
+      "Cláusula": "CLÁUSULA DE CONTRATO DE MANTENIMIENTO"
     },
     {
-      "Código": 669,
-      "Cláusula": "GASTOS POR DEMOSTRACIÓN DE  PÉRDIDAS"
+      "Código": 807,
+      "Cláusula": "CLÁUSULA DE LIMITACIÓN A LOS SERVICIOS DE MANTENIMIENTO Y PR"
     },
     {
-      "Código": 670,
-      "Cláusula": "NOTIFICACIÓN DE RENOVACIÓN AUTOMÁTICA"
+      "Código": 808,
+      "Cláusula": "CLÁUSULA DE PROPIEDAD DE TERCEROS BAJO RESPONSABILIDAD DEL A"
     },
     {
-      "Código": 671,
-      "Cláusula": "IMPEDIMENTO DE ACCESO"
+      "Código": 809,
+      "Cláusula": "CLÁUSULA DE DEFINICIÓN DE MENAJE DE CASA"
     },
     {
-      "Código": 674,
-      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
+      "Código": 810,
+      "Cláusula": "CLÁUSULA DE DESIGNACIÓN DE BIENES"
     },
     {
-      "Código": 676,
-      "Cláusula": "ANEXO DE COMPRA PROTEGIDA"
+      "Código": 811,
+      "Cláusula": "CLÁUSULA DE DESTRUCCIÓN PREVENTIVA"
     },
     {
-      "Código": 677,
-      "Cláusula": "DEFINICION DE CONTENDIO CASA HABITACION"
+      "Código": 812,
+      "Cláusula": "CLÁUSULA DE LIBRE CIRCULACIÓN"
     },
     {
-      "Código": 678,
-      "Cláusula": "MOTIN HUELGA Y CONMOCIÓN CIVIL"
+      "Código": 813,
+      "Cláusula": "CLÁUSULA DE LISTADO VALORADO DE MUEBLES ENSERES Y EQUIPOS D"
     },
     {
-      "Código": 679,
-      "Cláusula": "Cláusula De Limitación Y Exclusión De Sanciones"
+      "Código": 814,
+      "Cláusula": "CLÁUSULA DE LISTADO VALORADO DE MENAJE DE CASA"
     },
     {
-      "Código": 680,
-      "Cláusula": "ANEXO ACLARATORIO DE ESTADO DE EXCEPCIÓN"
+      "Código": 815,
+      "Cláusula": "CLÁUSULA DE PROPIEDADES FUERA DEL CONTROL DEL ASEGURADO"
     },
     {
-      "Código": 681,
-      "Cláusula": "ASISTENCIA PYMES"
+      "Código": 816,
+      "Cláusula": "CLÁUSULA DE SALVAMENTO"
     },
     {
-      "Código": 682,
-      "Cláusula": "ASISTENCIA MUPI (AC)"
+      "Código": 817,
+      "Cláusula": "CLÁUSULA DE NOTIFICACIÓN DE SINIESTROS"
     },
     {
-      "Código": 683,
-      "Cláusula": "CL. MAREMOTO"
+      "Código": 818,
+      "Cláusula": "CLÁUSULA DE CANCELACIÓN DE PÓLIZA"
     },
     {
-      "Código": 685,
-      "Cláusula": "CL ADHESION"
+      "Código": 819,
+      "Cláusula": "CLÁUSULA DE AMPARO DE MUELLES"
     },
     {
-      "Código": 686,
-      "Cláusula": "CL. CUOTAS DE ADMINISTRACIÓN SOBRE AREAS Y/O INMUEBLES"
+      "Código": 820,
+      "Cláusula": "CLÁUSULA ELÉCTRICA"
     },
     {
-      "Código": 687,
-      "Cláusula": "CL. ANTICIPO EN CASO DE SINIESTRO"
-    },
-    {
-      "Código": 688,
-      "Cláusula": "CL. AUTOEXPLOSIÓN"
-    },
-    {
-      "Código": 690,
-      "Cláusula": "CL. GARANTIA EN CAJA FUERTE"
-    },
-    {
-      "Código": 691,
-      "Cláusula": "CL. COB. AUTOMATICA PARA EQUIPOS MAQ. Y SUS PARTES EN SUSTI"
-    },
-    {
-      "Código": 692,
-      "Cláusula": "ASISTENCIA HOGAR COMPLETA"
-    },
-    {
-      "Código": 693,
-      "Cláusula": "CL. DE COMBUSTIBLES LUBRICANTES Y EXPLOSIVOS"
-    },
-    {
-      "Código": 694,
-      "Cláusula": "CL. DAÑOS POR INUNDACIÓN EN PLANTAS DE HARINA DE PESCADO"
-    },
-    {
-      "Código": 695,
-      "Cláusula": "CL. DEFINICION DE EQUIPO ELECTRONICO"
-    },
-    {
-      "Código": 696,
-      "Cláusula": " CL. DEFINICIÓN DE MAQUINARIA"
-    },
-    {
-      "Código": 697,
-      "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
-    },
-    {
-      "Código": 698,
-      "Cláusula": "CL. DESIGNACIÓN DE BIENES"
-    },
-    {
-      "Código": 699,
-      "Cláusula": "CL. DOCUMENTOS Y MODELOS"
-    },
-    {
-      "Código": 700,
-      "Cláusula": "CL. EXTINTORES"
-    },
-    {
-      "Código": 701,
-      "Cláusula": "CL. FLOTANTE"
-    },
-    {
-      "Código": 702,
-      "Cláusula": "CL. GASTOS ADICIONALES"
-    },
-    {
-      "Código": 703,
-      "Cláusula": "CL. SALVATAJE"
-    },
-    {
-      "Código": 704,
-      "Cláusula": "CL. GASTOS PARA EXTINGUIR UN INCENDIO"
-    },
-    {
-      "Código": 705,
-      "Cláusula": "CL. GASTOS PARA PRESERVACIÓN DE BIENES"
-    },
-    {
-      "Código": 706,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE HORNOS"
-    },
-    {
-      "Código": 707,
-      "Cláusula": "CL. IMPLOSIÓN"
-    },
-    {
-      "Código": 708,
-      "Cláusula": "CL. SABOTAJE Y TERRORISMO"
-    },
-    {
-      "Código": 709,
-      "Cláusula": "CL. INTERES ASEGURABLE"
-    },
-    {
-      "Código": 710,
-      "Cláusula": "CL. LIMPIEZA DE CENIZAS"
-    },
-    {
-      "Código": 711,
-      "Cláusula": "CL. NO CANCELACIÓN INDIVIDUAL"
-    },
-    {
-      "Código": 712,
-      "Cláusula": "CL. NUEVAS PROPIEDADES BIENES Y PREDIOS"
-    },
-    {
-      "Código": 714,
-      "Cláusula": "CL. PROPIEDAD PERSONAL DE EMPLEADOS"
-    },
-    {
-      "Código": 715,
-      "Cláusula": "CL. REFRIGERACIÓN"
-    },
-    {
-      "Código": 716,
-      "Cláusula": "CL.REPARACIONES INMEDIATAS"
-    },
-    {
-      "Código": 717,
-      "Cláusula": "CL. ROTURA DE VIDRIOS"
-    },
-    {
-      "Código": 718,
-      "Cláusula": "CL. SELLOS Y MARCAS"
-    },
-    {
-      "Código": 719,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTRALIDAD"
-    },
-    {
-      "Código": 720,
-      "Cláusula": "CL. GARANTIAS PARA RIESGOS DIVERSOS"
-    },
-    {
-      "Código": 721,
-      "Cláusula": "CL. MATERIALES IMPORTADOS"
-    },
-    {
-      "Código": 722,
-      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
-    },
-    {
-      "Código": 723,
-      "Cláusula": "CL. GARANTÍA DE CONSTRUCCIÓN"
-    },
-    {
-      "Código": 724,
-      "Cláusula": "CL. SOLDADURA ESMERILADO U OTRAS ACTIVIDADES EN CALIENTE"
-    },
-    {
-      "Código": 726,
-      "Cláusula": "CL.Exclusión Absoluta de Pérdidas Cibernéticas  (IUA 09-081)"
-    },
-    {
-      "Código": 727,
-      "Cláusula": "CL.  EXCLUSIÓN ABSOLUTA DE PERDIDAS CIBERNETICAS"
-    },
-    {
-      "Código": 730,
-      "Cláusula": "CERTIFICADO DE INCENDIO"
-    },
-    {
-      "Código": 732,
-      "Cláusula": "ASISTENCIA INCENDIO 2024"
-    },
-    {
-      "Código": 733,
-      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE ENFERMEDAD"
-    },
-    {
-      "Código": 9004,
-      "Cláusula": "CONDICION GENERAL INCENDIO  RIESGOS NOMBRADOS"
-    },
-    {
-      "Código": 9005,
-      "Cláusula": "CONDICION GENERAL INCENDIO TODO RIESGO"
+      "Código": 9007,
+      "Cláusula": "CONDICION GENERAL TODO RIESGO DE INCENDIO Y LÍNEAS ALIADAS"
     }
   ],
   "RB": [
@@ -1275,7 +1071,7 @@ module.exports={
     },
     {
       "Código": 2,
-      "Cláusula": "DOCUMENTOS Y MODELO"
+      "Cláusula": "DOCUMENTOS Y MODELOS"
     },
     {
       "Código": 3,
@@ -2144,10 +1940,6 @@ module.exports={
       "Cláusula": "CL. PAR Y JUEGO"
     },
     {
-      "Código": 110,
-      "Cláusula": "CL. PERMANENCIA AUTOMÁTICA EN ADUANA"
-    },
-    {
       "Código": 111,
       "Cláusula": "CLÁUSULA ACLARATORIA DE PRIMERA OPCIÓN DE COMPRA"
     },
@@ -2838,6 +2630,14 @@ module.exports={
       "Cláusula": "CLÁUSULA DE COBERTURA DE AMPARO PATRIMONIAL VEHÍCULOS."
     },
     {
+      "Código": 1243,
+      "Cláusula": "ANEXO DE ASISTENCIA VEHICULAR GENERAL"
+    },
+    {
+      "Código": 1244,
+      "Cláusula": "ANEXO DE ASISTENCIA VEHICULAR VIP"
+    },
+    {
       "Código": 9001,
       "Cláusula": "POLIZA DE SEGURO CONTRA TODO RIESGO DE VEHICULOS"
     },
@@ -2856,10 +2656,6 @@ module.exports={
     {
       "Código": 9006,
       "Cláusula": "CONDICIONES GENERALES ACP"
-    },
-    {
-      "Código": 9007,
-      "Cláusula": " "
     }
   ],
   "RCE": [
@@ -2889,7 +2685,7 @@ module.exports={
     },
     {
       "Código": 12,
-      "Cláusula": "CIVIL CLÁUSULA DE COBERTURA DE CAFETERÍAS RESTAURANTES COM"
+      "Cláusula": "CLÁUSULA DE COBERTURA DE CAFETERÍAS RESTAURANTES COMEDORES"
     },
     {
       "Código": 18,
@@ -2958,10 +2754,6 @@ module.exports={
     {
       "Código": 100,
       "Cláusula": "CLÁUSULA DE COBERTURA DE CUIDADO CUSTODIA Y CONTROL"
-    },
-    {
-      "Código": 101,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE EXCESO DE RESPONSABILIDAD CIVIL DE"
     },
     {
       "Código": 102,
@@ -3121,19 +2913,19 @@ module.exports={
     },
     {
       "Código": 9001,
-      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL"
+      "Cláusula": "CONDICIONES GENERALES DE RESPONSABILIDAD CIVIL PROFESIONAL"
     },
     {
       "Código": 9002,
-      "Cláusula": "RESPONSABILIDAD CIVIL PARA DIRECTORES Y ADMINISTRADORES"
+      "Cláusula": "CONDICIONES GENERALES DE RESPONSABILIDAD CIVIL PARA DIRECTOR"
     },
     {
       "Código": 9003,
-      "Cláusula": "CONDICION GENERAL  DE RESPONSABILIDAD CIVIL"
+      "Cláusula": "CONDICIONES GENERALES DE RESPONSABILIDAD CIVIL"
     },
     {
       "Código": 9004,
-      "Cláusula": "CONDICIONES GENERALES RC RIESGOS CIBERNETICOS"
+      "Cláusula": "CONDICIONES GENERALES DE RIESGOS CIBERNETICOS"
     }
   ],
   "EM": [
@@ -3154,10 +2946,6 @@ module.exports={
       "Cláusula": "CLÁUSULA NUEVAS PROPIEDADES"
     },
     {
-      "Código": 16,
-      "Cláusula": "RESTITUCIÓN AUTOMATICA DE SUMA ASEGURADA CL. EQUIPO Y MAQUIN"
-    },
-    {
       "Código": 19,
       "Cláusula": "CLÁUSULA DE SALVAMENTO"
     },
@@ -3168,10 +2956,6 @@ module.exports={
     {
       "Código": 421,
       "Cláusula": "CL: EQUIPOS E INSTALACIONES DE PERFORACION DE AGUA"
-    },
-    {
-      "Código": 425,
-      "Cláusula": "CLÁUSULA DE ARBITRAJE"
     },
     {
       "Código": 427,
@@ -3190,10 +2974,6 @@ module.exports={
       "Cláusula": "CLÁUSULA AUTORIDAD CIVIL"
     },
     {
-      "Código": 439,
-      "Cláusula": "CLÁUSULA DE TRASLADO TEMPORAL"
-    },
-    {
       "Código": 441,
       "Cláusula": "ERRORES U OMISIONES"
     },
@@ -3210,20 +2990,12 @@ module.exports={
       "Cláusula": "CLÁUSULA ACLARATORIA PROPIEDAD FUERA DEL CONTROL DEL ASEGURA"
     },
     {
-      "Código": 447,
-      "Cláusula": "CLAUSULA DE DEPRECIACIÓN"
-    },
-    {
       "Código": 449,
       "Cláusula": "CLAUSULA DE LISTADOS (BLANKET)"
     },
     {
       "Código": 453,
       "Cláusula": "CLAUSULA DE REPARACIONES INMEDIATAS"
-    },
-    {
-      "Código": 454,
-      "Cláusula": "CLAUSULA DE PRIMERA OPCIÓN DE COMPRA"
     },
     {
       "Código": 455,
@@ -3271,7 +3043,7 @@ module.exports={
     },
     {
       "Código": 470,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE EQUIPOS Y MAQUINARIAS EN PARALIZACI"
+      "Cláusula": "CLÁUSULA DE EQUIPOS Y MAQUINARIAS EN PARALIZACIÓN"
     },
     {
       "Código": 471,
@@ -3283,431 +3055,431 @@ module.exports={
     },
     {
       "Código": 475,
-      "Cláusula": "CL. RESPONSABILIDAD CIVIL"
+      "Cláusula": "CLAUSULA DE COBERTURA DE  RESPONSABILIDAD CIVIL"
+    },
+    {
+      "Código": 477,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AGREGADO ANUAL"
+    },
+    {
+      "Código": 478,
+      "Cláusula": "CLÁUSULA DE HONORARIOS PROFESIONALES"
+    },
+    {
+      "Código": 479,
+      "Cláusula": "CLÁUSULA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+    },
+    {
+      "Código": 480,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE PANDEMIA"
+    },
+    {
+      "Código": 481,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTRALIDAD"
     },
     {
       "Código": 9000,
       "Cláusula": "POLIZA DE SEGURO DE EQUIPO Y MAQUINARIA DE CONTRATISTAS"
-    },
-    {
-      "Código": 9001,
-      "Cláusula": "ALBOROTOS POPULARES MOTIN HUELGA CONMOCIÓN CIVIL"
     }
   ],
   "RM": [
     {
-      "Código": 2,
-      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
-    },
-    {
-      "Código": 4,
-      "Cláusula": "DESIGNACION DE BIENES"
-    },
-    {
-      "Código": 6,
-      "Cláusula": "GASTOS EXT. POR HORAS EXTRASTRABAJO NOCTURNO  TRABAJO EN F"
-    },
-    {
-      "Código": 9,
-      "Cláusula": "ADHESION"
-    },
-    {
-      "Código": 10,
-      "Cláusula": "NOTIFICACION DE SINIESTROS"
-    },
-    {
-      "Código": 12,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE NUEVAS PROPIEDADES"
-    },
-    {
-      "Código": 13,
-      "Cláusula": "AUTORIDAD CIVIL"
-    },
-    {
-      "Código": 14,
-      "Cláusula": "AJUSTADORES"
-    },
-    {
-      "Código": 15,
-      "Cláusula": "CANCELACION"
-    },
-    {
-      "Código": 16,
-      "Cláusula": "NO CANCELACION INDIVIDUAL"
-    },
-    {
-      "Código": 17,
+      "Código": 457,
       "Cláusula": "PAGO DE PRIMAS"
     },
     {
-      "Código": 19,
-      "Cláusula": "SALVAMENTO"
+      "Código": 458,
+      "Cláusula": "NOTIFICACION DE SINIESTROS"
     },
     {
-      "Código": 21,
-      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS"
+      "Código": 459,
+      "Cláusula": "AUTORIDAD CIVIL"
     },
     {
-      "Código": 22,
-      "Cláusula": "DESTRUCCION PREVENTIVA"
+      "Código": 460,
+      "Cláusula": "ERRORES U OMISIONES"
     },
     {
-      "Código": 301,
-      "Cláusula": "REAJUSTE DE LA SUMA ASEGURADA Y DE LA PRIMA"
+      "Código": 461,
+      "Cláusula": "NO CANCELACION INDIVIDUAL"
     },
     {
-      "Código": 302,
-      "Cláusula": "PROPIEDAD ADYACENTE Y RESPONSABILIDAD CIVIL"
+      "Código": 462,
+      "Cláusula": "AMPARO AUTOMÁTICO DE NUEVAS PROPIEDADES"
     },
     {
-      "Código": 311,
-      "Cláusula": "CL. COBERTURA DE RIESGO DE CASCO TRANSPORTE EXCLUIDO"
+      "Código": 463,
+      "Cláusula": "TRASLADO TEMPORAL"
     },
     {
-      "Código": 314,
-      "Cláusula": "EXPLOSION DE MOTOR DE COMBUSTION INTERNA  Y GENERAD. REFRIG."
+      "Código": 464,
+      "Cláusula": "AJUSTADORES"
     },
     {
-      "Código": 315,
-      "Cláusula": "COBERTURA DE DERRAME DE TANQUES"
+      "Código": 465,
+      "Cláusula": "GASTOS PARA AMINORAR LA PERDIDA"
     },
     {
-      "Código": 333,
-      "Cláusula": "CL. DE TURBINAS DE VAPOR HIDRÁULICAS Y DE GAS TURBOGENERAD"
-    },
-    {
-      "Código": 342,
-      "Cláusula": "PRENSAS DE PLACAS"
-    },
-    {
-      "Código": 345,
-      "Cláusula": "CL. CALDERAS"
-    },
-    {
-      "Código": 352,
-      "Cláusula": "VASIJA A PRESION DEL REACTOR CON AGREG.INTERNOS"
-    },
-    {
-      "Código": 353,
-      "Cláusula": "ELEMENTOS COMBUSTIBLES"
-    },
-    {
-      "Código": 391,
-      "Cláusula": "TRABAJOS DE MANTEN.EN COMP. ELECT DE MAQ.ASEGUR"
-    },
-    {
-      "Código": 394,
-      "Cláusula": "ARBITRAJE"
-    },
-    {
-      "Código": 396,
-      "Cláusula": "CL. PRIMERA OPCIÓN DE COMPRA"
-    },
-    {
-      "Código": 397,
-      "Cláusula": "COBERTURA DE MAQUINARIA Y EQUIPO BAJO TIERRA"
-    },
-    {
-      "Código": 398,
-      "Cláusula": "COBERTURA DE INCENDIO INTERNO Y CAIDA DIRECTA DE RAYO"
-    },
-    {
-      "Código": 399,
-      "Cláusula": "COBERTURA DE BOMBAS SUMERGIDAS Y BOMBAS PARA POZOS PROFUNDOS"
-    },
-    {
-      "Código": 400,
-      "Cláusula": "COBERTURA DE REFRACTARIO Y/O REVESTIMIENTO DE HORNOS INDUSTR"
-    },
-    {
-      "Código": 402,
-      "Cláusula": "COBERTURA DE PERDIDA DE ACEITES LUBRICANTES Y/O REFRIGERANTE"
-    },
-    {
-      "Código": 403,
-      "Cláusula": "COBERTURA DE CABLES METALICOS Y CABLES NO ELECTRICOS"
-    },
-    {
-      "Código": 404,
-      "Cláusula": "COBERTURA DE BOMBILLAS DE FOCOS"
-    },
-    {
-      "Código": 405,
-      "Cláusula": "AJUSTE DE DEPRECIACION EN  REBOBINADO DE MAQUINA ELECTRICA"
-    },
-    {
-      "Código": 406,
-      "Cláusula": "AJUSTE DE DEPRECIACION PARA LA REPARACIÓN DE  MOTORES DE COM"
-    },
-    {
-      "Código": 407,
-      "Cláusula": "AJUSTE DE DEPRECIACION PARA LOS  COMPONENTES A LOS LARGO DEL"
-    },
-    {
-      "Código": 408,
-      "Cláusula": "CL. CADENAS Y CINTAS TRANSPORTADORAS"
-    },
-    {
-      "Código": 409,
-      "Cláusula": "COBERTURA DE INUNDACION O ENLODAMIENTO"
-    },
-    {
-      "Código": 410,
-      "Cláusula": "CL.GASTOS EXTRAS POR TRANSPORTE AÉREO O EXPRESO"
-    },
-    {
-      "Código": 412,
-      "Cláusula": "CL. GASTOS POR UTILIZACIÓN DE INSTALACIONES AJENAS"
-    },
-    {
-      "Código": 413,
-      "Cláusula": "SINIESTROS EN SERIE"
-    },
-    {
-      "Código": 414,
-      "Cláusula": "COBERTURA DE TRANSPORTES NACIONALES"
-    },
-    {
-      "Código": 416,
-      "Cláusula": "COBERTURA DE INSTALACIONRES Y EQUIPOS DE PERFORACION DE PETR"
-    },
-    {
-      "Código": 417,
-      "Cláusula": "COBERTURA DE EQUIPOS E INSTALACIONES DE PERFORACION PARA AGU"
-    },
-    {
-      "Código": 423,
-      "Cláusula": "CL. DE ERRORES U OMISIONES"
-    },
-    {
-      "Código": 424,
-      "Cláusula": "ALTERACIONES Y REPARACIONES"
-    },
-    {
-      "Código": 427,
-      "Cláusula": "CL ACEPTACIÓN"
-    },
-    {
-      "Código": 428,
-      "Cláusula": "CLAUSULA DE DEPRECIACION"
-    },
-    {
-      "Código": 429,
-      "Cláusula": "CLAUSULA DE LISTADOS (BLANKET)"
-    },
-    {
-      "Código": 430,
-      "Cláusula": "CLAUSULA DE SINIESTRALIDAD"
-    },
-    {
-      "Código": 433,
-      "Cláusula": "CLAUSULA DE VALOR ACORDADO"
-    },
-    {
-      "Código": 434,
-      "Cláusula": "CLÁUSULA DE COBERTURA AUTOMATICA PARA EQUIPOS MAQUINAS Y SU"
-    },
-    {
-      "Código": 436,
-      "Cláusula": "CLAUSULA DE GARANTIAS RIESGOS DIVERSOS"
-    },
-    {
-      "Código": 439,
-      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
-    },
-    {
-      "Código": 440,
-      "Cláusula": "PAR Y JUEGO"
-    },
-    {
-      "Código": 444,
-      "Cláusula": "CLAUSULA DE TOLERANCIA"
-    },
-    {
-      "Código": 445,
-      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
-    },
-    {
-      "Código": 446,
-      "Cláusula": "ANEXO ACLARATORIO DE ESTADO DE EXCEPCION"
-    },
-    {
-      "Código": 447,
-      "Cláusula": "CL. GASTOS DE DESCONTAMINACIÓN"
-    },
-    {
-      "Código": 448,
-      "Cláusula": "CL. ENDOSO DE BENEFICIARIO ACREEDOR"
-    },
-    {
-      "Código": 449,
-      "Cláusula": "CL. REVISIÓN DE MOTORES ELECTRICOS DE MAS DE 750 KW"
-    },
-    {
-      "Código": 450,
-      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
-    },
-    {
-      "Código": 451,
-      "Cláusula": "CL. REPARACIONES INMEDIATAS"
-    },
-    {
-      "Código": 452,
+      "Código": 466,
       "Cláusula": "REPARACIONES INMEDIATAS"
     },
     {
-      "Código": 453,
-      "Cláusula": "CL. HONORARIOS PROFESIONALES"
+      "Código": 467,
+      "Cláusula": "PAR Y JUEGO"
     },
     {
-      "Código": 454,
-      "Cláusula": "CLAUSULA DE GARANTÍA RIESGOS DIVERSOS (B)"
+      "Código": 468,
+      "Cláusula": "DESIGNACION DE BIENES"
     },
     {
-      "Código": 455,
-      "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+      "Código": 469,
+      "Cláusula": "SALVAMENTO"
     },
     {
-      "Código": 456,
-      "Cláusula": "CL DE COBERTURA DE GASTOS POR PAGOS DE HORAS EXTRAS EN LA RE"
+      "Código": 470,
+      "Cláusula": "DESTRUCCIÓN PREVENTIVA"
     },
     {
-      "Código": 9004,
+      "Código": 471,
+      "Cláusula": "LIBRE CIRCULACION"
+    },
+    {
+      "Código": 472,
+      "Cláusula": "GASTOS EXTRAORDINARIOS POR HORAS EXTRA TRABAJO NOCTURNO TR"
+    },
+    {
+      "Código": 473,
+      "Cláusula": "FLETE AEREO"
+    },
+    {
+      "Código": 474,
+      "Cláusula": "SINIESTROS EN SERIE"
+    },
+    {
+      "Código": 475,
+      "Cláusula": "PROPIEDAD ADYACENTE Y RESPONSABILIDAD CIVIL"
+    },
+    {
+      "Código": 476,
+      "Cláusula": "EXPLOSIONES DE GASES DE HUMO EN CALDERAS Y HORNOS"
+    },
+    {
+      "Código": 477,
+      "Cláusula": "EXPLOSIÓN EN MOTORES DE COMBUSTIÓN INTERNA Y GENERADORES REF"
+    },
+    {
+      "Código": 478,
+      "Cláusula": "DERRAME DE TANQUES"
+    },
+    {
+      "Código": 479,
+      "Cláusula": "INUNDACION Y ENLODAMIENTO"
+    },
+    {
+      "Código": 480,
+      "Cláusula": "MAQUINARIA Y EQUIPO BAJO TIERRA"
+    },
+    {
+      "Código": 481,
+      "Cláusula": "BOMBAS SUMERGIDAS Y BOMBAS PARA POZOS PROFUNDOS"
+    },
+    {
+      "Código": 482,
+      "Cláusula": "MATERIALES DE REFRACTARIO Y/O REVESTIMIENTO DE HORNOS INDUST"
+    },
+    {
+      "Código": 483,
+      "Cláusula": "ACEITES LUBRICANTES O REFRIGERANTES"
+    },
+    {
+      "Código": 484,
+      "Cláusula": "CADENAS Y CINTAS TRANSPORTADORAS"
+    },
+    {
+      "Código": 485,
+      "Cláusula": "CABLES METALICOS Y CABLES NO ELECTRICOS"
+    },
+    {
+      "Código": 486,
+      "Cláusula": "BOMBILLAS DE FOCOS"
+    },
+    {
+      "Código": 487,
+      "Cláusula": "REBOBINADO DE MAQUINAS ELECTRICAS"
+    },
+    {
+      "Código": 488,
+      "Cláusula": "MOTORES DE COMBUSTION INTERNA"
+    },
+    {
+      "Código": 489,
+      "Cláusula": "TURBINAS DE GAS"
+    },
+    {
+      "Código": 490,
+      "Cláusula": "PRENSAS DE PLACAS"
+    },
+    {
+      "Código": 491,
+      "Cláusula": "MOTORES ELECTRICOS"
+    },
+    {
+      "Código": 492,
+      "Cláusula": "TURBINAS DE VAPOR HIDRÁULICAS Y DE GAS ASÍ COMO DE UNIDADE"
+    },
+    {
+      "Código": 493,
+      "Cláusula": "CALDERAS"
+    },
+    {
+      "Código": 494,
+      "Cláusula": "DESCONTAMINACION"
+    },
+    {
+      "Código": 495,
+      "Cláusula": "VASIJA A PRESION DEL REACTOR CON AGREGADOS INTERNOS"
+    },
+    {
+      "Código": 496,
+      "Cláusula": "ELEMENTOS COMBUSTIBLES"
+    },
+    {
+      "Código": 497,
+      "Cláusula": "TRABAJOS DE MANTENIMIENTO EN COMPONENTES ELECTRONICOS DE LA"
+    },
+    {
+      "Código": 498,
+      "Cláusula": "INCLUSIÓN DE EQUIPOS PARARRAYOS Y EQUIPOS PROTECTORES CONTRA"
+    },
+    {
+      "Código": 499,
+      "Cláusula": "CONTRATO DE MANTENIMIENTO"
+    },
+    {
+      "Código": 500,
+      "Cláusula": "LIMITACION A LOS SERVICIOS DE MANTENIMIENTO Y PRESTACIONES D"
+    },
+    {
+      "Código": 501,
+      "Cláusula": "RIESGO DE CASCO-TRANSPORTE INCLUIDO"
+    },
+    {
+      "Código": 502,
+      "Cláusula": "ENFERMEDADES TRANSMISIBLES"
+    },
+    {
+      "Código": 503,
+      "Cláusula": "CYBER LOSS LIMITED EXCLUSION CLAUSE"
+    },
+    {
+      "Código": 504,
+      "Cláusula": "OBLIGACIONES RELATIVAS A EQUIPOS DE CLIMATIZACIÓN"
+    },
+    {
+      "Código": 505,
+      "Cláusula": "RECONOCIMIENTO ELECTRONICO DE FECHA"
+    },
+    {
+      "Código": 9005,
       "Cláusula": "CONDICIÓN GENERAL ROTURA DE MAQUINARIA"
     }
   ],
   "EE": [
     {
-      "Código": 918,
-      "Cláusula": "CONTABILIDAD"
+      "Código": 982,
+      "Cláusula": "CLÁUSULA PAGO DE PRIMAS"
     },
     {
-      "Código": 937,
-      "Cláusula": "AUTORIDAD CIVIL CL. EQUIPO ELECTRONICO"
+      "Código": 983,
+      "Cláusula": "CLÁUSULA NOTIFICACIÓN DE SINIESTRO"
     },
     {
-      "Código": 941,
-      "Cláusula": "GARANTIAS BASICAS"
+      "Código": 984,
+      "Cláusula": "CLÁUSULA CANCELACIÓN DE LA PÓLIZA"
     },
     {
-      "Código": 946,
-      "Cláusula": "PAR Y JUEGO"
+      "Código": 985,
+      "Cláusula": "CLÁUSULA AUTORIDAD CIVIL"
     },
     {
-      "Código": 949,
-      "Cláusula": "TOLERANCIA"
-    },
-    {
-      "Código": 951,
-      "Cláusula": "MOTIN HUELGA Y CONMOCIÓN CIVIL"
-    },
-    {
-      "Código": 952,
-      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
-    },
-    {
-      "Código": 953,
-      "Cláusula": "ANEXO ACLARATORIO DE ESTADO DE EXCEPCIÓN"
-    },
-    {
-      "Código": 954,
-      "Cláusula": "ENDOSO PARA DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
-    },
-    {
-      "Código": 956,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE CONTRATO DE MANTENIMIENTO"
-    },
-    {
-      "Código": 957,
-      "Cláusula": "CLAUSULA NO CANCELACIÓN INDIVIDUAL DE LA PÓLIZA"
-    },
-    {
-      "Código": 958,
-      "Cláusula": "CLAUSULA DE TERREMOTO"
-    },
-    {
-      "Código": 959,
-      "Cláusula": "CLAUSULA DE DESIGNACION DE BIENES"
-    },
-    {
-      "Código": 960,
-      "Cláusula": "CLAUSULA DE EQUIPOS PARRAYOS Y EQUPOS PROTECTORES CONTRA"
-    },
-    {
-      "Código": 961,
+      "Código": 986,
       "Cláusula": "CLAUSULA DE ERRORES U OMISIONES"
     },
     {
-      "Código": 962,
-      "Cláusula": "CLAUSULA DE FLETE AEREO"
+      "Código": 987,
+      "Cláusula": "CLAUSULA DE NO CANCELACION INDIVIDUAL"
     },
     {
-      "Código": 963,
-      "Cláusula": "CLAUSULA  DE GASTOS ADICIONALES"
+      "Código": 988,
+      "Cláusula": "AMPARO AUTOMÁTICO DE NUEVAS PROPIEDADES"
     },
     {
-      "Código": 964,
-      "Cláusula": "CLAUSULA DE HURTO"
+      "Código": 989,
+      "Cláusula": "CLÁUSULA DE TRASLADO TEMPORAL"
     },
     {
-      "Código": 965,
-      "Cláusula": "CLAUSULA DE INSTALACIÓN DE EQUPOS OBSOLETOS"
+      "Código": 990,
+      "Cláusula": "CLÁUSULA DE AJUSTADORES"
     },
     {
-      "Código": 966,
-      "Cláusula": "CLAUSULA DE LLUVIA E INUNDACIÓN"
+      "Código": 991,
+      "Cláusula": "CLÁUSULA DE GASTOS PARA AMINORIZAR LA PÉRDIDA"
     },
     {
-      "Código": 967,
-      "Cláusula": "CLAUSULA DE NUEVAS PROPIEDADES"
+      "Código": 992,
+      "Cláusula": "CLÁUSULA DE REPARACIONES INMEDIATAS"
     },
     {
-      "Código": 968,
-      "Cláusula": "CL. DE PORTABILIDAD"
+      "Código": 993,
+      "Cláusula": "CLÁUSULA DE COASEGURO PACTADO"
     },
     {
-      "Código": 969,
-      "Cláusula": "CLAUSULA DE TIFON CICLONY HURACAN"
+      "Código": 994,
+      "Cláusula": "CLÁUSULA DE PAR Y JUEGO"
     },
     {
-      "Código": 970,
-      "Cláusula": "CLAUSULA DE TRASLADO TEMPORAL"
+      "Código": 995,
+      "Cláusula": "CLÁUSULA DE DESIGNACIÓN DE BIENES"
     },
     {
-      "Código": 971,
-      "Cláusula": "CLAUSULA BLANKET"
+      "Código": 996,
+      "Cláusula": "CLÁUSULA DE SALVAMENTO"
     },
     {
-      "Código": 972,
-      "Cláusula": "PORTABILIDAD EXTRATERRITORIAL"
+      "Código": 997,
+      "Cláusula": "CLÁUSULA DE DESTRUCCIÓN PREVENTIVA"
     },
     {
-      "Código": 973,
-      "Cláusula": " EXTENSIÓN DE VIGENCIA"
+      "Código": 998,
+      "Cláusula": "CLÁUSULA DE LIBRE CIRCULACIÓN"
     },
     {
-      "Código": 974,
-      "Cláusula": "CL. SINIESTRALIDAD"
+      "Código": 999,
+      "Cláusula": "PÉRDIDAS O DAÑOS CAUSADOS POR HUELGA MOTIN Y CONMOCIÓN CIVI"
     },
     {
-      "Código": 975,
-      "Cláusula": "CL. AUTOMÁTICA PARA EQUIPOS MÁQUINAS EN SUSTITUCIÓN"
+      "Código": 1000,
+      "Cláusula": "GASTOS EXTRAORDINARIOS POR HORAS EXTRA TRABAJO NOCTURNO TR"
     },
     {
-      "Código": 976,
-      "Cláusula": "CL. AGREGADO ANUAL"
+      "Código": 1001,
+      "Cláusula": "CLÁUSULA DE FLETE AÉREO"
     },
     {
-      "Código": 978,
-      "Cláusula": "CL. GARANTÍAS RIESGOS DIVERSOS"
+      "Código": 1002,
+      "Cláusula": "CLÁUSULA TUBOS Y VALVULAS"
     },
     {
-      "Código": 9003,
-      "Cláusula": "CONDICIONES GENERAL EQUIPO ELECTRONICO"
+      "Código": 1003,
+      "Cláusula": "CLÁUSULA DE HURTO"
     },
     {
-      "Código": 9004,
-      "Cláusula": "CL. GARANTÍAS RIESGOS DIVERSOS(B)"
+      "Código": 1004,
+      "Cláusula": "CLÁUSULA DE EQUIPOS MÓVILES Y PORTÁTILES"
+    },
+    {
+      "Código": 1005,
+      "Cláusula": "CLÁUSULA DE TERREMOTO"
+    },
+    {
+      "Código": 1006,
+      "Cláusula": "CLÁUSULA DE TIFÓN CICLÓN Y HURACÁN"
+    },
+    {
+      "Código": 1007,
+      "Cláusula": "CLÁUSULA DE VALOR NUEVO DE REPOSICIÓN"
+    },
+    {
+      "Código": 1008,
+      "Cláusula": "VALOR NUEVO DE REPOSICIÓN A CONSECUENCIA DE UN DAÑO POR INCE"
+    },
+    {
+      "Código": 1009,
+      "Cláusula": "CLÁUSULA DE GASTOS ADICIONALES NO DEPENDIENTES DEL TIEMPO"
+    },
+    {
+      "Código": 1010,
+      "Cláusula": "CLÁUSULA DE GASTOS ADICIÓNALES EN PLANTAS SANEADAS"
+    },
+    {
+      "Código": 1011,
+      "Cláusula": "DAÑOS O PÉRDIDAS DEBIDO A INCENDIO IMPACTO DE RAYO EXPLOSI"
+    },
+    {
+      "Código": 1012,
+      "Cláusula": "CLÁUSULA DE DAÑOS MECÁNICOS Y ELÉCTRICOS INTERNOS"
+    },
+    {
+      "Código": 1013,
+      "Cláusula": "DAÑOS O PÉRDIDAS CAUSADOS POR DESBORDAMIENTO INUNDACIÓN VI"
+    },
+    {
+      "Código": 1014,
+      "Cláusula": "CLÁUSULA DE OBLIGACIONES RELATIVAS A EQUIPOS DE CLIMATIZACIÓ"
+    },
+    {
+      "Código": 1015,
+      "Cláusula": "GASTOS RELACIONADOS CON LA COLOCACIÓN DE ANDAMIAJES Y ESCALE"
+    },
+    {
+      "Código": 1016,
+      "Cláusula": "CLÁUSULA DE COSTOS DE ALBAÑILERÍA"
+    },
+    {
+      "Código": 1017,
+      "Cláusula": "CLÁUSULA ESPECIAL REFERENTE A TOMÓGRAFOS ELECTRÓNICOS"
+    },
+    {
+      "Código": 1018,
+      "Cláusula": "INCLUSIÓN DE EQUIPOS PARARRAYOS Y EQUIPOS PROTECTORES CONTRA"
+    },
+    {
+      "Código": 1019,
+      "Cláusula": "CLÁUSULA DE PELÍCULAS DE RAYOS X"
+    },
+    {
+      "Código": 1020,
+      "Cláusula": "CLÁUSULA DE RENUNCIA A SUBROGACIÓN"
+    },
+    {
+      "Código": 1021,
+      "Cláusula": "CLÁUSULA DE INSTALACIONES Y EQUIPOS OBSOLETOS"
+    },
+    {
+      "Código": 1022,
+      "Cláusula": "CLÁUSULA DE DEMORAS EN LA REPARACIÓN"
+    },
+    {
+      "Código": 1023,
+      "Cláusula": "INSTALACIONES DE PROCESAMIENTO ELECTRÓNICO DE DATOS ASEGURAD"
+    },
+    {
+      "Código": 1024,
+      "Cláusula": "CLÁUSULA DE CONTRATO DE MANTENIMIENTO"
+    },
+    {
+      "Código": 1025,
+      "Cláusula": "LIMITACIÓN A LOS SERVICIOS DE MANTENIMIENTO Y PRESTACIONES D"
+    },
+    {
+      "Código": 1026,
+      "Cláusula": "CLÁUSULA DE GUARDIANÍA"
+    },
+    {
+      "Código": 1027,
+      "Cláusula": "CLÁUSULA DE MEDIDAS DE SEGURIDAD"
+    },
+    {
+      "Código": 1028,
+      "Cláusula": "CLÁUSULA DE GARANTÍA EXTENDIDA"
+    },
+    {
+      "Código": 1029,
+      "Cláusula": "CLÁUSULA DE SISTEMA DE SEGURIDAD"
+    },
+    {
+      "Código": 9006,
+      "Cláusula": "CONDICIONES GENERALES DE EQUIPO ELECTRÓNICO"
     }
   ],
   "AP": [
@@ -3784,10 +3556,6 @@ module.exports={
       "Cláusula": "BECA ESTUDIANTIL Y/O CANASTA BÁSICA FAMILIAR"
     },
     {
-      "Código": 43,
-      "Cláusula": "ANEXO DE ASISTENCIA ROSA"
-    },
-    {
       "Código": 44,
       "Cláusula": "ASISTENCIA ESCOLAR PRODUBANCO"
     },
@@ -3838,10 +3606,6 @@ module.exports={
     {
       "Código": 56,
       "Cláusula": "ASISTENCIA DEPORTIVA"
-    },
-    {
-      "Código": 57,
-      "Cláusula": "ASISTENCIA VOY SEGURO FAMILIAR"
     },
     {
       "Código": 59,
@@ -3922,214 +3686,6 @@ module.exports={
       "Cláusula": "RC PROFESIONAL CLÁUSULA DE COBERTURA DE ACOMPAÑAMIENTO Y ASE"
     },
     {
-      "Código": 8,
-      "Cláusula": "RESPONSABILIDAD CIVIL POR INCENDIO Y EXPLOSION"
-    },
-    {
-      "Código": 11,
-      "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CONTAMINACIÓN ACCIDENTAL Y"
-    },
-    {
-      "Código": 13,
-      "Cláusula": "EXCESO DE VEHICULOS"
-    },
-    {
-      "Código": 14,
-      "Cláusula": "NO CANCELACION INDIVIDUAL"
-    },
-    {
-      "Código": 15,
-      "Cláusula": "ADHESION"
-    },
-    {
-      "Código": 16,
-      "Cláusula": "NOTIFICACION DE SINIESTROS"
-    },
-    {
-      "Código": 17,
-      "Cláusula": "CANCELACION"
-    },
-    {
-      "Código": 18,
-      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
-    },
-    {
-      "Código": 19,
-      "Cláusula": "ARBITRAJE"
-    },
-    {
-      "Código": 21,
-      "Cláusula": "PAGO DE PRIMAS"
-    },
-    {
-      "Código": 22,
-      "Cláusula": "RESTITUCION AUTOMATICA DE SUMA ASEGURADA"
-    },
-    {
-      "Código": 23,
-      "Cláusula": "CLAUSULA DE AVISO DE RESPONSABILIDAD DIVERSA"
-    },
-    {
-      "Código": 24,
-      "Cláusula": "EXCLUSION DE CONTAMINACION POR RADIACT.DEL INST.DE LONDRES"
-    },
-    {
-      "Código": 25,
-      "Cláusula": "RESPONSABILIDAD CIVIL EMPRESAS DE VIGILANCIA"
-    },
-    {
-      "Código": 26,
-      "Cláusula": "RESPONSABILIDAD CIVIL GUARDIANIA"
-    },
-    {
-      "Código": 27,
-      "Cláusula": "PAGO DE PRIMAS"
-    },
-    {
-      "Código": 28,
-      "Cláusula": "clausula de soldadura"
-    },
-    {
-      "Código": 29,
-      "Cláusula": "clausula N. 1 NMA 1683"
-    },
-    {
-      "Código": 30,
-      "Cláusula": "condiciones de gas/combustible (1989)"
-    },
-    {
-      "Código": 31,
-      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS (REASEGURO)"
-    },
-    {
-      "Código": 32,
-      "Cláusula": "NOTIFICACION DE RESPONSABILIDAD DIVERSA (LSW 1001)"
-    },
-    {
-      "Código": 33,
-      "Cláusula": "CLAUSULA DE EXCLUSION PARA GUERRA Y GUERRA CIVIL"
-    },
-    {
-      "Código": 34,
-      "Cláusula": "FILTRACIÓN POLUCIÓN Y CONTAM.PARA INDUSTRIAS N°3 NMA 1685"
-    },
-    {
-      "Código": 35,
-      "Cláusula": "SINIESTROS EN SERIE"
-    },
-    {
-      "Código": 37,
-      "Cláusula": "AMPARO AUTOMATICO PARA PREDIOS"
-    },
-    {
-      "Código": 38,
-      "Cláusula": "CLAUSULA DE CONTROL DE RECLAMACIONES"
-    },
-    {
-      "Código": 39,
-      "Cláusula": "CONDICIONES DE GAS / COMBUSTIBLE (1989)"
-    },
-    {
-      "Código": 40,
-      "Cláusula": "ANEXO DE: PREDIOS LABORES Y OPERACIONES"
-    },
-    {
-      "Código": 41,
-      "Cláusula": "ANEXO  DE: CONTRATISTAS INDEPENDIENTES"
-    },
-    {
-      "Código": 42,
-      "Cláusula": " ANEXO DE:  PRODUCTOS"
-    },
-    {
-      "Código": 43,
-      "Cláusula": "ANEXO  DE : RESPONSABILIDAD CIVIL PATRONAL"
-    },
-    {
-      "Código": 44,
-      "Cláusula": "ANEXO DE:VEHICULOS PROPIOS Y NO PROPIOS Y EXCESO DE RC"
-    },
-    {
-      "Código": 45,
-      "Cláusula": "ANEXO  DE: RESPONSABILIDAD CIVIL CRUZADA"
-    },
-    {
-      "Código": 46,
-      "Cláusula": "ANEXO  DE:  USO DE ASCENSORES"
-    },
-    {
-      "Código": 47,
-      "Cláusula": "ANEXO DE:TRANSPORTE DE BIENES INCLUYENDO CARGA Y DESCARGA"
-    },
-    {
-      "Código": 48,
-      "Cláusula": "ANEXO DE :  CUIDADO CUSTODIA Y CONTROL"
-    },
-    {
-      "Código": 49,
-      "Cláusula": "ANEXO  DE: USO DE PARQUEADEROS"
-    },
-    {
-      "Código": 50,
-      "Cláusula": "ANEXO DE :   CONTAMINACION  Y  POLUCION"
-    },
-    {
-      "Código": 51,
-      "Cláusula": "EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
-    },
-    {
-      "Código": 52,
-      "Cláusula": "CLAUSULA DE JURISDICCION"
-    },
-    {
-      "Código": 55,
-      "Cláusula": "AJUSTADORES"
-    },
-    {
-      "Código": 56,
-      "Cláusula": "CLAUSULA DE SERVICIOS SUBTERRANEOS"
-    },
-    {
-      "Código": 57,
-      "Cláusula": "CLAUSULA DE SOLDADURA"
-    },
-    {
-      "Código": 58,
-      "Cláusula": "EXCLUSIÓN DE GUERRA TERRORISMO Y TUMULTOS"
-    },
-    {
-      "Código": 59,
-      "Cláusula": "Responsabilidad Civil Talleres"
-    },
-    {
-      "Código": 60,
-      "Cláusula": "AUTORIDAD CIVIL"
-    },
-    {
-      "Código": 61,
-      "Cláusula": "ALTERACIONES Y REPARACIONES"
-    },
-    {
-      "Código": 62,
-      "Cláusula": "ASEGURADO ADICIONAL"
-    },
-    {
-      "Código": 63,
-      "Cláusula": "Cláusula de Siniestralidad"
-    },
-    {
-      "Código": 64,
-      "Cláusula": "CLAUSULA DE ACEPTACION"
-    },
-    {
-      "Código": 65,
-      "Cláusula": "ANEXO DE EXCLUSIONES"
-    },
-    {
-      "Código": 66,
-      "Cláusula": "CLAUSULA DE INCENDIO Y EXPLOSION"
-    },
-    {
       "Código": 72,
       "Cláusula": "RESPONSABILIDAD CIVIL PROFESIONAL CLÁUSULA DE COBERTURA DE R"
     },
@@ -4144,30 +3700,6 @@ module.exports={
     {
       "Código": 89,
       "Cláusula": "MEDICINA ESTETICA SIN CIRUGIA CON REJUVENECIMIENTO"
-    },
-    {
-      "Código": 94,
-      "Cláusula": "OTRAS OBLIGACIONESD EBERES FACULTADES CL RC PROFESIONAL"
-    },
-    {
-      "Código": 95,
-      "Cláusula": " "
-    },
-    {
-      "Código": 97,
-      "Cláusula": "RC PROFESIONAL PERIODO DE DESCUBRIMIENTO"
-    },
-    {
-      "Código": 98,
-      "Cláusula": "CLÁUSULA RESPONSABILIDAD DEL ASEGURADO POR CONTAMINACIÓN ACC"
-    },
-    {
-      "Código": 99,
-      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
-    },
-    {
-      "Código": 100,
-      "Cláusula": "RC SOCIEDADES  CONTAMINACIÓN ACCIDENTAL Y REPENTINA"
     },
     {
       "Código": 101,
@@ -4388,706 +3920,650 @@ module.exports={
   ],
   "LCI": [
     {
-      "Código": 1,
-      "Cláusula": "SUSPENSION DE SERVICIOS DE ENERGIA ELECTRICA AGUA O GAS"
+      "Código": 40,
+      "Cláusula": "CLÁUSULA DE PAGO DE PRIMAS"
     },
     {
-      "Código": 2,
-      "Cláusula": "PROVEEDORES DISTRIBUIDORES O PROCESADORES"
+      "Código": 41,
+      "Cláusula": "CLÁUSULA DE NOTIFICACIÓN DE SINIESTROS"
     },
     {
-      "Código": 3,
-      "Cláusula": "NOMINA POR SEMANA - REMUNERACIONES"
+      "Código": 42,
+      "Cláusula": "CLÁUSULA DE CANCELACIÓN DE PÓLIZA"
     },
     {
-      "Código": 4,
-      "Cláusula": "CL. NOMINA:  REMUNERACIONES CON INCLUSIÓN DE JORNALES (COASE"
+      "Código": 43,
+      "Cláusula": "CLÁUSULA DE AUTORIDAD CIVIL"
     },
     {
-      "Código": 5,
-      "Cláusula": "CL NOMINA:  REMUNERACIONES INCLUYENDO SUELDOS (COASEGURO)"
+      "Código": 44,
+      "Cláusula": "CLÁUSULA DE ERRORES U OMISIONES"
     },
     {
-      "Código": 6,
-      "Cláusula": "CUENTAS Y DOCUMENTOS POR COBRAR"
+      "Código": 45,
+      "Cláusula": "CLÁUSULA DE NO CANCELACIÓN INDIVIDUAL"
     },
     {
-      "Código": 7,
-      "Cláusula": "ANEXO FORMA DE PERIODO"
+      "Código": 46,
+      "Cláusula": "CLÁUSULA DE AJUSTADORES"
     },
     {
-      "Código": 8,
-      "Cláusula": "ANEXO FORMA DE COASEGURO"
+      "Código": 47,
+      "Cláusula": "CLÁUSULA DE GASTOS PARA AMINORAR LA PÉRDIDA"
     },
     {
-      "Código": 10,
-      "Cláusula": "ADHESION"
+      "Código": 48,
+      "Cláusula": "CLÁUSULA DE COASEGURO PACTADO"
     },
     {
-      "Código": 11,
-      "Cláusula": "NOTIFICACION DE SINIESTROS"
+      "Código": 49,
+      "Cláusula": "CLÁUSULA DE SINIESTROS EN SERIE (MAQUINARIAS Y/O EQUIPOS)"
     },
     {
-      "Código": 12,
-      "Cláusula": "REPOSICION DE INVENTARIOS"
+      "Código": 50,
+      "Cláusula": "CLÁUSULA DE PRODUCTO DE OTROS ESTABLECIMIENTOS"
     },
     {
-      "Código": 14,
-      "Cláusula": "EXCLUSION PROBLEMAS NUEVO MILENIO"
+      "Código": 51,
+      "Cláusula": "CLÁUSULA DE REEMBOLSO DE PRIMA"
     },
     {
-      "Código": 17,
-      "Cláusula": "ANTICIPO EN CASO DE SINIESTRO"
+      "Código": 52,
+      "Cláusula": "CLÁUSULA DE FACTOR DE PÉRDIDA"
     },
     {
-      "Código": 19,
-      "Cláusula": "AUDITORES CONTADORES Y ABOGADOS"
+      "Código": 53,
+      "Cláusula": "CLÁUSULA DE REACONDICIONAMIENTOS"
     },
     {
-      "Código": 22,
-      "Cláusula": "CONTABILIDAD"
+      "Código": 54,
+      "Cláusula": "CLÁUSULA DE INGRESOS DESPUÉS DE LA REANUDACIÓN DE LAS OPERAC"
     },
     {
-      "Código": 23,
-      "Cláusula": "NO CANCELACION INDIVIDUAL"
+      "Código": 55,
+      "Cláusula": "CLÁUSULA DE INUNDACIÓN Y ENCENAGAMIENTO EN CENTRALES HIDROEL"
     },
     {
-      "Código": 24,
-      "Cláusula": "PAGO DE PRIMAS"
+      "Código": 56,
+      "Cláusula": "CLAUSULA DE DETERIORO DE MATERIAS PRIMAS PRODUCTOS SEMIACAB"
     },
     {
-      "Código": 25,
-      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS"
+      "Código": 57,
+      "Cláusula": "CLÁUSULA DE DESEMBOLSOS SUPLEMENTARIOS EXCEPTO GASTOS ADICIO"
     },
     {
-      "Código": 27,
-      "Cláusula": "EXCLUSION DE CONTAMINACION POR RADIACT.DEL INST.DE LONDRES"
+      "Código": 58,
+      "Cláusula": "CLÁUSULA DE FALLO DE ABASTECIMIENTO DE ELECTRICIDAD DE LA RE"
     },
     {
-      "Código": 30,
-      "Cláusula": "GASTOS DE VIAJE Y ESTADIA"
+      "Código": 59,
+      "Cláusula": "CLÁUSULA DE DEMORAS EN LA REPARACIÓN"
     },
     {
-      "Código": 32,
-      "Cláusula": "EXTENSION DE VIGENCIA A PRORRATA"
+      "Código": 60,
+      "Cláusula": "CLÁUSULA DE LÍMITES DEL PERÍODO DE INDEMNIZACIÓN SUPERIORES"
     },
     {
-      "Código": 34,
-      "Cláusula": "CL. LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+      "Código": 61,
+      "Cláusula": "CLÁUSULA DE DEDUCIBLE TEMPORAL PROPORCIONAL"
     },
     {
-      "Código": 35,
-      "Cláusula": "CL. DESIGNACION DE BENEFICIARIO ACREEDOR"
+      "Código": 62,
+      "Cláusula": "CLÁUSULA DE SUMA ASEGURADA A BASE DEL PRECIO UNITARIO"
     },
     {
-      "Código": 36,
-      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
+      "Código": 63,
+      "Cláusula": "CLÁUSULA DE PROLONGACIÓN DEL PLAZO DE INTERRUPCIÓN A CONSECU"
     },
     {
-      "Código": 37,
-      "Cláusula": "CL. GARANTIA DE IMPLEMENTACIÓN DE PLA DE CONTINUIDAD DE NEGO"
+      "Código": 64,
+      "Cláusula": "CLÁUSULA DE SINIESTROS EN SERIE (LUCRO CESANTE)"
     },
     {
-      "Código": 38,
-      "Cláusula": "CL. GARANTÍA PARA RIESGOS DIVERSOS"
+      "Código": 65,
+      "Cláusula": "CLÁUSULA DE AMPARO DE PROVEEDORES DISTRIBUIDORES O PROCESAD"
     },
     {
-      "Código": 39,
-      "Cláusula": "SINIESTRALIDAD CL."
+      "Código": 66,
+      "Cláusula": "CLÁUSULA DE EXTENSION DE GASTOS DE VIAJE Y ESTADÍA"
     },
     {
-      "Código": 9001,
-      "Cláusula": " CONDICIONES GENERALES DE LUCRO POR INCENDIO"
+      "Código": 67,
+      "Cláusula": "CLÁUSULA DE HONORARIOS DE AUDITORES REVISORES Y CONTADORES"
+    },
+    {
+      "Código": 68,
+      "Cláusula": "CLÁUSULA DE AMPARO PARA NOMINA POR SEMANAS SOBRE REMUNERACIO"
+    },
+    {
+      "Código": 69,
+      "Cláusula": "CLÁUSULA DE INDEMNIZACIÓN FORMA INGLESA"
+    },
+    {
+      "Código": 70,
+      "Cláusula": "CLÁUSULA DE INDEMNIZACIÓN FORMA AMERICANA"
+    },
+    {
+      "Código": 9002,
+      "Cláusula": "CONDICIONES GENERALES LUCRO CESANTE A CONSECUENCIA DE INCEND"
     }
   ],
   "LCR": [
     {
-      "Código": 29,
-      "Cláusula": "EXCLUSION DE CONTAMINACION POR POR RADIACTIVOS DEL INSTITUTO"
+      "Código": 62,
+      "Cláusula": "PAGO DE PRIMAS"
     },
     {
-      "Código": 32,
-      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+      "Código": 63,
+      "Cláusula": "NOTIFICACION DE SINIESTROS"
     },
     {
-      "Código": 33,
-      "Cláusula": "CL. LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+      "Código": 64,
+      "Cláusula": "ERRORES U OMISIONES"
     },
     {
-      "Código": 34,
-      "Cláusula": "CL. ADHESIÓN"
+      "Código": 65,
+      "Cláusula": "NO CANCELACIÓN INDIVIDUAL"
     },
     {
-      "Código": 35,
-      "Cláusula": "CL. DAÑOS DE MAQUINARIA DURANTE EL PLAZO DE GARANTÍA"
+      "Código": 66,
+      "Cláusula": "AJUSTADORES"
     },
     {
-      "Código": 36,
-      "Cláusula": "CL. COBERTURA POR SUMISTRO DE CORRIENTE AGUA GAS O VAPOR"
+      "Código": 67,
+      "Cláusula": "GASTOS PARA AMINORAR LA PÉRDIDA"
     },
     {
-      "Código": 37,
-      "Cláusula": "CL. COBERTURA DE DESEMBOLSOS SUPLEMENTARIOS EXCEPTO GASTOS A"
+      "Código": 68,
+      "Cláusula": "SINIESTROS EN SERIE (MAQUINARIAS Y/O EQUIPOS)"
     },
     {
-      "Código": 38,
-      "Cláusula": "CL- DESTRUCCIÓN PREVENTIVA- AUTORIDAD CIVIL"
+      "Código": 69,
+      "Cláusula": "PRODUCTO DE OTROS ESTABLECIMIENTOS"
     },
     {
-      "Código": 39,
-      "Cláusula": "CL. DETERIORO DE MATERIAS PRIMAS PRODUCTOS SEMIACABADOS"
+      "Código": 70,
+      "Cláusula": "REEMBOLSO DE PRIMA"
     },
     {
-      "Código": 40,
-      "Cláusula": "C. FALLO DEL ABASTECIMIENTO DE ELECTRICIDADA DE LA RED PUBLI"
+      "Código": 71,
+      "Cláusula": "FACTOR DE PERDIDA"
     },
     {
-      "Código": 41,
-      "Cláusula": "CL. GASTOS DE VIAJE Y ESTADIA"
+      "Código": 72,
+      "Cláusula": "REACONDICIONAMIENTOS"
     },
     {
-      "Código": 42,
-      "Cláusula": "CL ISOTOPOS  RADIACTIVOS"
+      "Código": 73,
+      "Cláusula": "INGRESOS DESPUES DE LA REANUDACION DE LAS OPERACIONES"
     },
     {
-      "Código": 43,
-      "Cláusula": "CL. PROLONGACIÓN DEL PLAZO DE INTERRUPCIÓN A CONSECUENCIA DE"
+      "Código": 74,
+      "Cláusula": "DAÑOS FISICOS EN LA MAQUINARIA ASEGURADA"
     },
     {
-      "Código": 44,
-      "Cláusula": "CL. CARGA POR EXCESO DE DEMANDA DE ENERGIA ELECTRICA"
+      "Código": 75,
+      "Cláusula": "INUNDACIÓN Y ENCENAGAMIENTO EN CENTRALES HIDROELÉCTRICAS"
     },
     {
-      "Código": 45,
-      "Cláusula": "CL. PARA INCENDIO INTERNO EXPLOSIÓN QUIMICA INTERNA E IMPAC"
+      "Código": 76,
+      "Cláusula": "DETERIORO DE MATERIAS PRIMAS PRODUCTOS SEMIACABADOS Y MERCA"
     },
     {
-      "Código": 46,
-      "Cláusula": "CL. MAQUINARIA Y EQUIPOS BAJO TIERRA"
+      "Código": 77,
+      "Cláusula": "DESEMBOLSOS SUPLEMENTARIOS EXCEPTO GASTOS ADICIONALES"
     },
     {
-      "Código": 47,
-      "Cláusula": "CL. PARA DEMORAS EN LA REPARACIÓN"
+      "Código": 78,
+      "Cláusula": "FALLO DE ABASTECIMIENTO DE ELECTRICIDAD DE LA RED PÚBLICA A"
     },
     {
-      "Código": 48,
-      "Cláusula": "CL. CONDICIONES PARA ENSAYOS NO DESTRUCTIVOS DE PRENSAS CIZ"
+      "Código": 79,
+      "Cláusula": "DEMORAS EN LA REPARACION"
     },
     {
-      "Código": 49,
-      "Cláusula": "CL ACLARATORIA DE CONDICIONES  FRANQUICIA TEMPORAL PROPORCIO"
+      "Código": 80,
+      "Cláusula": "LÍMITES DEL PERIODO DE INDEMNIZACION SUPERIORES A 12 MESES"
     },
     {
-      "Código": 50,
-      "Cláusula": "CL. CONDICIONES PARA INSPECCIÓN Y REACONDICIONAMIENTO DE CAL"
+      "Código": 81,
+      "Cláusula": "DEDUCIBLE TEMPORAL PROPORCIONAL"
     },
     {
-      "Código": 51,
-      "Cláusula": "CL PARA LIMITES DE PERIODO DE INDEMINIZACIÓN SUP A 12 MESES"
+      "Código": 82,
+      "Cláusula": "SUMA ASEGURADA A BASE DEL PRECIO UNITARIO"
     },
     {
-      "Código": 52,
-      "Cláusula": "CL. CONDICOINES PARA MOTORES ELECTRICOS Y GENERADORES"
+      "Código": 83,
+      "Cláusula": "PROLONGACION DEL PLAZO DE INTERRUPCION A CONSECUENCIA DE DET"
     },
     {
-      "Código": 53,
-      "Cláusula": "CL. PARA REACONDICIONAMIENTO DE TURBINAS DE VAPOR HIDROELEC"
+      "Código": 84,
+      "Cláusula": "SINIESTROS EN SERIE (LUCRO CESANTE)"
     },
     {
-      "Código": 54,
-      "Cláusula": "CL. PARA SUMA ASEGURADA A BASE DE PRECIO UNITARIO"
+      "Código": 85,
+      "Cláusula": "AMPARO DE PROVEEDORES DISTRIBUIDORES O PROCESADORES"
     },
     {
-      "Código": 55,
-      "Cláusula": "CL. EXCLUSIÓN DE CONTAMINICIÓN POR RADIACTIVA ARMAS QUIMICA"
+      "Código": 86,
+      "Cláusula": "EXTENSION DE GASTOS DE VIAJE Y ESTADÍA"
     },
     {
-      "Código": 56,
-      "Cláusula": "CL. EXCLUSIÓN DE EXPLOSICIOES DE GASES DE HUMO EN CALDERAS"
+      "Código": 87,
+      "Cláusula": "HONORARIOS DE AUDITORES REVISORES Y CONTADORES"
     },
     {
-      "Código": 57,
-      "Cláusula": "CL. EXCLUSIÓN DE INUNDACIONES Y ENCENAGAMIENTO"
+      "Código": 88,
+      "Cláusula": "AMPARO PARA NOMINA POR SEMANAS SOBRE REMUNERACIONES SUELDOS"
     },
     {
-      "Código": 58,
-      "Cláusula": "CL. DE NO CANCELACIÓN INDIVIDUAL"
+      "Código": 89,
+      "Cláusula": "INDEMNIZACION FORMA INGLESA"
     },
     {
-      "Código": 59,
-      "Cláusula": "CL. ENDOSO DE DESIGNACIÓN DE BENEFICIARIO ACREEDOR"
+      "Código": 90,
+      "Cláusula": "INDEMNIZACION FORMA AMERICANA"
     },
     {
-      "Código": 60,
-      "Cláusula": "FORMULARIO"
-    },
-    {
-      "Código": 61,
-      "Cláusula": "CL. GARANTÍA DE IMPLEMENTACIÓN DE UN PLAN DE CONTINUIDAD DE"
-    },
-    {
-      "Código": 9001,
+      "Código": 9002,
       "Cláusula": "CONDICIÓN GENERAL DE PERDIDA DE BENEFICIOS POR ROTURA DE MAQ"
     }
   ],
   "TRC": [
     {
-      "Código": 124,
-      "Cláusula": "EXCLUSION DE CONTAMINACION POR RADIACT.DEL INST.DE LONDRES"
+      "Código": 462,
+      "Cláusula": "CLAUSULA DE DESGINACIÓN DE BIENES"
     },
     {
-      "Código": 127,
-      "Cláusula": "CONTROL DE SUSCRIPCION Y RECLAMOS (REASEGURO)"
+      "Código": 463,
+      "Cláusula": " "
     },
     {
-      "Código": 143,
-      "Cláusula": "MANTENIMIENTO SIMPLE CLAUSULA"
-    },
-    {
-      "Código": 144,
-      "Cláusula": "CL. DE COBERTURA DE PÉRDIDA DE BENEFICIOS  CONSECUENCIA DE U"
-    },
-    {
-      "Código": 145,
-      "Cláusula": "CL. HUELGA MOTIN Y CONMOCIÓN CIVIL"
-    },
-    {
-      "Código": 146,
-      "Cláusula": "CL. ACLARATORIA POR DAÑO SISMICO"
-    },
-    {
-      "Código": 147,
-      "Cláusula": "CLAUSULA DE ADHESION"
-    },
-    {
-      "Código": 148,
-      "Cláusula": "CL. DE CONDICIONES RELATIVAS AL CRONOGRAMA DE AVANCE"
-    },
-    {
-      "Código": 149,
-      "Cláusula": "CL. CONDICOINES RELATIVAS A CABLES SUBTERRANEOS TUBERIAS"
-    },
-    {
-      "Código": 150,
-      "Cláusula": "CLÁUSULA DE COBERTURA AMPLIA DE MANTENIMIENTO"
-    },
-    {
-      "Código": 151,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE BIENES ALMACENADOS FUERA"
-    },
-    {
-      "Código": 152,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE LA VIBRACIÓN ELIMINACIÓN O"
-    },
-    {
-      "Código": 153,
-      "Cláusula": "CL. DE COBERTURA DE OBRAS CIVILES ASEGURADAS  RECIBIDAS O PU"
-    },
-    {
-      "Código": 154,
-      "Cláusula": "CL DE COBERTURA DE PROPIEDAD EXISTENTE O DE PROPIEDAD QUE QU"
-    },
-    {
-      "Código": 155,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE REMOCIÓN DE ESCOMBROS"
-    },
-    {
-      "Código": 156,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE RESPONSABILIDAD CIVIL CRUZADA"
-    },
-    {
-      "Código": 157,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE RIESGO DE DISEÑO"
-    },
-    {
-      "Código": 158,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE SALVAMENTO"
-    },
-    {
-      "Código": 159,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE SINIESTROS EN SERIE"
-    },
-    {
-      "Código": 160,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE TRANSPORTES NACIONALES"
-    },
-    {
-      "Código": 161,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE TRASLADO TEMPORAL"
-    },
-    {
-      "Código": 162,
-      "Cláusula": "CLÁUSULA DE COBERTURA PARA FLETE AÉREO"
-    },
-    {
-      "Código": 163,
-      "Cláusula": "CL DE CONDICIONES RELATIVAS A LA COBERTURA DEL TENDIDO DE TU"
-    },
-    {
-      "Código": 164,
-      "Cláusula": " EXCLUSIÓN DE CONDICIONES RELATIVAS A LA CONTRUCCIÓN DE PRES"
-    },
-    {
-      "Código": 165,
-      "Cláusula": "CL EXCLUSIÓN DE CONDICIONES RELATIVAS A LA REMOCIÓN DE ESCOM"
-    },
-    {
-      "Código": 166,
-      "Cláusula": "CL. DE EXCL. DE CONDICIONES RELATIVAS A LAS CIMENTACIONES PO"
-    },
-    {
-      "Código": 167,
-      "Cláusula": "CL CONDICIONES RELATIVAS A MEDIDAS DE SEGURIDAD EN CASO DE P"
-    },
-    {
-      "Código": 168,
-      "Cláusula": "CL XCLUSIÓN CONDICIONES RELATIVAS A LA CONSTRUCCIÓN DE TÚNEL"
-    },
-    {
-      "Código": 169,
-      "Cláusula": "CL EXCLUSIÓN DE PÉRDIDAS O DAÑOS A COSECHASBOSQUES Y CULTIV"
-    },
-    {
-      "Código": 170,
-      "Cláusula": "CL ACLARATORIA DE OBLIGACIONES A CUMPLIR DE EFECTUARSE LOS T"
-    },
-    {
-      "Código": 171,
-      "Cláusula": "CL OBLIGACIONES RELATIVAS A CAMPAMENTOS Y ALMACENES DE MATER"
-    },
-    {
-      "Código": 172,
-      "Cláusula": "CL ACLARATORIA DE OBLIGACIONES RELATIVAS AL ALMACENAJE"
-    },
-    {
-      "Código": 173,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE REPARACIONES INMEDIATAS"
-    },
-    {
-      "Código": 174,
-      "Cláusula": "CL DE TRABAJOS DE PERFORACIÓN PARA POZOS DE AGUA"
-    },
-    {
-      "Código": 175,
-      "Cláusula": "CLÁUSULA ACLARATORIA PARA DESIGNACIÓN DE BENEFICIARIO ACREED"
-    },
-    {
-      "Código": 176,
-      "Cláusula": "CL DE OBLIGACIONES RELATIVAS A EQUIPO Y MAQUINARIA DE CONSTR"
-    },
-    {
-      "Código": 177,
-      "Cláusula": "CL CONDICIONES RELATIVAS A EQUIPOS EXTINTORES DE INCENDIO Y"
-    },
-    {
-      "Código": 178,
-      "Cláusula": "CL  DE LAS OPERACIONES DE PRUEBA DE MAQUINARIA E INSTALACION"
-    },
-    {
-      "Código": 179,
-      "Cláusula": "CL. PERÍODO DE MANTENIMIENTO SIMPLE"
-    },
-    {
-      "Código": 180,
-      "Cláusula": "FORMULARIO TODO RIESGO CONTRATISTA"
-    },
-    {
-      "Código": 9001,
-      "Cláusula": "CONDICIONES GENERALES TODO RIESGO CONTRATISTA"
-    }
-  ],
-  "TRM": [
-    {
-      "Código": 0,
-      "Cláusula": "CLÁUSULA DE COBERTURA PARA GASTOS ADICIONALES POR HORAS EXTR"
-    },
-    {
-      "Código": 1,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE PÉRDIDAS O DAÑOS CAUSADOS POR HUELG"
-    },
-    {
-      "Código": 2,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE RESPONSABILIDAD CIVIL CRUZADA"
-    },
-    {
-      "Código": 3,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE MANTENIMIENTO"
-    },
-    {
-      "Código": 4,
+      "Código": 464,
       "Cláusula": "CLÁUSULA ACLARATORIA DE ADHESIÓN"
     },
     {
-      "Código": 7,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE GASTOS DE FLETE AÉREO"
+      "Código": 465,
+      "Cláusula": "001 - PÉRDIDAS O DAÑOS CAUSADOS POR HUELGA MOTÍN Y CONMOCIÓ"
     },
     {
-      "Código": 11,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE SINIESTROS EN SERIE"
+      "Código": 466,
+      "Cláusula": "002 - RESPONSABILIDAD CIVIL CRUZADA - COBERTURA"
     },
     {
-      "Código": 13,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE BIENES ALMACENADOS  FUERA DEL SITIO"
+      "Código": 467,
+      "Cláusula": "004 - COBERTURA AMPLIA DE MANTENIMIENTO"
     },
     {
-      "Código": 14,
-      "Cláusula": "CLÁUSULA ACLARATORIA DE AJUSTADORES"
+      "Código": 468,
+      "Cláusula": "005 - CONDICIONES ESPECIALES CONCERNIENTES AL PROGRAMA DE CO"
     },
     {
-      "Código": 19,
-      "Cláusula": "CLÁUSULA DE COBERTURA AMPLIA DE MANTENIMIENTO"
+      "Código": 469,
+      "Cláusula": "006 - COBERTURA PARA GASTOS ADICIONALES POR HORAS EXTRAS TR"
     },
     {
-      "Código": 111,
-      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE CONDICIONES RELATIVAS A LA REMOCION"
+      "Código": 470,
+      "Cláusula": "007 - COBERTURA PARA FLETE AÉREO"
     },
     {
-      "Código": 115,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE RIESGO DE DISEÑO"
+      "Código": 471,
+      "Cláusula": "008 - CONDICIÓN CONCERNIENTE A ESTRUCTURAS EN ZONAS SÍSMICAS"
     },
     {
-      "Código": 121,
-      "Cláusula": "CLÁUSULA DE COBERTURA DE REMOCIÓN DE ESCOMBROS"
+      "Código": 472,
+      "Cláusula": "012 - EXCLUSIÓN DE PÉRDIDAS SINIESTROS Y RESPONSABILIDADES"
     },
     {
-      "Código": 201,
-      "Cláusula": "GARANTIA"
+      "Código": 473,
+      "Cláusula": "013 - BIENES ALMACENADOS FUERA DEL SITIO DE OBRA / MONTAJE M"
     },
     {
-      "Código": 203,
-      "Cláusula": "MAQUINARIA USADA"
+      "Código": 474,
+      "Cláusula": "100 -OPERACIONES DE PRUEBA DE MAQUINARIA E INSTALACIONES"
     },
     {
-      "Código": 204,
-      "Cláusula": "IND.PARA PROCESAMIENTO DE HIDROCARBUROS"
+      "Código": 475,
+      "Cláusula": "101 - CONDICIONES ESPECIALES RELATIVAS A LA CONSTRUCCIÓN DE"
     },
     {
-      "Código": 205,
-      "Cláusula": "IND. PARA PROCESAMIENTO DE HIDROCARBUROS ( II )"
+      "Código": 476,
+      "Cláusula": "102 CONDICIONES - ESPECIALES RELATIVAS A CABLES SUBTERRÁNEOS"
     },
     {
-      "Código": 207,
-      "Cláusula": "CAMPAMENTOS ALMACENES PARA MATERIALES DE CONSTRUCCION Y ARE"
+      "Código": 477,
+      "Cláusula": "103 - EXCLUSIÓN DE PÉRDIDAS O DAÑOS A COSECHAS BOSQUES Y CU"
     },
     {
-      "Código": 208,
-      "Cláusula": "CABLES TUBOS Y TUBERIAS SUBTERRANEAS"
+      "Código": 478,
+      "Cláusula": "104 CONDICIONES ESPECIALES RELATIVAS A LA CONSTRUCCIÓN DE PR"
     },
     {
-      "Código": 212,
-      "Cláusula": "DESCONTAMINACION"
+      "Código": 479,
+      "Cláusula": "106- OBLIGACIONES A CUMPLIR DE EFECTUARSE LOS TRABAJOS DE CO"
     },
     {
-      "Código": 213,
-      "Cláusula": "VASIJAS A PRESION DE REACTOR"
+      "Código": 480,
+      "Cláusula": "107- OBLIGACIONES RELATIVAS A CAMPAMENTOS Y ALMACENES"
     },
+    {
+      "Código": 481,
+      "Cláusula": "108 OBLIGACIONES RELATIVAS EQUIPO Y MAQUINARIA DE CONSTRUCCI"
+    },
+    {
+      "Código": 482,
+      "Cláusula": "109- OBLIGACIÓN RELATIVA AL ALMACENAJE DE MATERIAL DE CONSTR"
+    },
+    {
+      "Código": 483,
+      "Cláusula": "110 -CONDICIONES ESPECIALES RELATIVAS A MEDIDAS DE SEGURIDAD"
+    },
+    {
+      "Código": 484,
+      "Cláusula": "111- CONDICIONES ESPECIALES RELATIVAS A LA REMOCIÓN DE ESCOM"
+    },
+    {
+      "Código": 485,
+      "Cláusula": "112 CONDICIONES ESPECIALES PARA EQUIPOS EXTINTORES DE INCEND"
+    },
+    {
+      "Código": 486,
+      "Cláusula": "113 -TRANSPORTES NACIONALES"
+    },
+    {
+      "Código": 487,
+      "Cláusula": "114 - SINIESTROS EN SERIE"
+    },
+    {
+      "Código": 488,
+      "Cláusula": "115 COBERTURA DEL RIESGO DE DISEÑO"
+    },
+    {
+      "Código": 489,
+      "Cláusula": "116- COBERTURA DE OBRAS CIVILES ASEGURADAS RECIBIDAS O PUEST"
+    },
+    {
+      "Código": 490,
+      "Cláusula": "117- CONDICIONES ESPECIALES PARA LA COBERTURA DEL TENDIDO DE"
+    },
+    {
+      "Código": 491,
+      "Cláusula": "118- TRABAJOS DE PERFORACIÓN PARA POZOS DE AGUA"
+    },
+    {
+      "Código": 492,
+      "Cláusula": "119- COBERTURA DE PROPIEDAD EXISTENTE O DE PROPIEDAD QUE QUE"
+    },
+    {
+      "Código": 493,
+      "Cláusula": "120 -COBERTURA DE LA VIBRACIÓN ELIMINACIÓN O DEL DEBILITAMI"
+    },
+    {
+      "Código": 494,
+      "Cláusula": "121 -CONDICIONES ESPECIALES PARA CIMENTACIONES POR PILOTAJE"
+    },
+    {
+      "Código": 495,
+      "Cláusula": "214 EXCLUSIÓN DE DAÑOS Y PÉRDIDAS POR HUNDIMIENTO Y ASENTAMI"
+    },
+    {
+      "Código": 496,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE SALVAMENTO"
+    },
+    {
+      "Código": 497,
+      "Cláusula": "CLÁUSULA ACLARATORIA PARA DESIGNACIÓN DE BENEFICIARIO ACREED"
+    },
+    {
+      "Código": 498,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE PANDEMIA"
+    },
+    {
+      "Código": 499,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+    },
+    {
+      "Código": 500,
+      "Cláusula": "CLÁUSULA DE REMOCIÓN DE ESCOMBROS"
+    },
+    {
+      "Código": 501,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE LAS OPERACIONES DE PRUEBA DE MAQUINA"
+    },
+    {
+      "Código": 502,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE PÉRDIDA DE BENEFICIOS A CONSECUENCI"
+    },
+    {
+      "Código": 503,
+      "Cláusula": "CLÁUSULA DE COBERTURA EQUIPO Y MAQUINARIA DE CONSTRUCCIÓN"
+    },
+    {
+      "Código": 9002,
+      "Cláusula": "CONDICIONES GENERALES TODO RIESGO CONTRATISTAS"
+    }
+  ],
+  "TRM": [
     {
       "Código": 218,
       "Cláusula": "GASTOS PARA LOCALIZAR FUGAS QUE OCURRAN  DURANTE LA INUNDACI"
     },
     {
-      "Código": 221,
-      "Cláusula": "TRANSPORTES NACIONALES"
+      "Código": 287,
+      "Cláusula": "CLÁUSULA DE REMOCIÓN DE ESCOMBROS DESPUÉS DEL CORRIMIENTO DE"
     },
     {
-      "Código": 234,
-      "Cláusula": "SALVAMENTO"
+      "Código": 288,
+      "Cláusula": "CLÁUSULA BENEFICIARIO ACREEDOR"
     },
     {
-      "Código": 235,
-      "Cláusula": "TRASLADO TEMPORAL"
+      "Código": 289,
+      "Cláusula": "CLÁUSULA DE REPARACIONES INMEDIATAS"
     },
     {
-      "Código": 239,
-      "Cláusula": "CLAUSULA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
+      "Código": 290,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE ADHESIÓN"
     },
     {
-      "Código": 240,
-      "Cláusula": "CL. EVENTOS CUBIERTOS DENTRO DE LAS 72 HORAS"
+      "Código": 291,
+      "Cláusula": "001 PÉRDIDAS O DAÑOS CAUSADOS POR HUELGA MOTÍN Y CONMOCIÓN"
     },
     {
-      "Código": 241,
-      "Cláusula": "CL. BIENES A LA INTEMPERIE"
+      "Código": 292,
+      "Cláusula": "002 - RESPONSABILIDAD CIVIL CRUZADA"
     },
     {
-      "Código": 242,
-      "Cláusula": "CL. INCLUSIÓN DE ELEMENTOS COMBUSTIBLES"
+      "Código": 293,
+      "Cláusula": "003 - COBERTURA DE MANTENIMIENTO"
     },
     {
-      "Código": 243,
-      "Cláusula": "CL. COBERTURA DE MAQUINARIA DE CONSTRUCCIÓN/MONTAJE"
+      "Código": 294,
+      "Cláusula": "004 - COBERTURA AMPLIA DE MANTENIMIENTO"
     },
     {
-      "Código": 244,
-      "Cláusula": "CL. RIESGOS DEL FABRICANTE"
+      "Código": 295,
+      "Cláusula": "005 - CONDICIONES ESPECIALES CONCERNIENTES AL PROGRAMA DE CO"
     },
     {
-      "Código": 245,
-      "Cláusula": "CL. COBERTURA EN EL PERIODO DE GARANTÍA"
+      "Código": 296,
+      "Cláusula": "006 - COBERTURA PARA GASTOS ADICIONALES POR HORAS EXTRAS TR"
     },
     {
-      "Código": 246,
-      "Cláusula": "CL. COBERTURA PARA PROPIEDAD ADYACENTE"
+      "Código": 297,
+      "Cláusula": "007 - COBERTURA PARA FLETE AÉREO"
     },
     {
-      "Código": 247,
-      "Cláusula": "CL.  RELATIVAS A ESTRUCTURAS EN ZONAS SÍSMICAS"
+      "Código": 298,
+      "Cláusula": "008 - CONDICIÓN CONCERNIENTE A ESTRUCTURAS EN ZONAS SÍSMICAS"
     },
     {
-      "Código": 248,
-      "Cláusula": "CL CONDICIONES RELATIVAS AL PROGRAMA DE CONSTRUCCIÓN Y/O MON"
+      "Código": 299,
+      "Cláusula": "009 - EXCLUSIÓN DE PÉRDIDA DAÑO O RESPONSABILIDAD DEBIDOS A"
     },
     {
-      "Código": 249,
-      "Cláusula": "CL.  CONDICIONES PARA EQUIPOS EXTINTORES DE INCENDIOS"
+      "Código": 300,
+      "Cláusula": "010 - CONDICIÓN ESPECIAL CONCERNIENTE A PÉRDIDA DAÑO O RESP"
     },
     {
-      "Código": 250,
-      "Cláusula": "CL. ENDOSO DE BENEFICIARIO ACREEDOR"
+      "Código": 301,
+      "Cláusula": "011 - SINIESTROS EN SERIE"
     },
     {
-      "Código": 251,
-      "Cláusula": "CL. DE EXCLUSIÓN DE CONTAMINACIÓN POR RADIOACTIVA ARMAS QUÍ"
+      "Código": 302,
+      "Cláusula": "012 - EXCLUSIÓN DE PÉRDIDAS SINIESTROS Y RESPONSABILIDADES"
     },
     {
-      "Código": 252,
-      "Cláusula": "CL. EXCLUSIÓN DE PERDIDA DAÑO O RC DEBIDO A CICLÓN AVENIDA"
+      "Código": 303,
+      "Cláusula": "201 - GARANTÍA - COBERTURA CON COSTO"
     },
     {
-      "Código": 253,
-      "Cláusula": "CL. DE EXCL. DE PÉRDIDA DAÑO O RESPONSABILIDAD DEBIDO A TER"
+      "Código": 304,
+      "Cláusula": "013 - BIENES ALMACENADOS FUERA DEL SITIO DE OBRA / MONTAJE M"
     },
     {
-      "Código": 254,
-      "Cláusula": "CL. DE EXCLUSIÓN DE PÉRDIDAS DE O  DAÑO A SIEMBRAS BOSQUES"
+      "Código": 305,
+      "Cláusula": "202 - COBERTURA DE MAQUINARIA DE CONSTRUCCIÓN / MONTAJE"
     },
     {
-      "Código": 255,
-      "Cláusula": "CL. EXCL. DE PERDIDAS Y RESP.  QUE SE ORIGINEN  POR VIENTOS"
+      "Código": 306,
+      "Cláusula": "203 - EXCLUSIONES RELATIVAS A MAQUINARIA USADA"
     },
     {
-      "Código": 256,
-      "Cláusula": "CL. EXCLUSIÓN DE PROBLEMAS DEL NUEVO MILENIO"
+      "Código": 307,
+      "Cláusula": "204 CONDICIÓN ESPECIAL 1 PARA INDUSTRIAS DE PROCESAMIENTO DE"
     },
     {
-      "Código": 257,
-      "Cláusula": "CL. CLÁUSULA DE EXCLUSIÓN POR DAÑOS Y PÉRDIDAS POR HUNDIMIEN"
+      "Código": 308,
+      "Cláusula": "205 CONDICIÓN ESPECIAL 2 PARA INDUSTRIAS DE PROCESAMIENTO DE"
     },
     {
-      "Código": 258,
-      "Cláusula": "CL. EXCLUSIÓN DE DAÑOS RC QUE SE ATRIBUYEN A PERFORACIONES D"
+      "Código": 309,
+      "Cláusula": "206 CONDICIONES ESPECIALES PARA EQUIPOS EXTINTORES DE INCEND"
     },
     {
-      "Código": 259,
-      "Cláusula": "CL. EXCLUSIONES RELATIVAS A MAQUINARIA USADA"
+      "Código": 310,
+      "Cláusula": "207 CAMPAMENTOS Y ALMACENES DE MATERIALES DE CONSTRUCCIÓN"
     },
     {
-      "Código": 260,
-      "Cláusula": "CL. ACLARATORIA DE INDEMNIZACIÓN"
+      "Código": 311,
+      "Cláusula": "208 CONDICIONES ESPECIALES RELATIVAS A CABLES Y TUBERÍAS SUB"
     },
     {
-      "Código": 261,
-      "Cláusula": "CL. CON.RELATIVAS A MEDIDAS DE SEGURIDAD EN CASO DE PRECIPIT"
+      "Código": 312,
+      "Cláusula": "209 CONDICIONES ESPECIALES RELATIVAS A PÉRDIDA DE O DAÑO A S"
     },
     {
-      "Código": 262,
-      "Cláusula": "CL. NO CANCELACIÓN INDIVIDUAL"
+      "Código": 313,
+      "Cláusula": "210 COBERTURA PARA PROPIEDAD ADYACENTE"
     },
     {
-      "Código": 263,
-      "Cláusula": "CL.DE EXCLUSIÓN DE CONDICIONES RELATIVAS A LA REMOCIÓN DE ES"
+      "Código": 314,
+      "Cláusula": "211 INCLUSIÓN DE ELEMENTOS COMBUSTIBLES"
     },
     {
-      "Código": 264,
-      "Cláusula": "CL.  DE CONDICIONES RELATIVAS AL PROGRAMA DE CONSTRUCCIÓN Y/"
+      "Código": 315,
+      "Cláusula": "212 COBERTURA DE GASTOS PARA LA DESCONTAMINACIÓN"
     },
     {
-      "Código": 265,
-      "Cláusula": "CL. RELATIVAS PARA CAMPAMENTOS Y ALMACENES DE MATERIALES DE"
+      "Código": 316,
+      "Cláusula": "213 INCLUSIÓN DE LA VASIJA A PRESIÓN DEL REACTOR CON AGREGAD"
     },
     {
-      "Código": 266,
-      "Cláusula": "CL. DE CONDICIONES PARA EQUIPOS EXTINTORES DE INCENDIOS"
+      "Código": 317,
+      "Cláusula": "214 EXCLUSIÓN DE DAÑOS Y PÉRDIDAS POR HUNDIMIENTO Y ASENTAMI"
     },
     {
-      "Código": 267,
-      "Cláusula": "CL. CONDICIONES RELATIVAS PARA LA COBERTURA DEL TENDIDO DE O"
+      "Código": 318,
+      "Cláusula": "217 CONDICIONES ESPECIALES PARA LA COBERTURA DEL TENDIDO DE"
     },
     {
-      "Código": 268,
-      "Cláusula": "CL. DESIGNACION DE BENEFICARIO ACREEDOR"
+      "Código": 319,
+      "Cláusula": "219 OBLIGACIONES A CUMPLIR EN LA PERFORACIÓN DIRECCIONAL HOR"
     },
     {
-      "Código": 269,
-      "Cláusula": "CL.  CLÁUSULA DE EXCLUSIÓN DE CONTAMINACIÓN POR RADIOACTIVA"
+      "Código": 320,
+      "Cláusula": "220 TRANSPORTES NACIONALES"
     },
     {
-      "Código": 270,
-      "Cláusula": "CL. EXCLUSIÓN DE PERDIDA DAÑO O RESP. DEBIDO A CICLON AVEN"
+      "Código": 321,
+      "Cláusula": "221 CONDICIONES ESPECIALES RELATIVAS A MEDIDAS DE SEGURIDAD"
     },
     {
-      "Código": 271,
-      "Cláusula": "CL. EXCL.  DE PÉRDIDA DAÑO O RESP. DEBIDO A TERREMOTO TEMB"
+      "Código": 322,
+      "Cláusula": "222 EXCLUSIÓN DE DAÑOS PÉRDIDAS O RESPONSABILIDADES QUE SE"
     },
     {
-      "Código": 272,
-      "Cláusula": "CL. DE EXCLUSIÓN DE PÉRDIDAS DE O DAÑO A SIEMBRAS BOSQUES Y"
+      "Código": 323,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE AJUSTADORES"
     },
     {
-      "Código": 273,
-      "Cláusula": "CL. EXCL. DE PÉRDIDAS Y RESPONSABILIDADES QUE SE ORIGINEN PO"
+      "Código": 324,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE SALVAMENTO"
     },
     {
-      "Código": 274,
-      "Cláusula": "CL. DE EXCLUSIÓN DE PROBLEMAS DEL NUEVO MILENIO"
+      "Código": 325,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE ERRORES U OMISIONES DE DESCRIPCIÓN"
     },
     {
-      "Código": 275,
-      "Cláusula": "CL. EXCL.  CLÁUSULA DE EXCLPOR DAÑOS Y PERDIDAS POR HUNDIMI"
+      "Código": 326,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN CONTAMINACIÓN POR RADIOACTIVA ARMAS Q"
     },
     {
-      "Código": 276,
-      "Cláusula": "CL. EXCL. DE DAÑOS PERDIDASO RESP. QUE SE ATRIBUYEN A PERFOR"
+      "Código": 327,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE PROBLEMAS DEL NUEVO MILENIO"
     },
     {
-      "Código": 277,
-      "Cláusula": "CL. ACLARATORIA DE INDEMNIZACIÓN"
+      "Código": 328,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE INDEMNIZACIÓN"
     },
     {
-      "Código": 278,
-      "Cláusula": "CL. RELATIVAS A MEDIDAS DE SEGURIDAD EN CASO DE PRECIPITACIO"
+      "Código": 329,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE NO CANCELACIÓN INDIVIDUAL"
     },
     {
-      "Código": 279,
-      "Cláusula": "CL. OBLIGACIONES RELATIVAS A EQUIPO Y MAQUINARIA DE CONSTRUC"
+      "Código": 330,
+      "Cláusula": "CLÁUSULA DE EXCLUSIÓN DE PANDEMIA"
     },
     {
-      "Código": 280,
-      "Cláusula": "CL. OBLIGACIONES A CUMPLIR EN LA PERFORACIÓN DIRECCIONAL HOR"
+      "Código": 331,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE EVENTOS CUBIERTOS DENTRO DE LAS 72 H"
     },
     {
-      "Código": 281,
-      "Cláusula": "CL. REPARACIONES INMEDIATAS"
+      "Código": 332,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE LIMITACIÓN Y EXCLUSIÓN DE SANCIONES"
     },
     {
-      "Código": 282,
-      "Cláusula": "CL. PARA GASTOS ADICIONALES POR HORAS EXTRAS TRABAJO NOCTUR"
+      "Código": 333,
+      "Cláusula": "CLÁUSULA DE REMOCIÓN DE ESCOMBROS"
     },
     {
-      "Código": 283,
-      "Cláusula": "CL.  DE PÉRDIDA DE BENEFICIOS A CONSECUENCIA DE UN SINIESTRO"
+      "Código": 334,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RIESGO DEL FABRICANTE"
     },
     {
-      "Código": 284,
-      "Cláusula": "CL. EXCLUSIÓN DE PANDEMIA"
+      "Código": 335,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE TRASLADO TEMPORAL"
     },
     {
-      "Código": 285,
-      "Cláusula": "CL. RIESGO DE DISEÑO"
+      "Código": 336,
+      "Cláusula": "CLÁUSULA ACLARATORIA DE OBLIGACIONES RELATIVAS A EQUIPO Y MA"
     },
     {
-      "Código": 9001,
-      "Cláusula": "CONDICIÓN GENERAL TODO RIESGO MONTAJE"
+      "Código": 337,
+      "Cláusula": "CLÁUSULA DE COBERTURA ADICIONAL DE PÉRDIDA DE BENEFICIOS A C"
+    },
+    {
+      "Código": 338,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE RIESGO DE DISEÑO"
+    },
+    {
+      "Código": 339,
+      "Cláusula": "CLÁUSULA DE COBERTURA DE BIENES A LA INTEMPERIE"
+    },
+    {
+      "Código": 9002,
+      "Cláusula": "CONDICIONES GENERALES TODO RIESGO MONTAJE"
     }
   ],
   "CB": [
@@ -5434,10 +4910,6 @@ module.exports={
       "Cláusula": "JHA CL. CANCELACIÓN DE EXTENSIÓN DE GUERRA Y TERRORISMO 168"
     },
     {
-      "Código": 98,
-      "Cláusula": "CL. PAGO PROVISIONAL DE RECLAMO 50/50"
-    },
-    {
       "Código": 99,
       "Cláusula": "CLÁUSULA LPO 438 DE PAGO SIMULTÁNEO (REASEGURO)"
     },
@@ -5494,10 +4966,6 @@ module.exports={
     {
       "Código": 12,
       "Cláusula": "CLAUSULA ELECTRICA AMPLIA"
-    },
-    {
-      "Código": 13,
-      "Cláusula": "ASISTENCIA LEGAL"
     },
     {
       "Código": 15,
@@ -5624,6 +5092,14 @@ module.exports={
       "Cláusula": "CLAUSULA DE GARANTÍA DE RIESGOS DIVERSOS (B)"
     },
     {
+      "Código": 53,
+      "Cláusula": "PRUEBA"
+    },
+    {
+      "Código": 54,
+      "Cláusula": "ANEXO DE ASISTENCIAS SUIZA HOGAR"
+    },
+    {
       "Código": 9002,
       "Cláusula": "CONDICION GENERAL MULTIRIESGO HOGAR"
     }
@@ -5726,10 +5202,6 @@ module.exports={
       "Cláusula": "CLÁUSULA ACLARATORIA DE ERRORES U OMISIONES"
     },
     {
-      "Código": 662,
-      "Cláusula": "CLÁUSULA DE AMPLIACION DE RAYO - DADA DE BAJA"
-    },
-    {
       "Código": 663,
       "Cláusula": "CLÁUSULA ACLARATORIA DE AJUSTADORES"
     },
@@ -5755,7 +5227,7 @@ module.exports={
     },
     {
       "Código": 9006,
-      "Cláusula": "PÓLIZA DE FIDELIDAD Y RIESGOS FINANCIEROS PARA INSTITUCIONES"
+      "Cláusula": "CONDICIONES GENERALES FIDELIDAD Y RIESGOS FINANCIEROS PARA I"
     }
   ]
 }
