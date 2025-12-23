@@ -4,29 +4,23 @@ const sizeInput = document.getElementById("tablesize");
 const textArea = document.getElementById("texto");
 const clearBtn = document.getElementById("clear-button");
 
-function normalizeCurrency(str) {
-  if (!str) return str;
+const MIN_GAP = 2;
 
-  const match = str.match(/\$\s*([\d.,]+)/);
-  if (!match) return str;
-
-  return `$ ${match[1]}`;
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
-function wrapLineAtSpaces(line, limit) {
-  const parts = [];
-  let s = line.trimEnd();
-
-  while (s.length > limit) {
-    let cut = s.lastIndexOf(" ", limit);
-    if (cut <= 0) cut = limit;
-
-    parts.push(s.slice(0, cut).trimEnd());
-    s = s.slice(cut).trimStart();
-  }
-
-  parts.push(s);
-  return parts;
+function normalizeCurrency(str) {
+  if (!str) return str;
+  const s = String(str).replace(/\u00A0/g, " ").trim();
+  const m = s.match(/\$\s*([0-9][0-9.,]*)/);
+  if (!m) return s;
+  return `$ ${m[1]}`;
 }
 
 function parseTsv(text) {
@@ -59,7 +53,7 @@ function parseTsv(text) {
       if (ch === "\r" && text[i + 1] === "\n") i++;
       row.push(normalizeCurrency(cell.trim()));
       cell = "";
-      if (row.some(v => v.length > 0)) rows.push(row);
+      if (row.some(v => String(v).trim().length > 0)) rows.push(row);
       row = [];
       continue;
     }
@@ -68,7 +62,7 @@ function parseTsv(text) {
   }
 
   row.push(normalizeCurrency(cell.trim()));
-  if (row.some(v => v.length > 0)) rows.push(row);
+  if (row.some(v => String(v).trim().length > 0)) rows.push(row);
 
   const colCount = Math.max(0, ...rows.map(r => r.length));
   for (const r of rows) while (r.length < colCount) r.push("");
@@ -76,33 +70,91 @@ function parseTsv(text) {
   return { rows, colCount };
 }
 
-function wrapRows(rows, colCount, limit) {
+function wrapLineAtSpaces(line, limit) {
+  const parts = [];
+  let s = String(line ?? "").trim();
+
+  if (s.length === 0) return [""];
+
+  while (s.length > limit) {
+    let cut = s.lastIndexOf(" ", limit);
+    if (cut <= 0) cut = limit;
+
+    parts.push(s.slice(0, cut).trimEnd());
+    s = s.slice(cut).trimStart();
+  }
+
+  parts.push(s);
+  return parts;
+}
+
+function setupLongestLens(rows, colCount) {
+  const longestLens = new Array(colCount).fill(0);
+
+  for (const r of rows) {
+    for (let c = 0; c < colCount; c++) {
+      const v = String(r[c] ?? "").trim();
+      const lines = v.split(/\r?\n/);
+      for (const ln of lines) longestLens[c] = Math.max(longestLens[c], ln.length);
+    }
+  }
+
+  for (let c = 0; c < colCount; c++) longestLens[c] = Math.max(1, longestLens[c]);
+  return longestLens;
+}
+
+
+function calcSequentialLimit(totalWidth, colCount, longestLens) {
+  const glob = Math.floor(totalWidth / colCount);
+
+  let sum = 0;
+  let nExceeding = 0;
+
+  for (const w of longestLens) {
+    if (w <= glob) sum += (glob - w);
+    else nExceeding += 1;
+  }
+
+  if (nExceeding === 0) return Math.max(2, glob);
+
+  const limit =
+    glob +
+    Math.floor(sum / nExceeding) -
+    Math.ceil((colCount - 1) / nExceeding);
+
+  return Math.max(2, limit);
+}
+
+
+function wrapRowsNoRepeat(rows, colCount, colWidths) {
   const out = [];
 
   for (const row of rows) {
-    const chunks = row.map(cell => {
-      const value = cell ?? "";
+    const chunks = row.map((cell, c) => {
+      const value = String(cell ?? "");
       if (value === "") return [""];
 
       const logicalLines = value.split(/\r?\n/);
       const parts = [];
 
-      for (const ln of logicalLines) {
-        if (ln.length === 0) {
+      for (const ln0 of logicalLines) {
+        const ln = String(ln0);
+        if (ln.trim().length === 0) {
           parts.push("");
           continue;
         }
-        parts.push(...wrapLineAtSpaces(ln, limit));
+        parts.push(...wrapLineAtSpaces(ln, colWidths[c]));
       }
 
       return parts.length ? parts : [""];
     });
 
-    const height = Math.max(...chunks.map(c => c.length));
+    const height = Math.max(...chunks.map(a => a.length));
+
     for (let h = 0; h < height; h++) {
-      const newRow = new Array(colCount);
+      const newRow = new Array(colCount).fill("");
       for (let c = 0; c < colCount; c++) {
-        newRow[c] = chunks[c]?.[h] ?? "";
+        newRow[c] = chunks[c][h] ?? "";
       }
       out.push(newRow);
     }
@@ -111,35 +163,97 @@ function wrapRows(rows, colCount, limit) {
   return out;
 }
 
-function colWidths(rows, colCount) {
+function usedWidthsFromWrapped(wrapped, colCount) {
   const widths = new Array(colCount).fill(0);
-  for (const r of rows) {
+  for (const r of wrapped) {
     for (let c = 0; c < colCount; c++) {
-      widths[c] = Math.max(widths[c], (r[c] ?? "").length);
+      widths[c] = Math.max(widths[c], String(r[c] ?? "").length);
     }
   }
+  for (let c = 0; c < colCount; c++) widths[c] = Math.max(1, widths[c]);
   return widths;
 }
 
-function computeGap(totalWidth, widths) {
-  const cols = widths.length;
-  if (cols <= 1) return 1;
-
-  const used = widths.reduce((a, b) => a + b, 0);
-  const remaining = totalWidth - used;
-  return Math.max(1, Math.floor(remaining / (cols - 1)));
-}
-
-function renderTable(rows, widths, gap) {
+function renderTable(wrapped, colWidths, gap) {
   const sep = " ".repeat(gap);
-  return rows
+  const cols = colWidths.length;
+
+  return wrapped
     .map(r =>
       r.map((cell, i) => {
-        const s = cell ?? "";
-        return i === widths.length - 1 ? s : s.padEnd(widths[i], " ");
+        const s = String(cell ?? "");
+        return i === cols - 1 ? s : s.padEnd(colWidths[i], " ");
       }).join(sep)
     )
     .join("\n");
+}
+
+
+
+function layoutMaxSpace(rows, colCount, totalWidth) {
+  const longestLens = setupLongestLens(rows, colCount);
+
+  const widthBudgetForCols = totalWidth - MIN_GAP * (colCount - 1);
+  if (widthBudgetForCols <= colCount) {
+    const tiny = new Array(colCount).fill(1);
+    const wrapped = wrapRowsNoRepeat(rows, colCount, tiny);
+    return { wrapped, colWidths: tiny, gap: MIN_GAP };
+  }
+
+  let limit = calcSequentialLimit(widthBudgetForCols, colCount, longestLens);
+
+
+  let colWidths = longestLens.map(w => Math.min(w, limit));
+
+  let wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
+  let used = usedWidthsFromWrapped(wrapped, colCount);
+
+
+  let slack = totalWidth - used.reduce((a, b) => a + b, 0) - MIN_GAP * (colCount - 1);
+
+
+  let guard = 0;
+  while (slack > 0 && guard < 20000) {
+    guard++;
+
+
+    let grew = false;
+    for (let c = 0; c < colCount && slack > 0; c++) {
+      if (colWidths[c] < longestLens[c]) {
+        colWidths[c] += 1;
+        slack -= 1;
+        grew = true;
+      }
+    }
+
+
+    if (!grew) break;
+
+
+    if (guard % 20 === 0) {
+      wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
+      used = usedWidthsFromWrapped(wrapped, colCount);
+      slack = totalWidth - used.reduce((a, b) => a + b, 0) - MIN_GAP * (colCount - 1);
+    }
+  }
+
+
+  wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
+  used = usedWidthsFromWrapped(wrapped, colCount);
+
+
+  const usedCols = used.reduce((a, b) => a + b, 0);
+  const remaining = Math.max(0, totalWidth - usedCols);
+  const baseGap = MIN_GAP;
+  const extraSlack = Math.max(0, remaining - baseGap * (colCount - 1));
+
+  const extraPerGap = colCount > 1 ? Math.floor(extraSlack / (colCount - 1)) : 0;
+  const gap = baseGap + extraPerGap;
+
+
+  const finalWidths = used;
+
+  return { wrapped, colWidths: finalWidths, gap };
 }
 
 formatBtn.addEventListener("click", () => {
@@ -155,20 +269,8 @@ formatBtn.addEventListener("click", () => {
     return;
   }
 
-  let limit = Math.max(4, Math.floor(totalWidth / colCount) - 1);
-
-  let wrapped = wrapRows(rows, colCount, limit);
-  let widths = colWidths(wrapped, colCount);
-  let gap = computeGap(totalWidth, widths);
-
-  for (let tries = 0; tries < 50 && gap < 1; tries++) {
-    limit = Math.max(2, limit - 1);
-    wrapped = wrapRows(rows, colCount, limit);
-    widths = colWidths(wrapped, colCount);
-    gap = computeGap(totalWidth, widths);
-  }
-
-  const tableText = renderTable(wrapped, widths, gap);
+  const { wrapped, colWidths, gap } = layoutMaxSpace(rows, colCount, totalWidth);
+  const tableText = renderTable(wrapped, colWidths, gap);
 
   resultDiv.innerHTML = `
     <div>
@@ -182,12 +284,3 @@ clearBtn.addEventListener("click", () => {
   textArea.value = "";
   resultDiv.textContent = "";
 });
-
-function escapeHtml(str) {
-  return str
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
