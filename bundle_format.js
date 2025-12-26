@@ -28,17 +28,26 @@ function parseTsv(text) {
   let row = [];
   let cell = "";
   let inQuotes = false;
+  let cellStart = true; // NEW: are we at the start of a cell?
 
   for (let i = 0; i < text.length; i++) {
     const ch = text[i];
 
-    if (ch === '"') {
+    // Only enter/exit quoted-mode if the quote begins a cell
+    if (ch === '"' && cellStart) {
+      inQuotes = true;
+      cellStart = false;
+      continue;
+    }
+
+    // If we are in quoted-mode, allow "" to mean a literal "
+    if (inQuotes && ch === '"') {
       const next = text[i + 1];
-      if (inQuotes && next === '"') {
+      if (next === '"') {
         cell += '"';
         i++;
       } else {
-        inQuotes = !inQuotes;
+        inQuotes = false; // closing quote
       }
       continue;
     }
@@ -46,6 +55,7 @@ function parseTsv(text) {
     if (!inQuotes && ch === "\t") {
       row.push(normalizeCurrency(cell.trim()));
       cell = "";
+      cellStart = true;
       continue;
     }
 
@@ -53,12 +63,15 @@ function parseTsv(text) {
       if (ch === "\r" && text[i + 1] === "\n") i++;
       row.push(normalizeCurrency(cell.trim()));
       cell = "";
+      cellStart = true;
+
       if (row.some(v => String(v).trim().length > 0)) rows.push(row);
       row = [];
       continue;
     }
 
     cell += ch;
+    cellStart = false;
   }
 
   row.push(normalizeCurrency(cell.trim()));
@@ -242,18 +255,53 @@ function layoutMaxSpace(rows, colCount, totalWidth) {
   used = usedWidthsFromWrapped(wrapped, colCount);
 
 
-  const usedCols = used.reduce((a, b) => a + b, 0);
-  const remaining = Math.max(0, totalWidth - usedCols);
   const baseGap = MIN_GAP;
-  const extraSlack = Math.max(0, remaining - baseGap * (colCount - 1));
+
+  // Start with minimum gap (don’t inflate it yet)
+  let gap = baseGap;
+
+  // Hard clamp: last column must fit in totalWidth given other columns + gaps
+  const last = colCount - 1;
+
+  // Recompute available width for last column based on current used widths
+  // (use "used" for other columns, because that’s what you actually render)
+  const otherColsWidth = used
+    .slice(0, last)
+    .reduce((a, b) => a + b, 0);
+
+  // Max width the last column is allowed to occupy on a line
+  let maxLastWidth = totalWidth - otherColsWidth - gap * (colCount - 1);
+  maxLastWidth = Math.max(1, maxLastWidth);
+
+  // If last column would exceed, force wrap by shrinking it
+  if (colWidths[last] > maxLastWidth) {
+    colWidths[last] = maxLastWidth;
+
+    wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
+    used = usedWidthsFromWrapped(wrapped, colCount);
+  }
+
+  // Now (optionally) distribute extra space into the gap, BUT never break width constraint
+  const usedCols = used.reduce((a, b) => a + b, 0);
+  const remaining = totalWidth - usedCols - baseGap * (colCount - 1);
+  const extraSlack = Math.max(0, remaining);
 
   const extraPerGap = colCount > 1 ? Math.floor(extraSlack / (colCount - 1)) : 0;
-  const gap = baseGap + extraPerGap;
+  gap = baseGap + extraPerGap;
 
+  // Re-check constraint after increasing gap:
+  // increasing gap reduces available width for last col, so clamp again if needed.
+  maxLastWidth = totalWidth - otherColsWidth - gap * (colCount - 1);
+  maxLastWidth = Math.max(1, maxLastWidth);
 
-  const finalWidths = used;
+  if (colWidths[last] > maxLastWidth) {
+    colWidths[last] = maxLastWidth;
+    wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
+    used = usedWidthsFromWrapped(wrapped, colCount);
+  }
 
-  return { wrapped, colWidths: finalWidths, gap };
+  return { wrapped, colWidths: used, gap };
+
 }
 
 formatBtn.addEventListener("click", () => {
