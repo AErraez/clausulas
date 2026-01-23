@@ -1,83 +1,271 @@
+/* ---------- GLOBAL ---------- */
+/* ---------- NAVBAR ---------- */
+
+.app-nav {
+    background-color: #f1f3f5; /* slightly darker than main */
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    gap: 0.25rem;
+}
+
+
+.app-nav .nav-link {
+    color: #495057;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.app-nav .nav-link:hover {
+    background-color: #e7f0ff;
+    color: #3b5bdb;
+}
+
+.app-nav .nav-link.active {
+    background-color: #3b5bdb;
+    color: #ffffff;
+}
+
+
+body {
+    background: linear-gradient(180deg, #e6e8f0, #dfe2ec);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 2rem !important;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+/* ---------- NAV ---------- */
+
+.nav-pills .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #3b5bdb;
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+
+label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+select,
+textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    max-width: 480px;
+}
+
+textarea:focus,
+select:focus {
+    border-color: #3b5bdb;
+    box-shadow: 0 0 0 0.2rem rgba(59, 91, 219, 0.15);
+}
+
+/* ---------- ACTION BUTTONS ---------- */
+
+.grey-but {
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-weight: 500;
+}
+
+.grey-but:hover {
+    background-color: #e9ecef;
+}
+
+/* ---------- CLAUSE BUTTONS ---------- */
+
 .claus-but {
-    border: solid ;
-    margin: auto;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    text-align: center;
+    border: 1px solid #adb5bd;
+    background-color: #f8f9fa;
+    padding: 0.75rem 0.5rem !important;
     font-size: 0.75rem !important;
-    transition: all 0.25s;
-    border-radius: 5px;
+    border-radius: 8px;
     min-width: 4vw;
+    transition: all 0.2s ease-in-out;
 }
 
-.review-but{
-  
-    transition: all 0.25s;
+.claus-but:hover {
+    background-color: #e7f0ff;
+    border-color: #3b5bdb;
 }
 
-.review-but:hover{
-    cursor: pointer;
-    box-shadow: inset;
-    border-color:rgb(29, 95, 203,0.5);
-    background-color: rgba(56, 42, 181, 0.333);
-}
-.claus-but:hover{
-    cursor: pointer;
-    box-shadow: inset;
-    border-color:rgb(29, 95, 203);
-    background-color: rgb(226, 229, 234);
+.claus-but.active {
+    background-color: #3b5bdb;
+    color: #ffffff;
+    border-color: #3b5bdb;
 }
 
-.rev-active{
-    border-color:rgb(29, 95, 203);
-    background-color: rgba(56, 42, 181, 0.333);
-    transition: all 0.25s;
+.claus-but.active:hover {
+    background-color: #364fc7 !important;
 }
 
-.rev-active:hover{
-    border-color: rgb(210, 18, 18);
-    background-color: rgba(226, 21, 21, 0.332);
-}
-.active{
-    border-color:rgb(29, 95, 203);
-    background-color: rgba(56, 42, 181, 0.333);
-}
-.active:hover{
-    border-color:rgb(29, 95, 203);
-    background-color: rgba(56, 42, 181, 0.333) !important;
+/* ---------- RESULTS ROW ---------- */
+
+#resultado > .row {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
-p {
-    margin: 0 !important;
+/* ---------- REVIEW / SEARCH ---------- */
+
+.review-but {
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    transition: background-color 0.15s, border-color 0.15s;
 }
+
+.review-but:hover {
+    background-color: #e7f0ff;
+    border-color: #3b5bdb;
+}
+
+
+.rev-active {
+    width: 100%;
+    background-color: #3b5bdb;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+}
+
+.rev-active:hover {
+    background-color: #e03131;
+}
+
+/* ---------- SCROLL PANELS ---------- */
 
 .scroll {
     overflow-y: auto;
     height: 450px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
 }
 
-.grey-but {
-    transition: all 0.25s;
-}
+/* ---------- CODE OUTPUT ---------- */
 
-.grey-but:hover {
-    background-color: rgb(208, 206, 206);
-}
-
-select {
-    width: 30rem !important
-}
-
-main {
-    background-color: rgb(255, 255, 255);
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+#clausulas {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Courier Prime", monospace;
+    font-size: 0.85rem;
 }
-body {
-    background-color: rgb(221 222 231);
+
+#selectable {
+    cursor: pointer;
 }
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+    color: #495057;
+}
+
+/* === REVIEW PANELS LAYOUT FIX === */
+
+#check .col-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#check .scroll {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+/* Remove nested scrollbar feeling */
+#manual_search_result {
+    margin-top: 1rem;
+}
+
+/* Titles inside panels */
+#check h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+#unselected p {
+    font-size: 0.9rem;
+    color: #495057;
+    padding-left: 0.5rem;
+}
+
+#unselected:empty::after {
+    content: "No hay cláusulas sin seleccionar.";
+    color: #868e96;
+    font-style: italic;
+}
+
+
+
+#check .row {
+    column-gap: 0.5rem;
+}
+
+.rev-active {
+    width: 100%;
+    background-color: #3b5bdb;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    border: none;
+    text-align: left;
+}
+
+.rev-active:hover {
+    background-color: #dc4747;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+
+#searchclaus {
+    min-height: 2.5rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+
 
 .sise_font {
     font-family: "Courier Prime", monospace;

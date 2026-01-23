@@ -23,7 +23,7 @@
     </header>
     
     <main class="container-fluid py-3">
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills app-nav mb-4">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Cláusulas</a>
             </li>
@@ -33,7 +33,7 @@
         </ul>
         <div class="row py-3">
             <label for="ramo">Selecciona un ramo:</label> 
-            <select name="ramo" id="ramo">
+            <select name="ramo" id="ramo" class="form-select w-auto">
                 <option value="VH">Todo Riesgo Vehículos</option>
                 <option value="IN">Incendio</option>
                 <option value="MI">Multiriesgo Industrial </option>
@@ -97,7 +97,7 @@
                     <h2 class="py-2">Buscar</h2>
                     <label for="searchclaus">Ingrese cláusula a buscar:</label>
                     
-                    <textarea id="searchclaus" name="searchclaus" value="" rows="1" cols="45"></textarea>
+                    <textarea id="searchclaus" name="searchclaus" class="form-control" value="" rows="1" cols="45"></textarea>
                     <div id="manual_search_result" class="row"></div>
 
                 </div>

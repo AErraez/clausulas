@@ -5409,7 +5409,7 @@ filterbutton.addEventListener("input", (event) => {
   filteredclaus = filteredclaus.slice(0, 10);
   
   filteredclaus.forEach((elem) => {
-    manual_search_result.innerHTML += `<div class="py-2 col-12"><button class="review-but" value=${elem["Código"]}->${elem["Código"]} - ${elem["Cláusula"]}</button></div>`;
+    manual_search_result.innerHTML += `<div class="py-1 col-12"><button class="review-but" value=${elem["Código"]}->${elem["Código"]} - ${elem["Cláusula"]}</button></div>`;
   });
 
 
@@ -5465,7 +5465,7 @@ reviewbutt.addEventListener("click", (event) => {
     }
   }
   unselectedarr.forEach((unselected) => {
-    unselecteddiv.innerHTML += `<div class="row py-2"><p>- ${unselected}</p></div>`;
+    unselecteddiv.innerHTML += `<div class="row py-1"><p>- ${unselected}</p></div>`;
   });
 
 
