@@ -28,7 +28,7 @@ formatBtn.addEventListener("click", () => {
     <div>
       <button class="grey-but" style="width:10%" onclick="Copy('copyable')">Copiar</button>
     </div>
-    <pre id="copyable" class="sise_font border border-dark" style="white-space: pre-wrap; max-width: 97ch!important; ">${outputText}</pre>
+    <pre id="copyable" class="sise_font border border-dark" style="white-space: pre-wrap; max-width: 97ch!important; max-height: 50ch!important;">${outputText}</pre>
   `;
 });
 
