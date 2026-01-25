@@ -273,3 +273,100 @@ footer {
     font-style: normal;
   }
   
+  /* Table overall */
+.table {
+  font-size: 0.9rem;
+}
+
+/* Header styling */
+.table thead th {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Checkbox column */
+.table th:first-child,
+.table td:first-child {
+  width: 80px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Perfect checkbox centering */
+.table input[type="checkbox"] {
+  margin: 0;
+  transform: scale(1.1);
+}
+
+/* Body cells */
+.table tbody td {
+  vertical-align: middle;
+}
+
+/* Improve long text readability */
+.table td:nth-child(3),
+.table td:nth-child(4) {
+  max-width: 320px;
+  white-space: normal;
+}
+
+/* Subtle hover (very Excel-like) */
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table-container {
+  max-height: 450px;          /* adjust as needed */
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+}
+
+/* Keep header visible while scrolling */
+.table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8f9fa;
+  z-index: 2;
+}
+
+/* Prevent column misalignment */
+.table {
+  margin-bottom: 0;
+}
+
+/* Optional: nicer scrollbar (Chrome/Edge) */
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  border-radius: 4px;
+}
+
+.excel-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid #dee2e6;
+    max-height: 60vh;
+  overflow-y: auto;
+}
+
+.excel-table-container table {
+  width: max-content; /* allows table to grow horizontally */
+  white-space: nowrap;
+}
+
+#excelTable th:first-child,
+#excelTable td:first-child {
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  min-width: 70px;
+  font-weight: bold;
+}
+
+#excelTable thead th:first-child {
+  z-index: 3;
+}
