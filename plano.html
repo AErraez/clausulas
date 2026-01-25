@@ -28,13 +28,13 @@
               <a class="nav-link"  href="./index.html">Cláusulas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="table.html">Excel a SISE</a>
+              <a class="nav-link"  href="table.html">Excel a SISE</a>
             </li>
                         <li class="nav-item">
               <a class="nav-link"  href="slip.html">Formato Slip</a>
             </li>
                                     <li class="nav-item">
-              <a class="nav-link"  href="plano.html">Archivo Plano</a>
+              <a class="nav-link" aria-current="page" href="plano.html">Archivo Plano</a>
             </li>
         </ul>
 
@@ -46,7 +46,7 @@
             <textarea id="texto" name="texto" rows="10" cols="50"></textarea>
                         <label for="first_item">Ingrese el # del primer ítem:</label>
             <div>
-                <input type="number" id="first_item" name="tablesize" min="1" value="3">
+                <input type="number" id="first_item" name="tablesize" min="1" value="2">
             </div>
         </div>
 
@@ -56,24 +56,7 @@
 
         <div id="resultado" class="row justify-content-center py-3">
 
-<div class="table-responsive">
-  <table class="table table-bordered table-sm" id="excelTable">
-    <thead class="table-light">
-      <tr>
-        <th>Columna 1</th>
-        <th>Columna 2</th>
-        <th>Columna 3</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td contenteditable="true"></td>
-        <td contenteditable="true"></td>
-        <td contenteditable="true"></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
 
 
         </div>
@@ -95,40 +78,6 @@ function Copy(divid) {
 }
 
 </script>
-<script>
-document
-  .getElementById("excelTable")
-  .addEventListener("paste", function (e) {
-    const cell = e.target.closest("td");
-    if (!cell) return;
 
-    e.preventDefault();
-
-    const text = e.clipboardData.getData("text/plain");
-    const rows = text.trim().split(/\r?\n/);
-    const startRow = cell.parentElement.rowIndex - 1; // tbody index
-    const startCol = cell.cellIndex;
-
-    const tbody = this.tBodies[0];
-
-    rows.forEach((rowText, r) => {
-      const cols = rowText.split("\t");
-
-      let row = tbody.rows[startRow + r];
-      if (!row) {
-        row = tbody.insertRow();
-        for (let i = 0; i < this.tHead.rows[0].cells.length; i++) {
-          const td = row.insertCell();
-          td.contentEditable = "true";
-        }
-      }
-
-      cols.forEach((value, c) => {
-        const td = row.cells[startCol + c];
-        if (td) td.textContent = value;
-      });
-    });
-  });
-</script>
 
 </main></body></html>

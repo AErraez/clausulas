@@ -347,7 +347,6 @@ footer {
 .excel-table-container {
   max-width: 100%;
   overflow-x: auto;
-  border: 1px solid #dee2e6;
     max-height: 60vh;
   overflow-y: auto;
 }
@@ -369,4 +368,15 @@ footer {
 
 #excelTable thead th:first-child {
   z-index: 3;
+}
+
+.table-container,
+.excel-table-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#excelTable, #totalsTable {
+  margin-left: auto;
+  margin-right: auto;
 }

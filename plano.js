@@ -3,10 +3,54 @@ const resultDiv = document.getElementById("resultado");
 const textArea = document.getElementById("texto");
 const clearBtn = document.getElementById("clear-button");
 
-const columns=['ITEM','COD_RAMO','RAMO','COD_SUB_RAMO','SUB_RAMO','COD_OBJETO','OBJETO',
-                'COD_AMPARO','AMPARO','COD_CATEGORIA','CATEGORIA','VALOR_DECLARADO','SUMA_ASEGURADA',
-                'TASA','%','AJUSTE_PRIMA','RESP_MAXIMA','LAA','FACULTADO','PRIMER_RIESGO','AJUSTE',
-                'DEDUCIBLES','VALOR','MINIMO','MINIMO2','ACUM_PRIMA','ACUM_SUMA','IMPRIME']
+const finalHeaders = [
+  "1. Item",
+  "2. Cod Ramo",
+  "3. Ramo",
+  "4. Cod Sub Ramo",
+  "5. Sub Ramo",
+  "6. Cod Obj del Seg",
+  "7. Obj del Seg",
+  "8. Cod Amparo",
+  "9. Amparo",
+  "10. Cod Categoría",
+  "11. Categoría",
+  "12. Valor Declarado",
+  "13. Suma Asegurada",
+  "14. Tasa",
+  "15. % - %o",
+  "16. Ajuste de prima",
+  "17. Responsabilidad Máxima",
+  "18. Limite Agregado Anual",
+  "19. Debe Facultar?",
+  "20. A Primer Riesgo",
+  "21. Ajuste",
+  "22. Deducibles",
+  "23. Valor",
+  "24. Mínimo",
+  "25. Mínimo",
+  "26. Acum. Prima Total",
+  "27. Acum. Suma Total",
+  "28. Se imprime"
+];
+
+
+function createInstructionBox({ title, text, type = "info", icon = "ℹ️" }) {
+  const box = document.createElement("div");
+  box.className = `alert alert-${type} mb-3`;
+
+  const strong = document.createElement("strong");
+  strong.textContent = `${icon} ${title}`;
+  box.appendChild(strong);
+
+  const p = document.createElement("div");
+  p.className = "mt-1";
+  p.textContent = text;
+  box.appendChild(p);
+
+  return box;
+}
+
 
 function parseFlexibleNumber(input) {
   if (typeof input !== "string") return NaN;
@@ -161,8 +205,8 @@ if (rows[0][0]=='1. Item') { // only splice array when item is found
 }
 
   // indices we want (0-based)
-  const pickedIndexes = [4, 6, 8, 12, 25, 26, 27];
-  const pickedHeaders=['RAMO','OBJETO','AMPARO','SUMA_ASEGURADA','ACUM_PRIMA','ACUM_SUMA','IMPRIME']
+  const pickedIndexes = [4, 6, 8, 12,18, 25, 26, 27];
+  const pickedHeaders=['RAMO','OBJETO','AMPARO','SUMA_ASEGURADA','FACULTADO','ACUM_PRIMA','ACUM_SUMA','IMPRIME']
 
   // create table
   const table = document.createElement("table");
@@ -216,9 +260,24 @@ rows.forEach((row, rowIndex) => {
 
 
   table.appendChild(tbody);
-const label = document.createElement("label");
-label.textContent = "Seleccione únicamente los objetos asegurados:";
-resultDiv.appendChild(label);
+resultDiv.appendChild(
+  createInstructionBox({
+    title: "Seleccione los objetos asegurados",
+    text: "Marque únicamente los objetos que deben recibir valores. Los no seleccionados se tratarán como amparos.",
+    type: "primary",
+    icon: "🧾"
+  })
+);
+
+resultDiv.appendChild(
+  createInstructionBox({
+    title: "Verifique el campo IMPRIME",
+    text: "Antes de continuar, asegúrese de que todos los objetos a imprimir tengan el valor IMPRIME en -1.",
+    type: "warning",
+    icon: "⚠️"
+  })
+);
+
 
 const container = document.createElement("div");
 container.className = "table-container my-3";
@@ -279,10 +338,7 @@ const totalHeaders = objetos.map(o => `${o[4]}-${o[6]}`);
 const totalsTable = createTotalsTable(totalHeaders);
 
 // ⬆️ totals first
-const totalsContainer = document.createElement("div");
-totalsContainer.className = "excel-table-container mb-2";
-totalsContainer.appendChild(totalsTable);
-resultDiv.appendChild(totalsContainer);
+
 
 
 
@@ -320,7 +376,27 @@ const excelContainer = document.createElement("div");
 excelContainer.className = "excel-table-container my-3";
 
 // put table inside container
+resultDiv.appendChild(
+  createInstructionBox({
+    title: "Pegue valores desde Excel",
+    text: "Haga clic en una celda y pegue los valores correspondientes a cada objeto asegurado. Puede pegar múltiples filas y columnas como en Excel.",
+    type: "success",
+    icon: "📋"
+  })
+);
+
+resultDiv.appendChild(
+  createInstructionBox({
+    title: "Importante:",
+    text: "Las celdas vacías o que contengan texto serán interpretadas como 0.",
+    type: "warning",
+    icon: "⚠️"
+  })
+);
+
 excelContainer.appendChild(excelTable);
+
+
 recalcTotals(excelTable, totalsTable);
 
 excelTable.addEventListener("blur", (e) => {
@@ -336,12 +412,32 @@ excelTable.addEventListener("blur", (e) => {
 
 // append container instead of table
 resultDiv.appendChild(excelContainer);
+const totalsCard = document.createElement("div");
+totalsCard.className = "card mb-3";
+totalsCard.style.display = "none"
 
+const totalsHeader = document.createElement("div");
+totalsHeader.className = "card-header py-2";
+totalsHeader.innerHTML = "📊 <strong>Totales por objeto</strong>";
+
+const totalsBody = document.createElement("div");
+totalsBody.className = "card-body p-2 excel-table-container";
+totalsBody.appendChild(totalsTable);
+
+totalsCard.appendChild(totalsHeader);
+totalsCard.appendChild(totalsBody);
+resultDiv.appendChild(totalsCard);
+let totalsShown = false;
 excelTable.addEventListener("paste", function (e) {
   const cell = e.target.closest("td");
   if (!cell) return;
 
   e.preventDefault();
+
+  if (!totalsShown) {
+    totalsCard.style.display = "block";
+    totalsShown = true;
+  }
 
   const text = e.clipboardData.getData("text/plain");
   const rows = text.trim().split(/\r?\n/);
@@ -428,7 +524,9 @@ final_button.addEventListener("click", () => {
     });
   });
 
-  const tsv = exportRowsToTSV(finalRows);
+const tsv =
+  finalHeaders.join("\t") + "\n" +
+  exportRowsToTSV(finalRows);
 
 // copy to clipboard
 navigator.clipboard.writeText(tsv).then(() => {
