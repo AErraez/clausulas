@@ -3,6 +3,14 @@ const resultDiv = document.getElementById("resultado");
 const textArea = document.getElementById("texto");
 const clearBtn = document.getElementById("clear-button");
 
+const EDITABLE_COLS = new Set([
+  18, // Debe Facultar?
+  25, // Acum. Prima Total
+  26, // Acum. Suma Total
+  27  // Se imprime
+]);
+
+
 const finalHeaders = [
   "1. Item",
   "2. Cod Ramo",
@@ -249,14 +257,48 @@ rows.forEach((row, rowIndex) => {
   tr.appendChild(checkTd);
 
   // picked values
-  pickedIndexes.forEach(idx => {
-    const td = document.createElement("td");
-    td.textContent = row[idx] ?? "";
-    tr.appendChild(td);
-  });
+pickedIndexes.forEach(idx => {
+  const td = document.createElement("td");
+  td.textContent = row[idx] ?? "";
+  td.dataset.colIndex = idx;
+
+  if (EDITABLE_COLS.has(idx)) {
+    td.contentEditable = "true";
+    td.classList.add("binary-cell");
+  }
+
+  tr.appendChild(td);
+});
+
 
   tbody.appendChild(tr);
 });
+
+table.addEventListener("blur", (e) => {
+  const td = e.target.closest("td");
+  if (!td || !td.isContentEditable) return;
+
+  const tr = td.closest("tr");
+  const rowIndex = tr.dataset.rowIndex;
+  const colIndex = Number(td.dataset.colIndex);
+
+  if (rowIndex == null || Number.isNaN(colIndex)) return;
+
+  let raw = td.textContent.trim();
+
+  // normalize input
+  let value;
+  if (raw === "-1") value = -1;
+  else value = 0; // default fallback
+
+  // reflect normalized value in UI
+  td.textContent = value;
+
+  // 🔥 persist into original data
+  rows[rowIndex][colIndex] = value;
+
+}, true);
+
 
 
   table.appendChild(tbody);
@@ -277,6 +319,7 @@ resultDiv.appendChild(
     icon: "⚠️"
   })
 );
+
 
 
 const container = document.createElement("div");
@@ -440,7 +483,7 @@ excelTable.addEventListener("paste", function (e) {
   }
 
   const text = e.clipboardData.getData("text/plain");
-  const rows = text.trim().split(/\r?\n/);
+  const rows = text.split(/\r?\n/);
 
   const startRow = cell.parentElement.rowIndex - 1; // tbody index
   const startCol = cell.cellIndex;

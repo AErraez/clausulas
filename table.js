@@ -6,6 +6,13 @@ const clearBtn = document.getElementById("clear-button");
 
 const MIN_GAP = 2;
 
+const characters={
+    '€':'EUR',
+    '—':'-',
+    '…':'...',
+    '•':'-',
+    '™':'(TM)',
+}
 function escapeHtml(str) {
   return String(str)
     .replaceAll("&", "&amp;")
@@ -24,6 +31,9 @@ function normalizeCurrency(str) {
 }
 
 function parseTsv(text) {
+  for (const [key, value] of Object.entries(characters)) {
+        text = text.split(key).join(value);
+    }
   const rows = [];
   let row = [];
   let cell = "";
