@@ -24,11 +24,12 @@ function escapeHtml(str) {
 
 function normalizeCurrency(str) {
   if (!str) return str;
-  const s = String(str).replace(/\u00A0/g, " ").trim();
-  const m = s.match(/\$\s*([0-9][0-9.,]*)/);
-  if (!m) return s;
-  return `$ ${m[1]}`;
+
+  return String(str)
+    .replace(/\u00A0/g, " ")
+    .replace(/\$\s*([0-9][0-9.,]*)/g, "$ $1");
 }
+
 
 function parseTsv(text) {
   for (const [key, value] of Object.entries(characters)) {
