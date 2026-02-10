@@ -485,6 +485,13 @@ excelTable.addEventListener("paste", function (e) {
   const text = e.clipboardData.getData("text/plain");
   const rows = text.split(/\r?\n/);
 
+  if (
+  rows.length &&
+  rows.at(-1).split("\t").every(v => v.trim() === "")
+) {
+  rows.pop();
+}
+  
   const startRow = cell.parentElement.rowIndex - 1; // tbody index
   const startCol = cell.cellIndex;
   const tbody = this.tBodies[0];
