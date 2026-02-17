@@ -3,8 +3,39 @@ const resultDiv = document.getElementById("resultado");
 const sizeInput = document.getElementById("tablesize");
 const textArea = document.getElementById("texto");
 const clearBtn = document.getElementById("clear-button");
+const headerSepCheckbox = document.getElementById("useHeaderSep");
 
 const MIN_GAP = 2;
+
+function insertHeaderSeparator(rows, colCount, colWidths, gap) {
+  if (rows.length === 0) return [];
+
+  // Wrap ONLY the header row
+  const headerWrapped = wrapRowsNoRepeat(
+    [rows[0]],
+    colCount,
+    colWidths
+  );
+
+  const headerHeight = headerWrapped.length;
+
+  // Wrap the rest of the rows
+  const bodyWrapped = wrapRowsNoRepeat(
+    rows.slice(1),
+    colCount,
+    colWidths
+  );
+
+  // Build dash row using final column widths
+  const dashRow = colWidths.map(w => "-".repeat(Math.max(3, w)));
+
+  return [
+    ...headerWrapped,
+    dashRow,
+    ...bodyWrapped
+  ];
+}
+
 
 const characters={
     '€':'EUR',
@@ -328,8 +359,14 @@ formatBtn.addEventListener("click", () => {
     return;
   }
 
-  const { wrapped, colWidths, gap } = layoutMaxSpace(rows, colCount, totalWidth);
-  const tableText = renderTable(wrapped, colWidths, gap);
+let { wrapped, colWidths, gap } = layoutMaxSpace(rows, colCount, totalWidth);
+
+if (headerSepCheckbox?.checked) {
+  wrapped = insertHeaderSeparator(rows, colCount, colWidths, gap);
+}
+
+const tableText = renderTable(wrapped, colWidths, gap);
+
 
   resultDiv.innerHTML = `
     <div>
