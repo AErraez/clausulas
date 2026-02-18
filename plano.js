@@ -43,6 +43,13 @@ const finalHeaders = [
 ];
 
 
+function renumberItems(table, start) {
+  const tbody = table.tBodies[0];
+  Array.from(tbody.rows).forEach((row, index) => {
+    row.cells[0].textContent = start + index;
+  });
+}
+
 function createInstructionBox({ title, text, type = "info", icon = "ℹ️" }) {
   const box = document.createElement("div");
   box.className = `alert alert-${type} mb-3`;
@@ -141,10 +148,17 @@ function createTotalsTable(headers) {
   thead.className = "table-light";
   const headRow = document.createElement("tr");
 
+  // TOTAL label
   const labelTh = document.createElement("th");
   labelTh.textContent = "TOTAL";
   headRow.appendChild(labelTh);
 
+  // 🔥 NEW ROW COUNT HEADER
+  const countTh = document.createElement("th");
+  countTh.textContent = "# ITEMS";
+  headRow.appendChild(countTh);
+
+  // Object headers
   headers.forEach(h => {
     const th = document.createElement("th");
     th.textContent = h;
@@ -157,11 +171,19 @@ function createTotalsTable(headers) {
   const tbody = document.createElement("tbody");
   const tr = document.createElement("tr");
 
+  // TOTAL label cell
   const labelTd = document.createElement("td");
   labelTd.textContent = "TOTAL";
   labelTd.style.fontWeight = "bold";
   tr.appendChild(labelTd);
 
+  // 🔥 Row count cell
+  const countTd = document.createElement("td");
+  countTd.textContent = "0";
+  countTd.style.fontWeight = "bold";
+  tr.appendChild(countTd);
+
+  // Totals cells
   headers.forEach(() => {
     const td = document.createElement("td");
     td.textContent = "0.00";
@@ -182,7 +204,11 @@ function recalcTotals(excelTable, totalsTable) {
 
   const colCount = excelTable.tHead.rows[0].cells.length;
 
-  for (let col = 1; col < colCount; col++) {
+  // 🔢 Row count (column index 1 now truly exists)
+  totalRow.cells[1].textContent = tbody.rows.length;
+
+  // 🔢 Column totals (skip ITEM + DEL)
+  for (let col = 2; col < colCount; col++) {
     let sum = 0;
 
     Array.from(tbody.rows).forEach(row => {
@@ -193,9 +219,17 @@ function recalcTotals(excelTable, totalsTable) {
       if (!Number.isNaN(num)) sum += num;
     });
 
-    totalRow.cells[col].textContent = formatNumberUS(sum);
+    // +1 offset because of # FILAS column
+    const totalsColIndex = col;
+
+    if (totalRow.cells[totalsColIndex]) {
+      totalRow.cells[totalsColIndex].textContent =
+        formatNumberUS(sum);
+    }
   }
 }
+
+
 
 
 
@@ -366,6 +400,11 @@ const headRow = document.createElement("tr");
 const itemTh = document.createElement("th");
 itemTh.textContent = "ITEM";
 headRow.appendChild(itemTh);
+// DELETE column
+const deleteTh = document.createElement("th");
+deleteTh.textContent = "ELIMINAR";
+headRow.appendChild(deleteTh);
+
 
 // dynamic headers from objetos
 objetos.forEach(objeto => {
@@ -396,6 +435,22 @@ const itemTd = document.createElement("td");
 itemTd.textContent = primer_item;
 itemTd.contentEditable = "false";
 firstRow.appendChild(itemTd);
+// DELETE button cell
+const deleteTd = document.createElement("td");
+deleteTd.style.textAlign = "center";
+const deleteBtn = document.createElement("button");
+deleteBtn.className = "btn btn-sm btn-outline-danger";
+deleteBtn.textContent = "✕";
+
+deleteBtn.addEventListener("click", () => {
+  firstRow.remove();
+  renumberItems(excelTable, primer_item);
+  recalcTotals(excelTable, totalsTable);
+});
+
+deleteTd.appendChild(deleteBtn);
+firstRow.appendChild(deleteTd);
+
 
 // values from objeto[12]
 objetos.forEach(objeto => {
@@ -493,7 +548,9 @@ excelTable.addEventListener("paste", function (e) {
 }
   
   const startRow = cell.parentElement.rowIndex - 1; // tbody index
-  const startCol = cell.cellIndex;
+const startCol = cell.cellIndex;
+if (startCol === 1) return; // prevent pasting into delete column
+
   const tbody = this.tBodies[0];
   const totalCols = this.tHead.rows[0].cells.length;
 
@@ -505,12 +562,30 @@ excelTable.addEventListener("paste", function (e) {
       row = tbody.insertRow();
 
       // ITEM cell (auto increment, locked)
-      const itemCell = row.insertCell();
-      itemCell.contentEditable = "false";
-      itemCell.textContent = primer_item + tbody.rows.length - 1;
+// DELETE button cell
+// ITEM cell (auto increment, locked)
+const itemCell = row.insertCell();
+itemCell.textContent = primer_item + tbody.rows.length - 1;
+itemCell.contentEditable = "false";
+
+// DELETE cell
+const deleteCell = row.insertCell();
+deleteCell.style.textAlign = "center";
+const deleteBtn = document.createElement("button");
+deleteBtn.className = "btn btn-sm btn-outline-danger";
+deleteBtn.textContent = "✕";
+
+deleteBtn.addEventListener("click", () => {
+  row.remove();
+  renumberItems(excelTable, primer_item);
+  recalcTotals(excelTable, totalsTable);
+});
+
+deleteCell.appendChild(deleteBtn);
+
 
       // rest of cells editable
-      for (let i = 1; i < totalCols; i++) {
+      for (let i = 2; i < totalCols; i++) {
         const td = row.insertCell();
         td.contentEditable = "true";
       }
@@ -518,7 +593,7 @@ excelTable.addEventListener("paste", function (e) {
 
     values.forEach((value, c) => {
       const targetCell = row.cells[startCol + c];
-      if (targetCell && targetCell.cellIndex !== 0) {
+      if (targetCell && targetCell.cellIndex > 1) {
         targetCell.textContent = value;
         normalizeCell(targetCell);
 
@@ -546,7 +621,7 @@ final_button.addEventListener("click", () => {
 
     // ---------- OBJETOS ----------
     objetos.forEach((objeto, colIndex) => {
-      const cell = excelRow.cells[colIndex + 1]; // +1 skips ITEM col
+      const cell = excelRow.cells[colIndex + 2]; // +1 skips ITEM col
       if (!cell) return;
 
       const value = parseFlexibleNumber(cell.textContent);
