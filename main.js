@@ -2,28 +2,51 @@ const clausulas = require("./lista_clau.json");
 const stringSimilarity = require("string-similarity"); 
 
 //**********************FUNCIONES*********************//
+function normalizeText(text) {
+  return text
+    .replace(/ñ/g, "__enie__")     // protect ñ
+    .replace(/Ñ/g, "__ENIE__")     // protect Ñ
+    .normalize("NFD")              // split accents
+    .replace(/[\u0300-\u036f]/g, "") // remove accents
+    .replace(/__enie__/g, "ñ")     // restore ñ
+    .replace(/__ENIE__/g, "Ñ")     // restore Ñ
+    .replace(/-/g, " ")
+    .trim()
+    .toUpperCase();
+}
 
 function findSimilarSentences(objclaus, inputSentence) {
   let similarities = [];
-  let sentencesArray = objclaus.map((claus) => claus["Cláusula"]);
-  let codearray = objclaus.map((claus) => claus["Código"]);
-  for (let i = 0; i < sentencesArray.length; i++) {
-    var sentence = sentencesArray[i];
-    var codclaus = codearray[i];
-    sentence = sentence.toUpperCase();
+
+  const normalizedInput = normalizeText(inputSentence).replace('CLAUSULA', '').trim();
+
+  for (let claus of objclaus) {
+    let originalSentence = claus["Cláusula"];
+    let codclaus = claus["Código"];
+
+    let normalizedSentence = normalizeText(originalSentence).replace('CLAUSULA', '').trim();
+
     const similarityScore = Number(
-      stringSimilarity.compareTwoStrings(sentence, inputSentence)
+      stringSimilarity.compareTwoStrings(
+        normalizedSentence,
+        normalizedInput
+      )
     ).toFixed(2);
-    similarities.push({ sentence, similarityScore, codclaus });
+
+    similarities.push({
+      sentence: originalSentence, // keep original for display
+      similarityScore,
+      codclaus,
+    });
   }
+
   similarities.sort((a, b) => b.similarityScore - a.similarityScore);
-  return similarities
-    .slice(0, 5)
-    .map((similarity) => [
-      similarity.sentence,
-      similarity.codclaus,
-      similarity.similarityScore,
-    ]);
+
+  return similarities.slice(0, 5).map((similarity) => [
+    similarity.sentence,
+    similarity.codclaus,
+    similarity.similarityScore,
+  ]);
 }
 
 function arrtotext(arr) {
@@ -59,6 +82,8 @@ let codarray= []
 let htmlbutarr=[]
 //**************EVENTOS************************************ */
 
+
+
 boton.addEventListener("click", (event) => {
   manual_search_result.innerHTML = ""
   htmlbutarr=[]
@@ -71,13 +96,7 @@ boton.addEventListener("click", (event) => {
   let texto = document.getElementById("texto").value;
 
   let arrtxt = texto.split("\n");
-  let txtclean = arrtxt.map((elem) => {
-    //Se limpia el texto ingresado por el usuario
-    elem = elem.replace("-", " ");
-    elem = elem.trim();
-    elem = elem.toUpperCase();
-    return elem;
-  });
+  let txtclean = arrtxt.map((elem) => normalizeText(elem));
 
   clausramo = clausulas[ramo];
   
@@ -89,21 +108,21 @@ boton.addEventListener("click", (event) => {
     let similist = findSimilarSentences(clausramo, element);
     console.log(similist[0][2])
     let txttoshow=""
-    if (similist[0][2]>0.35){
+    if (similist[0][2]>0.50){
       txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
-                      <div class="col-2 "><button class="claus-but active" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
-                      <div class="col-2 "><button class="claus-but" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
-                      <div class="col-2 "><button class="claus-but" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
+                      <div class="col-2 "><button class="claus-but active" data-score="${similist[0][2]}" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
+                      <div class="col-2 "><button class="claus-but" data-score="${similist[1][2]}" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
+                      <div class="col-2 "><button class="claus-but" data-score="${similist[2][2]}" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
                       <div class="col-md-auto text-center"><button class="claus-but" name="${element}" value="">X</button></div> </div>`;
                       codarray.push(similist[0][1] + "-");
                     }
     else {
       txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
       <div class="col-5"><p>${element} ===> </p></div> 
-      <div class="col-2 "><button class="claus-but" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
-      <div class="col-2 "><button class="claus-but" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
-      <div class="col-2 "><button class="claus-but" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
+      <div class="col-2 "><button class="claus-but" data-score="${similist[0][2]}" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
+      <div class="col-2 "><button class="claus-but" data-score="${similist[1][2]}" value=${similist[1][1]}->${similist[1][0]} - ${similist[1][1]}</button></div> 
+      <div class="col-2 "><button class="claus-but" data-score="${similist[2][2]}" value=${similist[2][1]}->${similist[2][0]} - ${similist[2][1]}</button></div> 
       <div class="col-md-auto text-center"><button class="claus-but active" name="${element}" value="">X</button></div> </div>`;
 
     }
@@ -166,10 +185,10 @@ let manual_search_result = document.getElementById("manual_search_result");
 let filterbutton = document.getElementById("searchclaus");
 filterbutton.addEventListener("input", (event) => {
   manual_search_result.innerHTML = "";
-  let filtertxt = filterbutton.value.toUpperCase();
+  let filtertxt = normalizeText(filterbutton.value);
 
   let filteredclaus = clausramo.filter((claus) =>
-    claus["Cláusula"].includes(filtertxt)
+    normalizeText(claus["Cláusula"]).includes(filtertxt)
   );
   filteredclaus = filteredclaus.slice(0, 10);
   
