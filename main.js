@@ -108,7 +108,7 @@ boton.addEventListener("click", (event) => {
     let similist = findSimilarSentences(clausramo, element);
     console.log(similist[0][2])
     let txttoshow=""
-    if (similist[0][2]>0.50){
+    if (similist[0][2]>0.40){
       txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
                       <div class="col-2 "><button class="claus-but active" data-score="${similist[0][2]}" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 

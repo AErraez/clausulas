@@ -7,6 +7,46 @@ const headerSepCheckbox = document.getElementById("useHeaderSep");
 
 const MIN_GAP = 2;
 
+function isMoney(value) {
+  if (!value) return false;
+
+  const v = String(value).trim();
+
+  return /^(?:US\$|us\$|\$)\s*\d[\d,\s]*(?:\.\d+)?$/.test(v);
+}
+function longestBodyValue(rows, col) {
+  let max = 1;
+
+  for (let r = 1; r < rows.length; r++) {
+    const v = String(rows[r][col] ?? "").trim();
+    const lines = v.split(/\r?\n/);
+
+    for (const ln of lines) {
+      max = Math.max(max, ln.length);
+    }
+  }
+
+  return max;
+}
+function detectMoneyColumns(rows, colCount) {
+  const moneyCols = new Array(colCount).fill(true);
+
+  for (let c = 0; c < colCount; c++) {
+    for (let r = 1; r < rows.length; r++) { // skip header
+      const val = String(rows[r][c] ?? "").trim();
+
+      if (val === "") continue;
+
+      if (!isMoney(val)) {
+        moneyCols[c] = false;
+        break;
+      }
+    }
+  }
+
+  return moneyCols;
+}
+
 function insertHeaderSeparator(rows, colCount, colWidths, gap) {
   if (rows.length === 0) return [];
 
@@ -27,7 +67,7 @@ function insertHeaderSeparator(rows, colCount, colWidths, gap) {
   );
 
   // Build dash row using final column widths
-  const dashRow = colWidths.map(w => "-".repeat(Math.max(3, w)));
+  const dashRow = colWidths.map(w => "-".repeat(Math.max(1, w)));
 
   return [
     ...headerWrapped,
@@ -155,9 +195,9 @@ function setupLongestLens(rows, colCount) {
   }
 
   for (let c = 0; c < colCount; c++) longestLens[c] = Math.max(1, longestLens[c]);
+
   return longestLens;
 }
-
 
 function calcSequentialLimit(totalWidth, colCount, longestLens) {
   const glob = Math.floor(totalWidth / colCount);
@@ -247,18 +287,54 @@ function renderTable(wrapped, colWidths, gap) {
 
 function layoutMaxSpace(rows, colCount, totalWidth) {
   const longestLens = setupLongestLens(rows, colCount);
+  const moneyCols = detectMoneyColumns(rows, colCount);
+const reservedWidths = new Array(colCount).fill(0);
 
-  const widthBudgetForCols = totalWidth - MIN_GAP * (colCount - 1);
+let reservedTotal = 0;
+let normalColumnCount = 0;
+
+const useHeaderLogic = headerSepCheckbox?.checked;
+
+for (let c = 0; c < colCount; c++) {
+
+  if (moneyCols[c] && useHeaderLogic) {
+
+    const bodyMax = longestBodyValue(rows, c);
+
+    reservedWidths[c] = bodyMax;
+    reservedTotal += bodyMax;
+
+  } else if (moneyCols[c]) {
+
+    reservedWidths[c] = longestLens[c];
+    reservedTotal += longestLens[c];
+
+  } else {
+
+    normalColumnCount++;
+
+  }
+}
+
+const widthBudgetForCols =
+  totalWidth - MIN_GAP * (colCount - 1) - reservedTotal;
   if (widthBudgetForCols <= colCount) {
     const tiny = new Array(colCount).fill(1);
     const wrapped = wrapRowsNoRepeat(rows, colCount, tiny);
     return { wrapped, colWidths: tiny, gap: MIN_GAP };
   }
 
-  let limit = calcSequentialLimit(widthBudgetForCols, colCount, longestLens);
+let limit = calcSequentialLimit(
+  widthBudgetForCols,
+  Math.max(1, normalColumnCount),
+  longestLens.filter((_, i) => !moneyCols[i])
+);
 
 
-  let colWidths = longestLens.map(w => Math.min(w, limit));
+let colWidths = longestLens.map((w, c) => {
+  if (moneyCols[c]) return reservedWidths[c];
+  return Math.min(w, limit);
+});
 
   let wrapped = wrapRowsNoRepeat(rows, colCount, colWidths);
   let used = usedWidthsFromWrapped(wrapped, colCount);
