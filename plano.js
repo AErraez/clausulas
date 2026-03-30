@@ -68,39 +68,40 @@ function createInstructionBox({ title, text, type = "info", icon = "ℹ️" }) {
 
 
 function parseFlexibleNumber(input) {
-  if (typeof input !== "string") return NaN;
+  if (typeof input === "number") return input >= 0 ? Math.round(input * 100) / 100 : 0;
+  if (typeof input !== "string") return 0;
 
-  let value = input
-    .replace(/[^\d.,-]/g, "")
-    .trim();
+  let value = input.trim();
+  if (value === "" || value === "." || value === ",") return 0;
 
-  const hasComma = value.includes(",");
-  const hasDot = value.includes(".");
+  // Strip everything except digits, dot, comma
+  value = value.replace(/[^\d.,]/g, "");
 
-  if (hasComma && hasDot) {
-    // Both present → last separator is decimal
+  if (value === "") return 0;
+
+  const commaCount = (value.match(/,/g) || []).length;
+  const dotCount   = (value.match(/\./g) || []).length;
+
+  if (commaCount > 1 && dotCount === 0) {
+    value = value.replace(/,/g, "");
+  } else if (dotCount > 1 && commaCount === 0) {
+    value = value.replace(/\./g, "");
+  } else if (commaCount === 1 && dotCount === 1) {
     if (value.lastIndexOf(",") > value.lastIndexOf(".")) {
-      // 25.000,50
       value = value.replace(/\./g, "").replace(",", ".");
     } else {
-      // 25,000.50
       value = value.replace(/,/g, "");
     }
-  } else if (hasComma || hasDot) {
-    const sep = hasComma ? "," : ".";
-    const parts = value.split(sep);
-
-    if (parts.length === 2 && parts[1].length === 3) {
-      // thousands separator
-      value = parts.join("");
-    } else {
-      // decimal separator
-      value = parts.join(".");
-    }
+  } else if (commaCount === 1 && dotCount === 0) {
+    const parts = value.split(",");
+    value = parts[1].length >= 4 ? parts.join("") : parts.join(".");
+  } else if (dotCount === 1 && commaCount === 0) {
+    const parts = value.split(".");
+    value = parts[1].length >= 4 ? parts.join("") : value;
   }
 
   const num = Number(value);
-  if (Number.isNaN(num)) return NaN;
+  if (Number.isNaN(num) || num < 0) return 0;
 
   return Math.round(num * 100) / 100;
 }
