@@ -2,6 +2,28 @@ const clausulas = require("./lista_clau.json");
 const stringSimilarity = require("string-similarity"); 
 
 //**********************FUNCIONES*********************//
+
+const SPANISH_STOP_WORDS = new Set([
+  // articles
+  "EL", "LA", "LOS", "LAS", "UN", "UNA", "UNOS", "UNAS",
+  // prepositions
+  "A", "ANTE", "BAJO", "CON", "CONTRA", "DE", "DESDE", "EN",
+  "ENTRE", "HACIA", "HASTA", "PARA", "POR", "SEGUN", "SIN",
+  "SOBRE", "TRAS", "DURANTE", "MEDIANTE",
+  // conjunctions
+  "Y", "E", "O", "U", "NI", "QUE", "PERO", "MAS", "SINO",
+  "AUNQUE", "COMO", "SI", "CUANDO",
+  // common pronouns / determiners
+  "DEL", "AL", "SU", "SUS", "SE",
+]);
+
+function stripPrepositions(normalizedText) {
+  return normalizedText
+    .split(/\s+/)
+    .filter(word => word.length > 0 && !SPANISH_STOP_WORDS.has(word))
+    .join(" ");
+}
+
 function normalizeText(text) {
   return text
     .replace(/ñ/g, "__enie__")     // protect ñ
@@ -18,35 +40,28 @@ function normalizeText(text) {
 function findSimilarSentences(objclaus, inputSentence) {
   let similarities = [];
 
-  const normalizedInput = normalizeText(inputSentence).replace('CLAUSULA', '').trim();
+  const normalizedInput = stripPrepositions(
+    normalizeText(inputSentence).replace("CLAUSULA", "").trim()
+  );
 
   for (let claus of objclaus) {
     let originalSentence = claus["Cláusula"];
     let codclaus = claus["Código"];
 
-    let normalizedSentence = normalizeText(originalSentence).replace('CLAUSULA', '').trim();
+    const normalizedSentence = stripPrepositions(
+      normalizeText(originalSentence).replace("CLAUSULA", "").trim()
+    );
 
     const similarityScore = Number(
-      stringSimilarity.compareTwoStrings(
-        normalizedSentence,
-        normalizedInput
-      )
+      stringSimilarity.compareTwoStrings(normalizedSentence, normalizedInput)
     ).toFixed(2);
 
-    similarities.push({
-      sentence: originalSentence, // keep original for display
-      similarityScore,
-      codclaus,
-    });
+    similarities.push({ sentence: originalSentence, similarityScore, codclaus });
   }
 
   similarities.sort((a, b) => b.similarityScore - a.similarityScore);
 
-  return similarities.slice(0, 5).map((similarity) => [
-    similarity.sentence,
-    similarity.codclaus,
-    similarity.similarityScore,
-  ]);
+  return similarities.slice(0, 5).map((s) => [s.sentence, s.codclaus, s.similarityScore]);
 }
 
 function arrtotext(arr) {
@@ -108,7 +123,7 @@ boton.addEventListener("click", (event) => {
     let similist = findSimilarSentences(clausramo, element);
     console.log(similist[0][2])
     let txttoshow=""
-    if (similist[0][2]>0.40){
+    if (similist[0][2]>0.50){
       txttoshow = `<div class="row py-1 justify-content-around align-items-center text-align-center">
                       <div class="col-5"><p>${element} ===> </p></div> 
                       <div class="col-2 "><button class="claus-but active" data-score="${similist[0][2]}" value=${similist[0][1]}->${similist[0][0]} - ${similist[0][1]}</button></div> 
