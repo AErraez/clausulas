@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Larga</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        
+        /* Estilos específicos para la salida del parser */
+        #output {
+            white-space: pre-wrap;
+            word-break: break-word;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            padding: 1.5rem;
+            min-height: 120px;
+                font-family: 'Courier Prime', monospace;
+                font-size: 0.95em;
+            max-width: 97ch!important;
+        }
+
+
+        /* Fallback de la clase grey-but por si no está en style.css */
+        .grey-but {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .grey-but:hover {
+            background-color: #5c636a;
+        }
+    </style>
+</head>
+
+<body class="px-3">
+    <header class="text-center py-3">
+        <h1>Tabla Larga</h1>
+    </header>
+
+    <main class="container-fluid py-3">
+        <ul class="nav nav-pills app-nav mb-4">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Cláusulas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html">Excel a SISE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slip.html">Formato Slip</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plano.html">Archivo Plano</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tabla Larga</a>
+            </li>
+        </ul>
+
+        <div class="row py-3">
+
+            <div class="col-12 d-flex justify-content-between align-items-end mb-2">
+                <label for="inputData">Ingrese los datos de la tabla:</label>
+                <button id="clear-button" class="grey-but" onclick="clearAll()">Limpiar</button>
+            </div>
+            
+            <div class="col-12 mb-3">
+                <textarea id="inputData" class="form-control" rows="10" placeholder="Pega aquí los datos de la tabla (incluyendo encabezados)..."></textarea>
+            </div>
+
+            <div class="col-12 mb-3" id="valor-col-wrap" style="display: none; align-items: center; gap: 10px;">
+                <label for="valorColSelect" class="mb-0">Columna que agrupa registros:</label>
+                <select id="valorColSelect" class="form-select w-auto" onchange="reparse()">
+                    <option value="-1">Sin agrupación (una fila = un registro)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row py-3 d-flex align-items-center">
+            <div class="col-auto">
+                <button class="grey-but" onclick="parseData()">Transformar</button>
+            </div>
+            <div class="col-auto">
+                <span id="countBadge" class="badge bg-secondary" style="display:none; font-size: 0.9em; font-family: system-ui;"></span>
+            </div>
+            <div class="col-auto ms-auto">
+                <button id="copyAll" class="grey-but" style="display:none;" onclick="copyAll()">Copiar todo</button>
+            </div>
+        </div>
+
+        <div id="output" class="row py-3 mt-2 mx-auto">
+            <span class="text-muted text-center w-100">El resultado aparecerá aquí...</span>
+        </div>
+
+    </main>
+
+    <script>
+        let parsedHeaders = [];
+        let parsedRows = [];
+
+        // Full CSV/TSV parser
+        function parseTSV(raw) {
+            const rows = [];
+            let row = [];
+            let cell = '';
+            let inQuotes = false;
+            let i = 0;
+
+            while (i < raw.length) {
+                const ch = raw[i];
+
+                if (inQuotes) {
+                    if (ch === '"') {
+                        if (raw[i + 1] === '"') {
+                            cell += '"';
+                            i += 2;
+                        } else {
+                            inQuotes = false;
+                            i++;
+                        }
+                    } else if (ch === '\r' && raw[i + 1] === '\n') {
+                        cell += ' ';
+                        i += 2;
+                    } else if (ch === '\n' || ch === '\r') {
+                        cell += ' ';
+                        i++;
+                    } else {
+                        cell += ch;
+                        i++;
+                    }
+                } else {
+                    if (ch === '"' && cell === '') {
+                        inQuotes = true;
+                        i++;
+                    } else if (ch === '\t') {
+                        row.push(cell.trim());
+                        cell = '';
+                        i++;
+                    } else if (ch === '\r' && raw[i + 1] === '\n') {
+                        row.push(cell.trim());
+                        rows.push(row);
+                        row = [];
+                        cell = '';
+                        i += 2;
+                    } else if (ch === '\n' || ch === '\r') {
+                        row.push(cell.trim());
+                        rows.push(row);
+                        row = [];
+                        cell = '';
+                        i++;
+                    } else {
+                        cell += ch;
+                        i++;
+                    }
+                }
+            }
+
+            row.push(cell.trim());
+            if (row.some(c => c !== '')) rows.push(row);
+
+            return rows;
+        }
+
+        function mergeWrappedRows(rows) {
+            if (rows.length === 0) return rows;
+            const numCols = parsedHeaders.length;
+
+            const knownCategories = new Set();
+            for (const row of rows) {
+                if (row.length >= numCols && row.slice(2).some(c => c)) {
+                    if (row[0]) knownCategories.add(row[0].trim().toUpperCase());
+                }
+            }
+
+            function isContinuation(row) {
+                if (row.every(c => !c)) return false;
+                const first = (row[0] || '').trim();
+                if (!first) return false;
+                if (knownCategories.has(first.toUpperCase())) return false;
+                if (/^[\/a-z]/.test(first)) return true;
+                return false;
+            }
+
+            function lastRealIdx(merged) {
+                for (let i = merged.length - 1; i >= 0; i--) {
+                    if (!merged[i].every(c => !c)) return i;
+                }
+                return -1;
+            }
+
+            const merged = [];
+            for (const row of rows) {
+                if (isContinuation(row)) {
+                    const idx = lastRealIdx(merged);
+                    if (idx >= 0) {
+                        const prev = merged[idx];
+                        const fragment = (row[0] || '').trim();
+                        if (fragment) prev[1] = (prev[1] ? prev[1] + ' ' : '') + fragment;
+                        for (let ci = 1; ci < row.length; ci++) {
+                            const targetCol = ci + 1;
+                            if (targetCol < numCols && row[ci] && !prev[targetCol]) {
+                                prev[targetCol] = row[ci];
+                            }
+                        }
+                    }
+                } else {
+                    const padded = [...row];
+                    while (padded.length < numCols) padded.push('');
+                    merged.push(padded);
+                }
+            }
+            return merged;
+        }
+
+        function parseData() {
+            const raw = document.getElementById('inputData').value;
+            if (!raw.trim()) return;
+
+            const allRows = parseTSV(raw);
+            if (allRows.length < 2) return;
+
+            parsedHeaders = allRows[0].map(h => h.trim());
+            parsedRows = mergeWrappedRows(allRows.slice(1));
+
+            const select = document.getElementById('valorColSelect');
+            select.innerHTML = '<option value="-1">Sin agrupación (una fila = un registro)</option>' +
+                parsedHeaders.map((h, i) =>
+                `<option value="${i}">${h || '(columna ' + (i + 1) + ')'}</option>`
+            ).join('');
+
+            select.value = detectValorCol();
+            document.getElementById('valor-col-wrap').style.display = 'flex';
+
+            reparse();
+        }
+
+        function detectValorCol() {
+            const counts = parsedHeaders.map((_, ci) =>
+                parsedRows.filter(r => r[ci] && /\$/.test(r[ci])).length
+            );
+            const max = Math.max(...counts);
+            return max > 0 ? counts.indexOf(max) : 2;
+        }
+
+function reparse() {
+      const valorCol = parseInt(document.getElementById('valorColSelect').value);
+      const records = [];
+      let currentItems = [];
+
+      for (const cols of parsedRows) {
+        const allEmpty = cols.every(c => !c);
+        if (allEmpty) continue;
+
+        const rowObj = {};
+        parsedHeaders.forEach((h, i) => {
+          rowObj[h || 'col_' + i] = cols[i] || '';
+        });
+
+        if (valorCol === -1) {
+          // No grouping: each row is its own record
+          records.push([rowObj]);
+        } else {
+          currentItems.push(rowObj);
+          const valorVal = cols[valorCol] || '';
+          
+          // FIX: Removed the regex requirement checking for '$'.
+          // Now it correctly groups whenever the chosen column has a value.
+          if (valorVal.trim() !== '') {
+            records.push([...currentItems]);
+            currentItems = [];
+          }
+        }
+      }
+
+      if (valorCol !== -1 && currentItems.length > 0) records.push([...currentItems]);
+
+      renderRecords(records);
+    }
+        function buildText(records) {
+            return records.map((rows) => {
+                return parsedHeaders.map((header, ci) => {
+                    const key = header || 'col_' + ci;
+                    const relevantRows = ci === 0
+                        ? rows
+                        : rows.filter(r => parsedHeaders.slice(1).some((h, j) => r[h || 'col_' + (j + 1)]));
+
+                    const values = [...new Set(relevantRows.map(r => r[key]).filter(Boolean))];
+                    return `${key}:\n${values.join('\n')}`;
+                }).join('\n\n');
+            }).join('\n\n---\n\n');
+        }
+
+        function renderRecords(records) {
+            const out = document.getElementById('output');
+
+            if (records.length === 0) {
+                out.innerHTML = '<span class="text-muted text-center w-100">No se encontraron registros. Asegúrate de que los datos estén separados por tabulaciones.</span>';
+                document.getElementById('countBadge').style.display = 'none';
+                document.getElementById('copyAll').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('countBadge').style.display = 'inline-block';
+            document.getElementById('countBadge').textContent = records.length + ' registros';
+            document.getElementById('copyAll').style.display = 'inline-block';
+
+            out.textContent = buildText(records);
+        }
+
+        function clearAll() {
+            document.getElementById('inputData').value = '';
+            document.getElementById('output').innerHTML = '<span class="text-muted text-center w-100">El resultado aparecerá aquí...</span>';
+            document.getElementById('countBadge').style.display = 'none';
+            document.getElementById('copyAll').style.display = 'none';
+            document.getElementById('valor-col-wrap').style.display = 'none';
+            document.getElementById('valorColSelect').innerHTML = '';
+            parsedHeaders = [];
+            parsedRows = [];
+        }
+
+        function copyAll() {
+            const text = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.getElementById('copyAll');
+                const orig = btn.textContent;
+                btn.textContent = '¡Copiado!';
+                setTimeout(() => btn.textContent = orig, 1500);
+            });
+        }
+    </script>
+</body>
+</html>
