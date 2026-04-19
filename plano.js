@@ -68,44 +68,39 @@ function createInstructionBox({ title, text, type = "info", icon = "ℹ️" }) {
 
 
 function parseFlexibleNumber(input) {
-  if (typeof input === "number") return input >= 0 ? Math.round(input * 100) / 100 : 0;
+  if (typeof input === "number") return input;
   if (typeof input !== "string") return 0;
 
-  let value = input.trim();
+  // 1. Remove everything except digits, commas, and dots
+  // This cleans "US$ 123,123.00" into "123,123.00"
+  let value = input.replace(/[^\d.,]/g, "").trim();
+  
   if (value === "" || value === "." || value === ",") return 0;
 
-  // Strip everything except digits, dot, comma
-  value = value.replace(/[^\d.,]/g, "");
+  // 2. Identify the decimal separator by finding the last punctuation mark
+  const lastComma = value.lastIndexOf(',');
+  const lastDot = value.lastIndexOf('.');
 
-  if (value === "") return 0;
-
-  const commaCount = (value.match(/,/g) || []).length;
-  const dotCount   = (value.match(/\./g) || []).length;
-
-  if (commaCount > 1 && dotCount === 0) {
-    value = value.replace(/,/g, "");
-  } else if (dotCount > 1 && commaCount === 0) {
-    value = value.replace(/\./g, "");
-  } else if (commaCount === 1 && dotCount === 1) {
-    if (value.lastIndexOf(",") > value.lastIndexOf(".")) {
-      value = value.replace(/\./g, "").replace(",", ".");
+  if (lastComma > lastDot) {
+    // European style: 1.231.230,00 -> remove dots, change comma to dot
+    value = value.replace(/\./g, '').replace(',', '.');
+  } else if (lastDot > lastComma) {
+    // US style: 1,231,230.00 -> remove commas
+    value = value.replace(/,/g, '');
+  } else {
+    // Only one type of separator exists (e.g., 1.231 or 123,00)
+    const parts = value.split(/[.,]/);
+    // If there's 3 digits after the separator, it's likely a thousand separator
+    if (parts.length > 1 && parts[parts.length - 1].length === 3) {
+      value = value.replace(/[.,]/g, '');
     } else {
-      value = value.replace(/,/g, "");
+      value = value.replace(',', '.');
     }
-  } else if (commaCount === 1 && dotCount === 0) {
-    const parts = value.split(",");
-    value = parts[1].length >= 4 ? parts.join("") : parts.join(".");
-  } else if (dotCount === 1 && commaCount === 0) {
-    const parts = value.split(".");
-    value = parts[1].length >= 4 ? parts.join("") : value;
   }
 
-  const num = Number(value);
-  if (Number.isNaN(num) || num < 0) return 0;
-
-  return Math.round(num * 100) / 100;
+  const num = parseFloat(value);
+  return isNaN(num) ? 0 : Math.round(num * 100) / 100;
 }
-
 function exportRowsToTSV(rows) {
   return rows
     .map(row =>
@@ -502,12 +497,14 @@ excelTable.addEventListener("blur", (e) => {
   const td = e.target.closest("td");
   if (!td) return;
 
-  // ignore ITEM column
-  if (td.cellIndex === 0) return;
+  // 1. Ignore the ITEM column (index 0)
+  // 2. Ignore the DELETE column (index 1) <--- ADD THIS
+  if (td.cellIndex === 0 || td.cellIndex === 1) return;
 
+  // Only normalize if it's an actual data cell
   normalizeCell(td);
   recalcTotals(excelTable, totalsTable);
-}, true); // 👈 capture phase is important
+}, true);
 
 // append container instead of table
 resultDiv.appendChild(excelContainer);
