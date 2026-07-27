@@ -11,7 +11,8 @@ const characters={
     '•':'-',
     '™':'(TM)',
     '?':' ',
-    '¬':''
+    '¬':'',
+    '’':"'"
 }
 
 formatBtn.addEventListener("click", () => {
